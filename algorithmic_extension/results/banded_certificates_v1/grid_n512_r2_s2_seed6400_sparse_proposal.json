@@ -1,0 +1,30 @@
+{
+  "lower": 0.09069024032113635,
+  "witness_points": [
+    0.0,
+    0.6707301870767474,
+    1.9998610313330316
+  ],
+  "pairs": [
+    {
+      "left": 0.0,
+      "right": 0.6707301870767474,
+      "dual_prices": [
+        0.2774208597198149,
+        0.2817618844477482
+      ]
+    },
+    {
+      "left": 0.6707301870767474,
+      "right": 1.9998610313330316,
+      "dual_prices": [
+        1.242019446198908,
+        1.1582936352257718
+      ]
+    }
+  ],
+  "proposal_source": "sparse",
+  "artifact": "results/sparse_confirmation_v2/grid_n512_r2_s2_seed6400_sparse.npz",
+  "artifact_sha256": "e737e5bc46b10b8fe8fc6bf21dfa7ba66fae0638f62da6189aa6a8ff5a0874af",
+  "proposal_seconds": 2.9622367000265513
+}

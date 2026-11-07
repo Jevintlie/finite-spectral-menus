@@ -1,0 +1,37 @@
+{
+  "artifact": "mirror_K1_reused.npz",
+  "artifact_sha256": "66c5031dff49d03f55fa456a00e62dfd9078abd1082bf4786044091485324f6e",
+  "status": "PASS_OUTWARD_BOUNDS",
+  "upper": 0.5730211031151738,
+  "lower": 0.5730111031151739,
+  "gap": 9.99999999995449e-06,
+  "upper_segments": [
+    {
+      "left": 0.0,
+      "right": 2.0,
+      "upper": 0.5730211031151738,
+      "site": 0
+    }
+  ],
+  "witness_points": [
+    0.0,
+    1.999946101328194
+  ],
+  "pairs": [
+    {
+      "left": 0.0,
+      "right": 1.999946101328194,
+      "dual_prices": [
+        0.654433283901923,
+        1.999946101328194
+      ],
+      "lower": 0.5730112846557797,
+      "site_lower_bounds": [
+        0.5730112846557797,
+        1.0228182263224008
+      ]
+    }
+  ],
+  "min_exclusion_margin": 1.8154060577035835e-07,
+  "seconds": 0.024078699992969632
+}

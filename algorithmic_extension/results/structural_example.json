@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "model": "single",
+      "alpha": 0.0,
+      "beta": 0.0,
+      "expected": 0.5,
+      "lower": 0.4999999999999965,
+      "upper": 0.5000000000000048,
+      "t": 0.5000000000000001
+    },
+    {
+      "model": "multi",
+      "alpha": 0.0,
+      "beta": 0.0,
+      "expected": 0.75,
+      "lower": 0.7499999999999957,
+      "upper": 0.7500000000000084,
+      "t": 0.25
+    },
+    {
+      "model": "single",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "expected": 0.5,
+      "lower": 0.499999999999995,
+      "upper": 0.5000000000000057,
+      "t": 0.5000000000000001
+    },
+    {
+      "model": "multi",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "expected": 0.75,
+      "lower": 0.7499999999999939,
+      "upper": 0.7500000000000085,
+      "t": 0.25
+    }
+  ],
+  "scope": "Numerical outward checks support the separate exact algebraic proof; all-global-optima dictionary limitation proved analytically."
+}

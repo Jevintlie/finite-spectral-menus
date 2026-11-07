@@ -1,0 +1,67 @@
+\subsection{Partial spectra and sparse computation}\label{sec:sparse}
+The preceding studies use full dense spectra. A separate extension stores
+the input matrices in compressed sparse row format and computes a partial
+spectrum through ARPACK, using SciPy's \texttt{eigsh} interface
+\cite{scipyeigsh}. The initial request is $\min(n,\max(r+8,2r))$ vectors;
+it expands when the returned boundary is too close to the rank cutoff.
+QR and Rayleigh--Ritz refinement, residual checks, and a 32 MiB spectrum
+cache accompany the same reusable endpoint search. Dense fallbacks are
+explicitly recorded and disabled above $n=1024$. This is an implementation
+of established sparse spectral methods, not a new eigensolver.
+
+The comparison uses a dense \emph{partial}-spectrum LAPACK backend with
+the same outer search and recovery. Both receive identical synthetic
+positive-semidefinite matrices: independently weighted graph Laplacians
+plus positive diagonal terms. Edge weights lie in $[0.05,0.25]$, reward
+diagonals in $[0.2,2]$, resource diagonals in $[0.1,1.5]$, and overheads in
+$[0,0.15]$. The graph is a row-major grid of width $\lfloor\sqrt n\rfloor$,
+possibly with an incomplete final row. These are computational test
+families without a calibrated physical interpretation.
+
+The initial sparse study stopped after 18 of 72 planned runs: both backends
+failed all three repetitions of one rank-two case at $n=128$. A narrow
+avoided eigenvalue crossing caused price bisection to reach binary64
+resolution before meeting the $10^{-9}$ endpoint tolerance. The revised
+implementation rotates the adjacent cutoff vectors to match the required
+chord slope, evaluates the original primal objective, and accepts only
+under the unchanged gap or decision criterion. The six failures and their
+source snapshot are retained. This recovery is applied to both backends;
+the failed study's seeds are thereafter treated as development data.
+
+A new protocol uses fresh seeds 6400 and 6401, $n=128,256,512$,
+$r=2,8$, two sites, and $K=2$. Three repetitions and two backends give
+72 timed runs in 12 paired cells, with alternating method order, one BLAS
+thread, and the preceding tolerances. Every saved menu is checked with
+independent full dense eigenvalue evaluation at all affine-line crossings
+and covering-segment endpoints. Those numerical cross-checks are distinct
+from outward certificates. Table~\ref{tab:sparse} reports per-cell median
+times; smaller instances need not benefit from sparse computation.
+
+\begin{table}[t]\centering\small
+\caption{Sparse confirmation. Times are medians of three runs in seconds;
+the ratio is dense partial divided by CSR/ARPACK. A ratio above one favors
+the sparse backend. Each row has two sites and two presets.}
+\label{tab:sparse}\input{tables/sparse.tex}
+\end{table}
+
+\input{sparse_results}
+
+Partial eigenpair residuals do not establish extremal ordering or complete
+cutoff multiplicity. The grid results therefore use separate ordered
+spectral checks, with outward dense verification on selected tractable
+cases. For paths, an outward Sturm-count verifier certifies ordered
+eigenvalue sums without a dense matrix, using classical tridiagonal
+inertia\cite{demmel1993}. Appendix~\ref{app:sturm} gives the argument.
+The descriptive larger-instance screen also compares paths against a
+specialized tridiagonal LAPACK solver; general CSR performance should not
+be inferred from beating an unnecessarily dense path implementation.
+
+\begin{table}[t]\centering\small
+\caption{Descriptive scaling screen: one solve per method and case,
+$r=2$, two sites, $K=2$. These are single observations, not repeated
+confirmation estimates. Retained memory counts input, spectrum-cache peak,
+and final basis-sample arrays, not peak process RSS.}
+\label{tab:sparse-scaling}\input{tables/sparse_scaling.tex}
+\end{table}
+
+\input{banded_results}

@@ -1,0 +1,57 @@
+\section{Tridiagonal and banded outward verification}\label{app:sturm}
+For tridiagonal $H=-A+pC_L$, write its diagonal as $a_i$ and
+off-diagonal as $b_i$. At a real shift $x$, the recurrence
+\[
+ t_1=a_1-x,\qquad t_i=a_i-x-b_{i-1}^2/t_{i-1}
+\]
+gives an $LDL^T$ factorization of $H-xI$ whenever all pivots are nonzero.
+By Sylvester's inertia law, the number of negative pivots equals the
+number of eigenvalues strictly below $x$; this is the classical Sturm
+count used in eigenvalue bisection\cite{demmel1993}. Our verifier encloses
+every pivot by outward interval operations and accepts a count only if
+each interval is finite and excludes zero. It rejects unresolved signs.
+
+An approximate eigenvalue merely proposes a bracket. If certified counts
+at $l,h$ satisfy $N(l)\le j-1$ and $N(h)\ge j$, then
+$\lambda_j(H)\in[l,h]$. Summing the first $r$ enclosures and adding $pd_L$
+encloses $F_L(p)$. This argument permits multiplicities and does not rely
+on the ordering of approximate Ritz pairs. For a preset basis, evaluate
+\[
+ \tr(U^THU)=\sum_{k=1}^r\left(\sum_i a_iU_{ik}^2+
+                   2\sum_i b_iU_{ik}U_{i+1,k}\right)
+\]
+by interval sums, then apply the polar-basis correction from
+Appendix~\ref{app:interval}. An outward row-sum bound controls $\|H\|_2$.
+The same saved segment and packing witnesses give global menu bounds.
+
+No dense $n\times n$ array is required. Each successful Sturm count uses
+$O(n)$ work, and the preset Gram calculation uses $O(nr^2)$ work.
+These statements do not bound the number of bracket expansions or menu
+search iterations. The implementation assumes the same elementary
+arithmetic contract as the dense verifier and has not received an external
+code audit.
+
+For a symmetric matrix of half-bandwidth $b$, the same inertia argument
+applies to unpivoted band $LDL^T$ elimination. At each step, if the pivot
+interval excludes zero, interval arithmetic encloses the Schur update
+$S_{ij}-v_iv_j/d$. Induction encloses the exact factorization, with no fill
+outside the full band. Definite signs of all pivots certify the inertia.
+A singular leading principal submatrix can prevent this calculation even
+for a nonsingular matrix; the checker rejects such a case. One successful
+count uses $O(nb^2)$ arithmetic operations and $O(nb+b^2)$ storage. A
+banded eigensolver only proposes brackets, which are checked by counts.
+
+The trace calculation extends to every stored off-diagonal band, and the
+same polar correction gives an objective enclosure for an actual projector.
+Outward pairwise addition trees are valid by induction on their nodes.
+Independent branch-price checks can run in CPU processes without changing
+these arguments.
+
+Unresolved counts at $n\le512$ may be retried with directed 50-digit
+decimal intervals. Exact conversion of each binary64 input and separately
+downward/upward-rounded elementary operations enclose the same real matrix.
+This path additionally assumes the correct directed rounding of Python's
+\texttt{Decimal} implementation\cite{pythondecimal}. Nonfinite or zero-containing pivots still
+cause rejection, and decimal underflow is trapped. No automatic decimal
+fallback is used for larger inputs. These precision and bandwidth limits
+are implementation choices, not unconditional convergence guarantees.

@@ -1,0 +1,297 @@
+\section{What the adaptive curve retains and loses}\label{sec:structure}
+The separation in Proposition~\ref{prop:separation} raises quantitative
+questions. How far can a curve-only relaxation underestimate menu regret?
+When is it exact? Can additional globally optimal presets compensate for
+its failure? We answer these questions using the slopes available on the
+active spectral faces. The convex-geometric arguments apply more generally
+to compact families of affine functions; the spectral model supplies an
+explicit face test and finiteness of the exceptional prices.
+
+\subsection{Three feasible families}
+Identify an affine line with its coefficient pair and let
+$\mathcal L=\{(\alpha(P),c(P)):P\in\Gr\}$, a compact subset of $\R^2$.
+Let $\mathcal G\subseteq\Gr$ contain every preset that attains $F(p)$ at
+some $p\in[0,B]$, including every choice at ties. This set is compact:
+it is the projection of the closed optimality relation in
+$\Gr\times[0,B]$. Write $E_K^{\mathcal G}$ for the menu optimum restricted
+to $\mathcal G$, and $\overline E_K$ for the optimum when each preset line
+can be any member of $\operatorname{conv}\mathcal L$. The latter is a
+mathematical relaxation; a convex combination of effective lines need not
+be realizable by a projector. The lower envelope remains $F$. Compactness
+ensures attainment of all three optima, and
+\begin{equation}\label{eq:threefamilies}
+ \overline E_K\le E_K\le E_K^{\mathcal G}.
+\end{equation}
+
+The geometric statements below hold for any nonempty compact coefficient
+set $\mathcal L\subset\R^2$, with presets interpreted as its elements and
+$F(p)=\min_{(\alpha,c)\in\mathcal L}(\alpha+pc)$. Convexity of
+$\mathcal L$ is not assumed. The spectral content is the realization of
+the sharp examples, the explicit active-face formula, and finiteness of
+the exceptional set. In particular, these results do not assert a new
+general scalarization or convex-duality principle.
+
+For $a<b$ define the curve-only endpoint value
+\begin{equation}\label{eq:curveoracle}
+ D(a,b)=\max_{p\in[a,b]}
+ \{F(p)-F(a)-(p-a)s\},\qquad s=\frac{F(b)-F(a)}{b-a}.
+\end{equation}
+For an interior price define the compact set of available optimal slopes
+\begin{equation}\label{eq:slopeset}
+ S(p)=\{c(P):J(P,p)=F(p)\}.
+\end{equation}
+The right and left derivatives of the compact affine envelope are
+$F'_+(p)=\min S(p)$ and $F'_-(p)=\max S(p)$, respectively. One way to
+see the right-derivative identity is to compare $F(p+h)$ with each
+minimizing line at $p$, then take a convergent subsequence of minimizing
+lines at $p+h$ as $h\downarrow0$. The reverse inequality follows from
+optimality at $p$. The left identity follows in the same way. Thus the
+superdifferential is $[\min S(p),\max S(p)]$.
+
+\begin{lemma}\label{lem:relaxation}
+$D(a,b)$ is the exact endpoint minimax value for
+$\operatorname{conv}\mathcal L$. An attaining relaxed line is either a
+globally optimal preset line or a convex combination of two preset lines
+that are globally optimal at the same interior price.
+\end{lemma}
+\begin{proof}
+Every relaxed line lies above $F$. Its regret relative to the chord at
+any price is a convex combination of its two endpoint regrets, giving
+$D(a,b)$ as a lower bound. Maximize $F(p)-sp$ at $p_*$. If
+$a<p_*<b$, then $s\in[\min S(p_*),\max S(p_*)]$. Choose two optimal
+lines whose slopes bracket $s$ and mix them to have slope $s$. They agree
+at $p_*$, so the mixed line has both endpoint regrets equal to $D(a,b)$.
+If $p_*=a$, select a minimizing line at $a$ of smallest slope. The
+right-derivative optimality condition makes its slope at most $s$, and
+its regret at $b$ is at most its regret at $a$. If $p_*=b$, use the
+largest minimizing slope and the left-derivative condition. The same
+argument uses the appropriate one-sided derivatives at $0$ and $B$.
+\end{proof}
+
+The acceptable set of a relaxed line is again an interval. Consequently
+Theorem~\ref{thm:greedy}, with $D$ in place of $e$, computes
+$\overline E_K$ from $F$ alone in exact arithmetic. It computes a lower
+bound on the realizable menu problem, with the following sharp comparison.
+This is a statement about values and covering intervals: recovery of an
+actual projector still requires the model's active-face information.
+
+\begin{theorem}\label{thm:factor}
+For every $K\ge1$,
+\begin{equation}\label{eq:factor}
+ \overline E_K\le E_K\le E_K^{\mathcal G}\le2\overline E_K.
+\end{equation}
+The constants in $E_K\le2\overline E_K$ and
+$E_K^{\mathcal G}\le2E_K$ cannot be decreased uniformly over the spectral
+models and budgets. Sharpness already occurs in the limit with $K=1$.
+\end{theorem}
+\begin{proof}
+An optimal relaxed menu supplies a partition into at most $K$ segments,
+each served by one relaxed line at tolerance $\overline E_K$. Such a
+partition is obtained from its closed interval cover as in
+Theorem~\ref{thm:greedy}. On a segment $[a,b]$ choose any globally
+optimal preset at $q=(a+b)/2$. Its two nonnegative endpoint regrets sum to
+\[
+ 2F(q)-F(a)-F(b)\le2\overline E_K,
+\]
+because the covering relaxed line lies above $F(q)$ and its endpoint
+regrets are at most $\overline E_K$. Each endpoint regret is therefore
+at most $2\overline E_K$, and convexity extends this bound to the segment.
+One such preset per segment proves the last inequality. The other
+inequalities are inclusions of feasible families. The next example proves
+sharpness.
+\end{proof}
+
+\paragraph{A continuum of indistinguishable curves.}
+Extend Model M by taking $C_1=2I$ and $C_2=\diag(\kappa,0)$ for
+$\kappa>2$, retaining $A=\diag(1,0)$, $r=1$, $B=1$, and zero overheads.
+For every $\kappa$,
+\begin{equation}\label{eq:kappa}
+ F(p)=\min(-1+2p,0),\qquad
+ \overline E_1=\tfrac12,\quad
+ E_1=1-\kappa^{-1},\quad E_1^{\mathcal G}=1.
+\end{equation}
+Indeed, with $t=u_1^2$ the endpoint regrets are $1-t$ and
+$\min(2-t,(\kappa-1)t)$. For $t\le2/\kappa$ their maximum is minimized
+at $t=1/\kappa$, with value $1-1/\kappa$. For $t\ge2/\kappa$ its
+minimum is $1$. For $p>0$ the only globally optimal projectors are the
+appropriate coordinate projectors, including both at $p=1/2$; at $p=0$
+only the first coordinate is optimal. The relaxed value follows from
+\eqref{eq:curveoracle}. Hence
+\[
+ \frac{E_1}{\overline E_1}=2-\frac2\kappa\longrightarrow2
+ \quad(\kappa\to\infty),\qquad
+ \frac{E_1^{\mathcal G}}{E_1}=\frac{\kappa}{\kappa-1}
+ \longrightarrow2\quad(\kappa\downarrow2).
+\]
+Also $E_1^{\mathcal G}=2\overline E_1$ throughout the family. The same
+curve realizes every value of $E_1$ strictly between $1/2$ and $1$.
+Common positive definite shifts preserve the regrets. At $\kappa=2$
+the optimal face at $p=1/2$ contains every projector, so the limiting
+claim does not assert continuity of the restricted feasible family.
+
+The factor-two argument is the elementary two-objective weighted-sum
+bound applied to endpoint regrets. Weighted scalarization and limitations
+of supported solutions have a substantial approximation literature
+\cite{bazgan2022,helfrich2024}; we do not claim that principle as new. Here its role is
+to quantify the information loss in Proposition~\ref{prop:separation},
+with sharp examples inside the specified spectral model.
+
+\subsection{An exact criterion on active slopes}
+Call $p\in(0,B)$ a \emph{slope-gap price} if
+$S(p)\ne[\min S(p),\max S(p)]$. This definition concerns missing slopes,
+not merely nondifferentiability: a corner can have every intermediate
+slope available from an optimal projector.
+
+\begin{theorem}\label{thm:exactness}
+The identity $e(a,b)=D(a,b)$ holds for every $0\le a<b\le B$ if and
+only if there are no slope-gap prices in $(0,B)$. In that case
+\begin{equation}\label{eq:exactmenus}
+ E_K=E_K^{\mathcal G}=\overline E_K\qquad(K\ge1).
+\end{equation}
+\end{theorem}
+\begin{proof}
+If every $S(p)$ fills its interval, the interior construction in
+Lemma~\ref{lem:relaxation} uses one actual globally optimal preset of
+slope $s$. Its boundary construction already uses one preset. Thus
+$e(a,b)=D(a,b)$ with a globally optimal realizing preset on every
+segment. Applying this to an optimal relaxed cover proves
+\eqref{eq:exactmenus}.
+
+Conversely let $s$ be a missing slope at $p_*\in(0,B)$. Compactness of
+$S(p_*)$ implies
+$l:=F'_+(p_*)<s<u:=F'_-(p_*)$. Fix
+$R>(u-s)/(s-l)$. For small $h>0$ set $a=p_*-h$. The chord slope
+from $a$ to $p_*$ tends to $u>s$, whereas the chord slope from $a$ to
+$p_*+Rh$ tends to $(u+Rl)/(1+R)<s$. By continuity there is
+$b\in(p_*,p_*+Rh)$ for which the chord slope is exactly $s$.
+Concavity and $l<s<u$ make $p_*$ the unique maximizer of $F(p)-sp$.
+
+Suppose an actual preset attained endpoint error $D(a,b)$. At $p_*$
+the positive weighted average of its endpoint regrets equals
+$J(P,p_*)-F(p_*)+D(a,b)\ge D(a,b)$. Since each endpoint regret is
+at most $D(a,b)$, equality forces both regrets to equal $D(a,b)$
+and $J(P,p_*)=F(p_*)$. Equal endpoint regrets force $c(P)=s$,
+contradicting $s\notin S(p_*)$. Attainment on the compact projector
+set therefore gives $e(a,b)>D(a,b)$.
+\end{proof}
+
+\paragraph{Computing the slope set from spectral faces.}
+At an interior price let $\mathcal A(p)=\{L:F_L(p)=F(p)\}$.
+For each $L\in\mathcal A(p)$ use the cutoff-face construction in
+Theorem~\ref{thm:endpoint} to obtain its minimum and maximum costs
+$c_{L,-}(p)$ and $c_{L,+}(p)$. Then
+\begin{equation}\label{eq:unionfaces}
+ S(p)=\bigcup_{L\in\mathcal A(p)}
+ [c_{L,-}(p),c_{L,+}(p)].
+\end{equation}
+Every intermediate cost is realized by the explicit rotations in that
+theorem. Moreover, a minimizing projector of an active site must have
+that site among its cheapest sites: since $p>0$, a strictly cheaper site
+would yield an objective below $F(p)$. Conversely, a globally optimal
+projector minimizes at a cheapest active site. This proves
+\eqref{eq:unionfaces}. The restriction $p>0$ is essential to this
+argument; at zero price a tied site's raw cost need not be the
+projector's effective cost.
+
+In particular, a single site has no slope-gap prices, even at eigenvalue
+collisions. Differentiability of $F$ throughout $(0,B)$ is another
+sufficient condition, since then every $S(p)$ is a singleton. With
+multiple sites, one tests whether the union in \eqref{eq:unionfaces}
+fills its interval. A jump in an optimizing subspace alone does not
+imply failure of the curve relaxation.
+
+\begin{remark}
+The equivalence concerns relaxation exactness on \emph{every subinterval}.
+It is not a converse criterion for \eqref{eq:exactmenus} on a single
+fixed domain, or for the optimality of supported presets alone. For
+Model M on $[1/2-h,1/2+h]$, $0<h<1/4$, direct endpoint calculation
+gives $e=e^{\mathcal G}=2h$ but $D=h$. Here $e^{\mathcal G}$ restricts
+the endpoint problem to globally optimal presets. Thus that restriction
+can be exact even when convexification strictly improves the objective.
+\end{remark}
+
+\subsection{A finite cost in additional presets}
+\begin{theorem}\label{thm:repair}
+If there are $q<\infty$ slope-gap prices in $(0,B)$, then
+\begin{equation}\label{eq:repair}
+ E_{K+\min(K,q)}^{\mathcal G}\le\overline E_K\le E_K
+ \qquad(K\ge1).
+\end{equation}
+Without finiteness, $E_{2K}^{\mathcal G}\le\overline E_K$ still holds.
+For the finite-dimensional spectral model, $q$ is always finite.
+\end{theorem}
+\begin{proof}
+Partition an optimal relaxed cover into at most $K$ segments and replace
+its line on each segment by an endpoint optimizer from
+Lemma~\ref{lem:relaxation}. If a globally optimal preset realizes that
+line, retain it. Otherwise its slope lies in a gap of $S(p_*)$ at an
+interior maximizing price. Choose two globally optimal lines at $p_*$
+whose slopes bracket the required slope. Their lower envelope is no
+greater than their convex combination at every price. The two actual
+presets therefore cover this segment at its relaxed tolerance.
+
+Each replacement that needs two presets can be charged to a slope-gap
+price strictly inside its segment. Distinct segment interiors are
+disjoint, so each price is charged at most once. There are at most
+$\min(K,q)$ extra presets. This is selection between two deterministic
+presets after observing the price, not a randomized projector.
+
+For finiteness, apply Rellich's analytic eigenvalue parameterization to
+each affine symmetric pencil on an open interval containing $[0,B]$
+\cite[Theorem~1.1]{barbarino2022}. Each $F_L$ is the minimum of the
+finitely many analytic functions obtained by summing any $r$ of those
+eigenvalue branches and adding $pd_L$. Consequently $F$ is the minimum
+of a finite family of analytic functions. Discard identical functions.
+Every pair then has finitely many zeros of its difference on the compact
+interval $[0,B]$. Outside their finite union, the minimizing analytic
+function is locally fixed, so $F$ is differentiable. A slope gap
+requires nondifferentiability by \eqref{eq:slopeset}, proving finiteness.
+No polynomial bound on $q$, or efficient exact enumeration of it, is
+asserted.
+\end{proof}
+
+Let $N_{\rm rel}(\epsilon)$, $N(\epsilon)$, and
+$N_{\mathcal G}(\epsilon)$ be the least menu sizes at tolerance
+$\epsilon>0$ in the three families. They are finite, and
+\begin{equation}\label{eq:cardinalityrepair}
+ N_{\rm rel}(\epsilon)\le N(\epsilon)\le N_{\mathcal G}(\epsilon)
+ \le N_{\rm rel}(\epsilon)+\min\{N_{\rm rel}(\epsilon),q\}.
+\end{equation}
+Thus the extra supported-menu budget is bounded independently of the
+requested accuracy for each fixed spectral instance. The bound counts
+exceptional prices, rather than the number of missing slope intervals
+at one price. It can be conservative: different repairs may reuse a
+preset. Some overhead is necessary: the family in \eqref{eq:kappa}
+has $q=1$ and $E_1^{\mathcal G}=1>\overline E_1=1/2$, whereas its
+two coordinate presets give $E_2^{\mathcal G}=0$. Thus the extra preset
+cannot be removed uniformly even for $q=K=1$. We do not assert sharpness
+of the additive $q$ term for every $q$ and $K$.
+
+For $K>q$, \eqref{eq:repair} also gives
+\begin{equation}\label{eq:asymptoticsandwich}
+ \overline E_K\le E_K\le E_K^{\mathcal G}\le\overline E_{K-q}.
+\end{equation}
+If a positive asymptotic law $\overline E_K\sim cK^{-\alpha}$ has been
+established for a particular curve, then both $E_K$ and
+$E_K^{\mathcal G}$ have that same leading law. This transfers existing
+scalar approximation results, such as suitable one-sided smooth-curve
+laws~\cite{gaubert2011}; it does not establish a new exponent or assert
+those regularity assumptions for every spectral instance. Piecewise
+affine curves can instead admit a finite zero-regret menu.
+
+\paragraph{Relation to representative-set approximation.}
+Minimum-size convex Pareto approximation already distinguishes feasible
+representatives from convex combinations~\cite{diakonikolas2008}; the
+detailed treatment in \cite[Sections~5.2--5.3]{diakonikolas2011} also
+exhibits loss from restricting representatives to extreme supported points.
+That phenomenon is not new here. Nor is replacement by supporting pieces:
+\cite[Lemma~2]{magnanti2012} gives a bounded-cardinality tangent replacement
+for multiplicative scalar approximation. Our two-line replacement is the
+corresponding elementary exposed-face construction for additive regret.
+The refinement is to charge a replacement only at an interior price with
+an unavailable active slope; disjoint covering intervals charge each such
+price at most once. Combining this count with \eqref{eq:unionfaces} and
+spectral finiteness gives the instance-wise additive overhead. It does not
+improve the computational-complexity guarantees of those predecessors.
+Appendix~\ref{app:comparison} makes the approximation criteria and the
+relation to robust policy-count bounds explicit.

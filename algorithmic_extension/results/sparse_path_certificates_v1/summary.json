@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "cases": 4,
+  "rows": [
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_sparse.npz",
+      "artifact_sha256": "13447e11aaca59f60bfc814637643d9640652095613ffbf95c0d615109b65a45",
+      "verifier": "tridiagonal",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.06398550069439236,
+      "lower": 0.06397550069439237,
+      "gap": 9.999999999996123e-06,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.2665862441062927,
+          "upper": 0.06398550069439236,
+          "site": 0
+        },
+        {
+          "left": 0.2665862441062927,
+          "right": 2.0,
+          "upper": 0.06398449169362676,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.26656711915677783,
+        1.9996455745386224
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.26656711915677783,
+          "dual_prices": [
+            0.17777269778323446,
+            0.23302281938374603
+          ],
+          "lower": 0.06397599715675993,
+          "site_lower_bounds": [
+            0.06397599715675993,
+            0.10441249422539921
+          ]
+        },
+        {
+          "left": 0.26656711915677783,
+          "right": 1.9996455745386224,
+          "dual_prices": [
+            0.9132388300540688,
+            1.457625024493457
+          ],
+          "lower": 0.06397553742808347,
+          "site_lower_bounds": [
+            0.06397553742808347,
+            0.5035110985269026
+          ]
+        }
+      ],
+      "min_exclusion_margin": 3.673369110279712e-08,
+      "seconds": 1.7027320000051986
+    },
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_tridiagonal.npz",
+      "artifact_sha256": "24fdf4aea0e34892531b2a24c47620319405aef63487b4da06853c39d3547a44",
+      "verifier": "tridiagonal",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.06398550069439503,
+      "lower": 0.06397550069439503,
+      "gap": 9.999999999996123e-06,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.2665862441062927,
+          "upper": 0.06398550069439503,
+          "site": 0
+        },
+        {
+          "left": 0.2665862441062927,
+          "right": 2.0,
+          "upper": 0.0639844916936232,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.26656711915677783,
+        1.9996455745386224
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.26656711915677783,
+          "dual_prices": [
+            0.17777269778323446,
+            0.23302281938374603
+          ],
+          "lower": 0.06397599715675993,
+          "site_lower_bounds": [
+            0.06397599715675993,
+            0.10441249422539921
+          ]
+        },
+        {
+          "left": 0.26656711915677783,
+          "right": 1.9996455745386224,
+          "dual_prices": [
+            0.9132388300540688,
+            1.457625024493457
+          ],
+          "lower": 0.06397553742808347,
+          "site_lower_bounds": [
+            0.06397553742808347,
+            0.5035110985269026
+          ]
+        }
+      ],
+      "min_exclusion_margin": 3.673368843826186e-08,
+      "seconds": 1.6831221999891568
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_sparse.npz",
+      "artifact_sha256": "0796dc7d1969c65771df92256a4b74ae12f75223a1a28f75dfa5e8c8b5926fea",
+      "verifier": "tridiagonal",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.08532048014390094,
+      "lower": 0.08531048014390094,
+      "gap": 9.999999999996123e-06,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.7289840131998062,
+          "upper": 0.08532048014390094,
+          "site": 0
+        },
+        {
+          "left": 0.7289840131998062,
+          "right": 2.0,
+          "upper": 0.0853183383597136,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.728921353576541,
+        1.9997984580683117
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.728921353576541,
+          "dual_prices": [
+            0.3252110871866928,
+            0.3528848480881915
+          ],
+          "lower": 0.08531063684004712,
+          "site_lower_bounds": [
+            0.08531063684004712,
+            0.2369989302790891
+          ]
+        },
+        {
+          "left": 0.728921353576541,
+          "right": 1.9997984580683117,
+          "dual_prices": [
+            1.3993730327919758,
+            0.9677828375094248
+          ],
+          "lower": 0.08531058491082975,
+          "site_lower_bounds": [
+            0.08531058491082975,
+            0.10275667316094593
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.0476692881289384e-07,
+      "seconds": 6.181272799993167
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_tridiagonal.npz",
+      "artifact_sha256": "aa4f4a092f99fcaee1aacd54a5416cce99be06330b4710bb78dea2182f8e3628",
+      "verifier": "tridiagonal",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.08532048014390271,
+      "lower": 0.08531048014390272,
+      "gap": 9.999999999996123e-06,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.7289840131998062,
+          "upper": 0.08532048014390271,
+          "site": 0
+        },
+        {
+          "left": 0.7289840131998062,
+          "right": 2.0,
+          "upper": 0.08531833835971005,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.728921353576541,
+        1.9997984580683117
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.728921353576541,
+          "dual_prices": [
+            0.3252110871866928,
+            0.3528848480881915
+          ],
+          "lower": 0.08531063684004712,
+          "site_lower_bounds": [
+            0.08531063684004712,
+            0.2369989302790891
+          ]
+        },
+        {
+          "left": 0.728921353576541,
+          "right": 1.9997984580683117,
+          "dual_prices": [
+            1.3993730327919758,
+            0.9677828375094248
+          ],
+          "lower": 0.08531058491082975,
+          "site_lower_bounds": [
+            0.08531058491082975,
+            0.10275667316094593
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.04766927036537e-07,
+      "seconds": 6.175328299985267
+    }
+  ],
+  "source": "results/sparse_scaling_v1",
+  "arithmetic_contract": "Exact binary64 input matrices; IEEE-754 outward elementary interval arithmetic; see CERTIFICATE_DERIVATION.md.",
+  "source_sha256": {
+    "certify_sparse_artifacts.py": "2b58b96a7245d96741ea4e961f94e67082c2d28681ce61bf1eb4ac5a5042277a",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08",
+    "CERTIFICATE_DERIVATION.md": "08b4f37c1fe1045bbb6b20d34102ae0e395eb2fece6a2c2d2639c55e484ff517",
+    "tridiagonal_verifier.py": "e45386ef3e8098310b6d1e0875c7c813dd54fc53b3a2dba730c0bcaa3e6a5722",
+    "SPARSE_VERIFICATION.md": "c86732964589ede3debd677cab4863a3e50f5eb3b953a30b059e8760c88f1b5c"
+  }
+}

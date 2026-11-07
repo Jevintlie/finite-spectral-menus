@@ -1,0 +1,92 @@
+{
+  "status": "PASS_STANDALONE_INTERVAL_VERIFICATION",
+  "cases": 10,
+  "rows": [
+    {
+      "artifact": "commuting_collision_K1_reused.npz",
+      "lower": 0.499990000000009,
+      "upper": 0.500000000000009,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 4.943928346712312e-07,
+      "seconds": 0.010544899996602908
+    },
+    {
+      "artifact": "mirror_K1_reused.npz",
+      "lower": 0.5730111031151739,
+      "upper": 0.5730211031151738,
+      "gap": 9.99999999995449e-06,
+      "min_exclusion_margin": 1.8154060577035835e-07,
+      "seconds": 0.004216399975121021
+    },
+    {
+      "artifact": "mirror_K2_reused.npz",
+      "lower": 0.04142382769706117,
+      "upper": 0.04143382769706117,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 3.045629174552866e-08,
+      "seconds": 0.0067918999993707985
+    },
+    {
+      "artifact": "mirror_K4_reused.npz",
+      "lower": 0.010292130419207691,
+      "upper": 0.01030213041920769,
+      "gap": 9.999999999999593e-06,
+      "min_exclusion_margin": 1.680269683113078e-08,
+      "seconds": 0.011465299990959466
+    },
+    {
+      "artifact": "n16_r4_s3_seed5200_K2_reused.npz",
+      "lower": 0.20536134670644798,
+      "upper": 0.205371346706448,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 2.1883557133062226e-07,
+      "seconds": 0.04508670000359416
+    },
+    {
+      "artifact": "n16_r4_s3_seed5200_K4_reused.npz",
+      "lower": 0.04576433456327107,
+      "upper": 0.045774334563271075,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 9.962693729020922e-08,
+      "seconds": 0.07918480000807904
+    },
+    {
+      "artifact": "n32_r8_s6_seed5200_K2_reused.npz",
+      "lower": 0.3055817812293494,
+      "upper": 0.30559178122934944,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 3.697077935460591e-07,
+      "seconds": 0.26576479998766445
+    },
+    {
+      "artifact": "n32_r8_s6_seed5200_K4_reused.npz",
+      "lower": 0.07715557540732795,
+      "upper": 0.07716557540732795,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.8719808671241456e-07,
+      "seconds": 0.5133864999806974
+    },
+    {
+      "artifact": "n64_r4_s3_seed5200_K2_reused.npz",
+      "lower": 0.20972265675604582,
+      "upper": 0.20973265675604583,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 2.414165777286925e-07,
+      "seconds": 0.6383856999746058
+    },
+    {
+      "artifact": "n64_r4_s3_seed5200_K4_reused.npz",
+      "lower": 0.04301640993909357,
+      "upper": 0.043026409939093575,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 1.1076559084527426e-07,
+      "seconds": 1.1349379000021145
+    }
+  ],
+  "solver_imported": false,
+  "source_sha256": {
+    "check_certificates.py": "c8872815cf320f48e0ac70c503dcb3825ab62d246277a98ff624932857090421",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08"
+  },
+  "scope": "Continuous-price global bounds under the documented IEEE-754/input contract; not a novelty assessment."
+}

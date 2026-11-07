@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,microtype}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\title{Request for independent mathematical criticism}
+\author{Jevint Felixciano\\Independent researcher\\
+\small jevintfelixciano@protonmail.com}
+\date{7 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Manuscript:} Finite Menus of Spectral Subspaces:
+Realizability and the Cost of Convexification. The v7 preparation changes
+authorship, declarations, licensing, and packaging; the structural proofs
+are unchanged from v6. No independent review or endorsement is claimed.
+
+\paragraph{Requested assessment.}
+Please challenge correctness and prior-art distinctness, rather than provide
+a general endorsement. A counterexample, a missing hypothesis, or a precise
+older theorem implying the result would be especially useful. The focused
+reading is Theorem 4, its spectral face formula, Theorem 6, and Appendix D.
+Numerical tests and the internal audit are not offered as proofs.
+
+\paragraph{Model and notation.}
+For real rank-$r$ orthogonal projectors $P$, shared symmetric reward $A$,
+site costs $C_L$, overheads $d_L$, and $p\in[0,B]$, put
+\[
+ \alpha(P)=-\operatorname{tr}(AP),\quad
+ c(P)=\min_L\{\operatorname{tr}(C_LP)+d_L\},\quad
+ J(P,p)=\alpha(P)+pc(P),\quad F(p)=\min_PJ(P,p).
+\]
+The resource interpretation assumes positive-semidefinite matrices,
+nonnegative overheads, and nonnegative scalar price. Write
+$R(P,p)=J(P,p)-F(p)$ and
+$e(a,b)=\min_P\max\{R(P,a),R(P,b)\}$.
+Let $\mathcal L=\{(\alpha(P),c(P))\}$ and let $\mathcal G$ contain
+\emph{all} projectors globally optimal at at least one price, including ties.
+The $K$-menu regrets $E_K$, $\overline E_K$, and $E_K^{\mathcal G}$ use,
+respectively, actual projectors, coefficient points in
+$\operatorname{conv}\mathcal L$, and projectors in $\mathcal G$.
+
+\paragraph{Theorem 4: exactness on every subinterval.}
+For $a<b$ let $s=(F(b)-F(a))/(b-a)$ and
+\[
+ D(a,b)=\max_{p\in[a,b]}\{F(p)-F(a)-(p-a)s\},\qquad
+ S(p)=\{c(P):J(P,p)=F(p)\}.
+\]
+The claim is that $e(a,b)=D(a,b)$ for \emph{every} subinterval if and
+only if $S(p)=[\min S(p),\max S(p)]$ at every interior price.
+This implies equality of the three menu values for every budget, but the
+manuscript does not assert the converse from one fixed budget or domain.
+
+Please examine: (i) the compactness and endpoint cases in the relaxed
+oracle; (ii) constructing a chord of exactly a missing slope across a
+corner; (iii) using attainment to obtain a strict, rather than merely
+unattained, gap; and (iv) persistent ties and zero-regret cases.
+For spectral data the claimed slope set is a union of closed cost intervals
+from active cutoff eigenspaces. Please challenge real-projector recovery,
+the active-site argument at $p>0$, and the single-site corollary.
+
+\paragraph{Theorem 6: additional-preset repair.}
+If $q$ interior prices have missing optimal slopes, the claim is
+\[
+ E^{\mathcal G}_{K+\min(K,q)}\leq\overline E_K\leq E_K.
+\]
+Without a finite $q$, the $2K$ replacement bound remains. Please examine
+the interval-cover partition, boundary/singleton segments, and whether
+charging a two-preset replacement to a strictly interior exceptional price
+can ever charge the same price twice. This is deterministic selection of
+a preset after observing price, not randomization.
+
+Finiteness for each fixed spectral instance uses analytic eigenvalue
+branches on an open neighborhood of the compact price domain, finitely
+many rank-$r$ branch sums, removal of identical branches, and isolated
+zeros of nonidentical analytic differences. Please check each hypothesis.
+No efficient enumeration, polynomial bound, uniformly small $q$, or
+sharpness of the additive term for all $K,q$ is claimed.
+
+\paragraph{Closest-prior-art challenge.}
+Appendix D explicitly acknowledges convex Pareto representatives, weighted
+scalarization, tangent replacement, and finite-policy bounds. In particular,
+convexifying an already selected menu does not change its linear value;
+allowing its selected representatives to come from a larger convex hull can.
+Please identify any earlier result that directly yields the all-subinterval
+criterion or the exceptional-price refinement, with an explicit mapping
+of assumptions and conclusions. Conversely, is the remaining refinement
+mathematically useful enough to merit a paper? The companion prior-art map
+provides the exact comparisons, not a claim of exhaustive priority.
+
+\paragraph{Evidence and response.}
+The artifact includes reproducible numerical checks and separate historical
+validation reports. Their role is computational reproducibility, not
+proof or external peer review. Please distinguish what you read, derived,
+or executed. A short response organized as ``correctness'', ``prior art'',
+``significance'', and ``required changes'' is sufficient; unreviewed parts
+should be marked as such. There is no request for coauthorship, arXiv
+endorsement, or a commitment to formal journal refereeing.
+
+\paragraph{AI disclosure.}
+AI assistance was used substantially in planning, literature search,
+mathematical drafting, implementation, analysis, and manuscript preparation.
+The author seeks independent criticism of precisely those central claims;
+internal automated checks should not be treated as independent review.
+\end{document}

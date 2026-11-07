@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_sparse.npz",
+      "loss": 0.06398550068689612,
+      "endpoint_upper": 0.06398550068689879,
+      "reported_difference": 1.7763568394002505e-15,
+      "seconds": 0.01754659999278374,
+      "reference": "tridiagonal"
+    },
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_tridiagonal.npz",
+      "loss": 0.06398550068689879,
+      "endpoint_upper": 0.06398550068689879,
+      "reported_difference": 0.0,
+      "seconds": 0.01706039998680353,
+      "reference": "tridiagonal"
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_sparse.npz",
+      "loss": 0.08532047977869173,
+      "endpoint_upper": 0.08532048013405014,
+      "reported_difference": 8.881784197001252e-16,
+      "seconds": 0.03385489998618141,
+      "reference": "tridiagonal"
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_tridiagonal.npz",
+      "loss": 0.0853204797786935,
+      "endpoint_upper": 0.08532048013405191,
+      "reported_difference": 8.881784197001252e-16,
+      "seconds": 0.03373649998684414,
+      "reference": "tridiagonal"
+    },
+    {
+      "artifact": "grid_n1024_r2_s2_seed6500_dense_partial.npz",
+      "loss": 0.11446594385535036,
+      "endpoint_upper": 0.11446594385535036,
+      "reported_difference": 4.440892098500626e-15,
+      "seconds": 0.5846388000063598,
+      "reference": "dense_full"
+    },
+    {
+      "artifact": "grid_n1024_r2_s2_seed6500_sparse.npz",
+      "loss": 0.11446594385535214,
+      "endpoint_upper": 0.11446594385535214,
+      "reported_difference": 7.993605777301127e-15,
+      "seconds": 0.6035649999976158,
+      "reference": "dense_full"
+    },
+    {
+      "artifact": "grid_n4096_r2_s2_seed6500_sparse.npz",
+      "loss": 0.11262635454989667,
+      "endpoint_upper": 0.1126263545501045,
+      "reported_difference": 2.3092638912203256e-14,
+      "seconds": 8.649863300001016,
+      "reference": "banded"
+    }
+  ],
+  "scope": "Independent ordered LAPACK numerical cross-checks; outward certificates are separate."
+}

@@ -1,0 +1,688 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,microtype}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Gr}{\mathcal G_r}
+\newcommand{\R}{\mathbb R}
+\title{Finite Menus of Spectral Subspaces:\\Realizability and the Cost of Convexification}
+\input{author_info}
+\author{\AuthorName\\{\AuthorAffiliation}\\{\small\CorrespondingEmail}}
+\date{11 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study fixed menus of rank-$r$ orthogonal subspaces under a shared
+quadratic reward and multiple quadratic resource costs, with worst-case
+additive regret over a compact scalar-price interval. The fully adaptive
+value curve determines a convexified menu problem but can conceal different
+realizable optima. We characterize exactly when this relaxation is valid
+on every price subinterval: the slopes of actual optimal presets must fill
+the superdifferential interval at every interior price. For spectral menus,
+this becomes a union-of-intervals test on active cutoff eigenspaces and
+always holds for a single site. If $q$ prices fail the criterion, every
+relaxed $K$-menu admits a replacement by at most $K+\min(K,q)$ globally
+price-optimal presets at no greater regret. Analytic eigenvalue
+parameterization makes $q$ finite for each fixed spectral instance.
+The resulting additive cardinality bound transfers any separately
+established positive power-law asymptotic. Sharp spectral examples also
+realize the factor-two comparison supplied by endpoint scalarization.
+We combine established two-criterion spectral optimization and interval
+covering with reusable bounds and solver-independent outward verification.
+Synthetic dense and sparse experiments demonstrate construction and
+continuous-price certification, including banded instances of dimension
+4096, while documenting regimes where specialized or dense methods are
+faster. The contribution is the realizability criterion, its spectral
+characterization, and the exceptional-price refinement of finite-menu repair.
+\end{abstract}
+\noindent\textbf{Keywords:} minimax regret; spectral optimization; finite
+adaptability; subspace menus; interval verification.
+
+\section{Introduction}
+A continuously adjustable measurement subspace can be optimal for each
+resource price, but a device or procedure may instead offer only a fixed
+number of presets. Choosing those presets is a different optimization
+problem. A good menu must control its worst loss relative to full adaptation,
+including prices between any sampled design points. We consider a quadratic
+model in which a preset is an orthogonal subspace, the task reward is shared
+across sites, and the resource cost depends on both the site and the subspace.
+The price is a single nonnegative scalar. These assumptions give an
+especially useful interval geometry without making the collection of
+realizable preset lines convex across sites.
+
+This paper studies what is lost by replacing realizable presets with scalar
+approximating lines. A family with an unchanged adaptive curve has a
+continuum of different one-preset losses. More generally, missing slopes
+on globally optimal faces exactly characterize failure of the scalar
+relaxation on some subinterval. Those exceptional prices also bound the
+extra number of globally price-optimal presets needed to match a relaxed
+menu. This makes the distinction quantitative at finite budgets and shows
+why it disappears from positive power-law leading asymptotics.
+
+We also provide an end-to-end construction for the model. The endpoint
+subproblem is a known two-objective trace minimax problem; its solution uses
+scalar eigenvalue optimization and recovery inside a possible tied
+eigenspace. We use it within exact-real greedy interval covering, accelerate
+the repeated endpoint queries through reusable bounds, and attach
+solver-independent finite upper and lower witnesses to computed menus.
+An explicit separation shows why the scalar fully adaptive curve alone
+does not encode which finite menus can be realized.
+
+The main structural results are the sharp model realizations in
+Theorem~\ref{thm:factor}, the exactness criterion in
+Theorem~\ref{thm:exactness}, and the finite additional-preset bound in
+Theorem~\ref{thm:repair}. Their ingredients include standard weighted
+scalarization, exposed faces, and interval covering. A reuse implementation
+and independently replayable continuous-price bounds complement this theory.
+We do not claim a new two-criterion
+duality theorem, interval greedy rule, eigenvalue-verification principle,
+or worst-case bit-complexity bound. We also do not claim a validated physical
+application: resource matrices in the experiments are synthetic.
+
+\paragraph{Relation to existing methods.}
+Regret-minimizing representative sets are established for finite databases,
+including efficient two-dimensional decision algorithms and interval-covering
+methods~\cite{cao2017}. Succinct convex Pareto approximation already distinguishes feasible
+representatives from convexified points and identifies losses from
+restricting the representatives~\cite{diakonikolas2008,diakonikolas2011}. Our candidate set
+is an implicit continuum of rank projectors with site-dependent costs,
+and the loss is additive over a specified price interval. Neither the
+finite-menu objective nor the use of interval covering is claimed to
+originate here.
+
+Policy-count bounds in robust optimization also use finite convex
+representations~\cite{hanasusanto2015,buchheim2017}. Recent bounds for
+nonlinear objectives require concavity in the uncertain parameter
+\cite{kurtz2026}, whereas our regret is convex in price. Thus those
+dimension-based exactness bounds do not directly apply. Our bound instead
+compares a relaxed finite menu with a realizable finite menu at the same
+regret tolerance. Appendix~\ref{app:comparison} details this distinction
+and the limits of the contribution relative to convex Pareto approximation.
+
+Tantipongpipat et al.~\cite{tantipongpipat2019} establish exact polynomial-time
+results for two-criterion dimensionality reduction. Shen et al.~\cite{shen2026}
+develop scalar eigenvalue optimization for fair PCA, use Brent optimization,
+and explicitly discuss recovery at repeated eigenvalues. These are direct
+predecessors of our endpoint oracle, including the need for actual subspace
+recovery. Our timing references implement their scalar strategy in our
+outer menu construction; they are not runs of the authors' software.
+
+Scalar convex-function approximation is also well developed. Rote's
+sandwich analysis~\cite{rote1992} studies adaptive function/derivative
+evaluation; Imamoto and Tang~\cite{imamoto2008} give a fixed-segment minimax
+construction for differentiable convex functions. Those problems permit
+scalar approximants defined from the function, whereas our affine pieces
+must come from a common task matrix and particular site costs.
+Proposition~\ref{prop:separation} demonstrates the distinction, rather than
+assuming it. Continuous covering and finite adaptability have broader
+precedents, including affine polyhedral families studied by Cardinal et
+al.~\cite{cardinal2025}; their input class and complexity results differ
+from the rank-projector family here. Verified spectral computation is an
+established field~\cite{rump2022}. Our verifier uses elementary congruence
+enclosures specifically to check menu witnesses. Approximation-rate results
+such as those of Gaubert et al.~\cite{gaubert2011} are background, not a
+claimed new inverse-square law in this paper.
+
+\section{Problem and a structural separation}
+Let $A,C_1,\ldots,C_m\in\R^{n\times n}$ be symmetric, $1\le r\le n$,
+$m\ge1$, and $B>0$. For the resource interpretation, $A,C_L\succeq0$
+and $d_L\ge0$. A preset is $P=UU^T$ with $U^TU=I_r$; the compact set
+of such projectors is denoted by $\Gr$. At price $p\in[0,B]$ and site $L$,
+\begin{align}
+ J_L(P,p)&=-\tr(AP)+p\{\tr(C_LP)+d_L\},\\
+ F_L(p)&=\sum_{j=1}^r\lambda_j(-A+pC_L)+pd_L,
+ &F(p)&=\min_L F_L(p),                                      \label{eq:F}
+\end{align}
+Eigenvalues are in increasing order. The minimum trace principle gives
+$F(p)=\min_{P,L}J_L(P,p)$.
+
+Write $\alpha(P)=-\tr(AP)$ and $c(P)=\min_L\{\tr(C_LP)+d_L\}$.
+Because $p\ge0$ and $A$ is shared, one cheapest site works for a fixed
+preset at every price. Its effective cost is the affine function
+\begin{equation}
+ J(P,p)=\alpha(P)+pc(P),\qquad R(P,p)=J(P,p)-F(p).             \label{eq:regret}
+\end{equation}
+$F$ is continuous and concave, as an infimum of affine functions with
+bounded slopes. Thus $R(P,\cdot)$ is continuous, nonnegative, and convex.
+For a menu $Q=(P_1,\ldots,P_K)$, define
+\begin{equation}
+ E(Q)=\max_{p\in[0,B]}\min_i R(P_i,p),\qquad
+ E_K=\min_{Q\in\Gr^K}E(Q).                                  \label{eq:menu}
+\end{equation}
+Compactness and continuity ensure attainment. Repeating a projector permits
+menus with fewer than $K$ distinct presets. A preset is an entire subspace;
+the budget is not a count of the $rK$ basis vectors.
+
+For $0\le a<b\le B$, write
+\[
+ e(a,b)=\min_{P\in\Gr}\max\{R(P,a),R(P,b)\},\qquad e(a,a)=0.
+\]
+Convexity makes this the optimal one-preset error on $[a,b]$.
+Section~\ref{sec:construction} gives a spectral construction for it.
+
+\begin{proposition}\label{prop:separation}
+The fully adaptive value function $F$ does not determine $E_K$ in this
+model. Moreover, restricting candidates to all globally price-optimal
+presets can strictly increase $E_K$, even when all choices at ties are allowed.
+\end{proposition}
+\begin{proof}
+Take $n=2$, $r=1$, $B=1$, $A=\diag(1,0)$, and zero overheads. Put
+$t=u_1^2\in[0,1]$. Model S has one site $C=\diag(2,0)$, giving
+$J_S=-t+2pt$. Model M has $C_1=\diag(2,2)$ and $C_2=\diag(4,0)$,
+giving $J_M=-t+p\min(2,4t)$. Both yield
+$F(p)=\min(-1+2p,0)$. In S the endpoint regrets are $1-t$ and $t$;
+their minimized maximum is $1/2$ at $t=1/2$. In M they are
+$1-t$ and $\min(2-t,3t)$. On $[0,1/2]$ the minimized maximum is
+$3/4$ at $t=1/4$; on $[1/2,1]$ its minimum is $1$ at $t=1$.
+Convexity makes these endpoint calculations sufficient on the whole domain.
+
+In M the unique global optimum has $t=1$ for $p<1/2$ and $t=0$ for
+$p>1/2$. At $p=1/2$ the regret is $\min(1-t,t)$, which vanishes only
+for $t=0,1$. Hence the collection of all global optima contains only the
+two coordinate projectors; either alone has worst regret $1$. The better
+$t=1/4$ preset is supported by site 2 at $p=1/4$, where that site's value
+is $0$ but the global value is $-1/2$. It is never globally price-optimal.
+\end{proof}
+
+This is a model-specific illustration of nonconvex implementability, not a
+claim that scalar value functions generally preserve all feasible decisions.
+The unrestricted upper affine approximation $p-1/2$ achieves regret $1/2$
+above this shared $F$, but cannot be implemented by a Model M preset.
+An algorithm given only $F$ must return the same answer for S and M and
+therefore cannot solve both correctly. Sampling all sites is stronger than
+sampling global optima; our dictionary comparisons use all sites.
+Adding $\alpha I$ to $A$ and a common $\beta I$ to every cost matrix
+adds $-\alpha+\beta p$ to every rank-one objective and to $F$.
+Thus the separation persists with strictly positive definite matrices for
+$\alpha,\beta>0$. Figure~\ref{fig:structural} depicts the example.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/structural.pdf}
+\caption{The same fully adaptive curve permits different finite menus.
+Left: the optimal realizable one-preset lines of Models S and M.
+Right: their endpoint maximum regrets as a function of $t=u_1^2$.
+The separation follows exactly from Proposition~\ref{prop:separation}.}
+\label{fig:structural}
+\end{figure}
+
+\input{structural_theory}
+
+\section{Endpoint construction and global covering}\label{sec:construction}
+For $a<b$, let $f_a=F(a)$, $f_b=F(b)$, and $s=(f_b-f_a)/(b-a)$.
+Define $e_L(a,b)$ as the best maximum endpoint regret at fixed site $L$.
+The following spectral reduction is a specialization of established
+two-objective trace minimax methods~\cite{tantipongpipat2019,shen2026}.
+We include recovery and the proof to specify exactly what our menu oracle needs.
+
+\begin{theorem}\label{thm:endpoint}
+For each site,
+\begin{equation}
+ e_L(a,b)=\max_{p\in[a,b]}
+ \{F_L(p)-f_a-(p-a)s\}.                                     \label{eq:dual}
+\end{equation}
+An actual rank-$r$ projector attains this value, including at a repeated
+cutoff eigenvalue. The minimum endpoint regret with free site choice is
+$e(a,b)=\min_L e_L(a,b)$. Set $e(a,a)=0$.
+\end{theorem}
+\begin{proof}
+For any fixed projector, the convex combination of its endpoint regrets
+with weights $(b-p)/(b-a)$ and $(p-a)/(b-a)$ is its regret relative to
+the chord at $p$. Minimizing that combination gives the right side of
+\eqref{eq:dual} as a lower bound on the maximum endpoint regret.
+
+Choose a scalar maximizer $p_*$. All minimizing projectors of
+$H=-A+p_*C_L$ contain its eigenspace strictly below $\lambda_r(H)$
+and choose the remaining $k$ dimensions within its cutoff eigenspace.
+Compress $C_L$ to that tied eigenspace. If its eigenvalues are
+$\mu_1\le\cdots\le\mu_q$, the minimum and maximum costs on the
+minimizing face are the fixed contribution plus $d_L$ and respectively
+$\sum_{j=1}^k\mu_j$ and $\sum_{j=q-k+1}^q\mu_j$. Denote them by
+$c_-$ and $c_+$.
+
+Every intermediate cost is attainable by a pure projector. Retain the
+shared coordinates of the $k$-low and $k$-high eigenspaces of the compression.
+Pair the remaining low and high coordinates, replacing each low column
+$e_i$ by $\sqrt{1-t}\,e_i+\sqrt{t}\,e_j$. Disjoint supports keep the
+columns orthonormal; their total cost is $(1-t)c_-+tc_+$.
+This is an explicit recovery construction, not random selection between
+two projectors. Tied-space recovery itself is prior art~\cite{shen2026}.
+
+The right and left derivatives of the affine envelope $F_L$ at $p_*$ are
+$c_-$ and $c_+$. At an interior maximum of \eqref{eq:dual},
+$c_-\le s\le c_+$. Select the face projector with cost $s$; its two
+endpoint regrets coincide with the dual value. At $p_*=a$, choose cost
+$c_-\le s$: the regret at $b$ is no larger than at $a$. At $p_*=b$,
+choose cost $c_+\ge s$ and reverse the argument. Equality follows in
+all cases. Finally, each projector has a single cheapest site at both
+endpoints, so minimizing over projectors and the finite site set commutes.
+\end{proof}
+
+The following interval-covering characterization is standard; compare
+\cite[Section~4.2]{cardinal2025}. We include its compactness argument
+because the preset set here is an implicit continuum.
+
+\begin{theorem}\label{thm:greedy}
+For $\epsilon\ge0$ define
+\begin{equation}
+ T_\epsilon(x)=\max\{y\in[x,B]:e(x,y)\le\epsilon\}.
+\end{equation}
+Starting at $g_0=0$, set $g_j=T_\epsilon(g_{j-1})$, with
+$T_\epsilon(B)=B$. Then $E_K\le\epsilon$ if and only if $g_K=B$.
+\end{theorem}
+\begin{proof}
+The acceptable prices for a preset form a closed interval, so two acceptable
+endpoints are equivalent to acceptability on their whole interval. A
+maximizing $y$ and its preset exist by compactness. Further, $T_\epsilon$
+is nondecreasing: a preset covering $[x,T_\epsilon(x)]$ also covers
+$[x',T_\epsilon(x)]$ if $x\le x'\le T_\epsilon(x)$; otherwise
+$T_\epsilon(x')\ge x'>T_\epsilon(x)$.
+
+Greedy success constructs a menu. Conversely, a feasible finite menu gives
+a closed interval cover, from which a chain of at most $K$ overlapping
+intervals connects $0$ to $B$. If its reachable endpoints are $x_j$,
+then $x_j\le T_\epsilon(x_{j-1})$. Induction using monotonicity gives
+$x_j\le g_j$, forcing $g_K=B$.
+\end{proof}
+
+For $\epsilon>0$ progress is uniformly positive unless all preset slopes
+coincide. If they lie in $[c_{\min},c_{\max}]$, a price-optimal preset
+at $x$ has regret at most $(c_{\max}-c_{\min})|y-x|$ at $y$.
+Thus the covering needs finitely many steps for positive tolerance. When
+all slopes coincide, one optimal preset suffices everywhere.
+The theorem supports a monotone outer search for $E_K$, but is an exact-real
+characterization, not a complexity guarantee for finite-precision nested searches.
+
+\paragraph{Numerical construction.}
+For each candidate tolerance, the implementation makes at most $K$ farthest
+endpoint searches. Each uses bisection in price and Theorem~\ref{thm:endpoint}
+to test the interval, returning a realized preset. An outer bisection searches
+the regret tolerance. For $K=1$ it solves only the full-domain endpoint problem.
+At a site, the scalar objective in \eqref{eq:dual} is concave; slope bisection
+and face recovery give primal and dual estimates. A site is feasible as soon
+as an actual preset upper estimate is at most $\epsilon$; exclusion requires
+lower estimates above $\epsilon$ at every site. Near eigenvalues are grouped
+only to propose a basis, whose actual primal objective is then evaluated.
+Unresolved oracle gaps raise an error. The numerical outer-search lower
+estimate is not a certified lower bound: ambiguous finite-precision decisions
+and finite price resolution are handled by separate witnesses below.
+
+\paragraph{Computational work.}
+Let $N_\epsilon$ and $N_p$ be the numbers of outer tolerance and price
+bisections, and let $T$ bound the spectral evaluations needed by a completed
+site endpoint solve, including recovery. A conservative uncached work count
+is $O(N_\epsilon K(1+N_p)mTn^3)$ with dense eigensolvers. Tolerance bisection
+gives logarithmic $N_\epsilon,N_p$ in the respective search resolutions,
+but a uniform accuracy-dependent bound for $T$ near arbitrary collisions
+is not asserted. The implementation caps it and reports unresolved gaps.
+Saved-witness verification uses $O(Kmn^3)$ dense arithmetic operations,
+independently of the number of outer search queries. Its constants include
+explicit interval products; verification is timed separately from optimization.
+
+\section{Reuse and independently checkable bounds}
+The outer construction produces many related endpoint queries. A stored
+site-preset line $\alpha+pc_L$ bounds $e_L(a,b)$ from above by
+\begin{equation}
+ \max\{\alpha+ac_L-F(a),\alpha+bc_L-F(b)\}.                 \label{eq:cachedprimal}
+\end{equation}
+A stored value $F_L(q)$ gives a lower bound
+$F_L(q)-F(a)-(q-a)s$ whenever $q\in[a,b]$. Minimizing the cached primal
+bounds and maximizing eligible dual bounds can settle a feasibility query
+without a new eigendecomposition.
+
+A minimizing preset at $q$ also gives a supergradient $c_L$ of $F_L$.
+If $c_L>s$, the supergradient inequality rules out scalar maximizers strictly
+to the left of $q$; if $c_L<s$, it rules out those strictly to its right.
+The cache therefore brackets subsequent scalar searches. These are standard
+supporting-line principles. We compare slope bisection with Brent both
+without this reuse and with increasingly complete reuse. Inverted numerical
+brackets are discarded. Full eigensystems use a bounded cache of about
+32 MiB; supported basis records require additional memory, which is reported.
+
+\begin{proposition}\label{prop:certificate}
+Suppose $K$ presets and a contiguous partition of $[0,B]$ have endpoint
+regret at most $U$, assigning one preset to each segment. Suppose also that
+$K+1$ increasing prices $x_0<\cdots<x_K$ satisfy, for every adjacent pair,
+\begin{equation}
+ \min_L\{F_L(q_{i,L})-\operatorname{chord}_{x_i,x_{i+1}}F(q_{i,L})\}
+ >\ell,\qquad q_{i,L}\in[x_i,x_{i+1}].                    \label{eq:packing}
+\end{equation}
+Then $\ell<E_K\le U$.
+\end{proposition}
+\begin{proof}
+Convexity extends each segment's endpoint upper bounds to the full segment.
+The weak-dual part of Theorem~\ref{thm:endpoint} shows that no preset can
+serve an adjacent witness pair at tolerance $\ell$. Nor can it serve a
+nonadjacent pair, since its acceptable set is an interval. Hence each preset
+serves at most one witness, and $K$ presets cannot serve $K+1$ witnesses.
+\end{proof}
+
+The verifier is separate from the optimizer. Stored binary64 matrices mean
+their exact real values. A stored basis $U$ means its exact polar-normalized
+subspace $Q=U(U^TU)^{-1/2}$; it need not be exactly orthonormal as stored.
+Outward interval arithmetic encloses its objective traces and the branch
+spectral sums. The verifier checks segment adjacency, endpoints, witness
+ordering, all site inequalities, and the final gap. Appendix~\ref{app:interval}
+gives the enclosure argument and arithmetic contract. The checked eigensolver
+only proposes a basis for an enclosure; neither its nominal precision nor
+the menu solver's stopping test is trusted as a certificate.
+
+For ordinary numerical evaluation, all pairwise intersections of the menu's
+effective affine lines, together with $0,B$, suffice to find its continuous
+maximum regret. Between crossings the lowest line is fixed and its regret
+is convex. The interval verifier avoids the need to certify those computed
+crossings by checking the saved covering segments instead.
+
+\section{Computational evidence in brief}\label{sec:evidence}
+The experiments test the construction and its certificates; they do not
+establish the structural theorems or a physical resource model.
+Appendix~\ref{app:experiments} retains the protocols, all comparison tables,
+stress cases, and failed development attempts. The original three dense
+studies contain 402 timed runs and 134 saved-menu checks. Against hybrid
+Brent with the same cached primal/dual decisions, the median ratio of
+reference time to reuse time is $1.367$ across 20 declared cells; its range
+is $[1.255,1.866]$. Specialized two-dimensional formulas are faster than
+the general construction. These are implementation comparisons, not a
+new worst-case complexity result.
+
+The dense studies and dictionary references include 54 independently
+replayed global certificate artifacts of width $10^{-5}$, counting repeated
+controls. Separately, the sharp family \eqref{eq:kappa} has 12 outward
+checks matching its exact formula to below $10^{-10}$. The other structural
+diagnostics are numerical checks, not proofs.
+
+The sparse confirmation uses 72 timed runs in 12 paired cells. Dense
+partial eigensolves are faster at dimensions 128 and 256; the sparse
+backend wins at dimension 512 with cell ratios $1.39$--$1.90$. Larger
+scaling cases are single observations. Independent banded verification
+certifies all 14 saved sparse grid menus, including dimension 4096, with
+gaps below $1.01\times10^{-5}$. Four of those grids also have earlier
+dense certificates: these counts describe artifacts, not additional
+independent instances. Banded verification exploits limited bandwidth,
+rejects unresolved pivots, and is timed separately from optimization.
+No performance claim for arbitrary sparse matrices or GPU execution is made.
+
+\section{Scope and conclusions}
+The useful structure is a shared reward, a scalar nonnegative price, and
+quadratic site costs for a fixed-rank subspace. It yields an exact-real
+finite-menu characterization and permits finite independent witnesses.
+The scalar adaptive curve determines a relaxation that can underestimate
+realizable regret by a factor approaching two. Missing optimal slopes
+characterize failure of this relaxation on subintervals. They occur at
+only finitely many prices in each fixed spectral instance, and their
+number bounds the additional globally optimal presets needed to repair
+a relaxed menu. Thus finite-budget distinctions coexist with agreement
+of positive power-law leading asymptotics. The active-face test identifies
+cases where curve approximation is already exact, including every
+single-site instance. Site-specific information is needed to resolve
+the general realizability constraint, not in every special case.
+Repeated endpoint queries benefit from reuse on the reported dense families,
+although the advantage narrows against a fully warmed Brent reference and
+reverses against specialized two-dimensional formulas.
+
+The sparse extension tests partial eigensolves at matched accuracy and
+extends independent outward verification to banded inputs. Its scope
+is specific graph-plus-diagonal families; it does not establish performance
+for arbitrary sparse matrices, very large dimensions, many resource
+parameters, site-dependent task rewards, negative prices, or externally
+measured resource models. Verified grid bounds exploit their bandwidth;
+arbitrary sparse graphs may have excessive fill or inconclusive pivots.
+Additional basis storage
+can grow even when the spectrum cache is bounded. Numerical convergence
+near spectral collisions is not a bit-complexity guarantee. The central contribution is consequently a structural characterization
+of convexification for finite spectral menus, supported by a construction
+with checkable solutions. The extra-preset count is instance-dependent;
+neither an efficient exact enumeration of exceptional prices nor a uniform
+small bound on their number is supplied.
+
+\section*{Statements and declarations}
+\paragraph{Data and code availability.}
+The accompanying artifact contains source code, frozen protocols, raw runs,
+saved menus, witness files, and solver-independent verification commands.
+It also contains the source for regenerating the tables and figure. A public
+repository or archival identifier has not yet been assigned.
+
+\paragraph{Funding.} This research received no external funding.
+\paragraph{Competing interests.} The author declares no competing interests.
+\paragraph{Author contributions.} Jevint Felixciano developed the research
+questions, directed the methodological and experimental investigation,
+participated in the mathematical analysis and validation, and developed and
+reviewed the manuscript, with the AI assistance described below.
+
+\paragraph{Author information and disclosure.}
+AI assistance was used in
+research planning, literature searches, mathematical drafting, implementation,
+numerical analysis, and manuscript preparation. The author is responsible
+for the scientific claims, proofs,
+attribution, code, and submission declarations. No journal acceptance or
+external peer review is implied by the internal verification record.
+
+\appendix
+\section{Computational protocols and complete results}\label{app:experiments}
+\subsection{Design and reproducibility}
+The original three comparisons use our Python implementations with dense full
+eigendecompositions, one BLAS thread, and fresh model/cache state per timed
+run. Random matrices are $XX^T/n+0.1I$ with independent standard-normal
+entries in $X$; site overheads are independent uniform draws in $[0,0.5]$,
+and $B=2$. Shapes $(n,r,m)$ are $(8,1,1)$, $(16,4,3)$, $(32,8,6)$,
+$(64,4,3)$, and $(64,16,3)$. Each family uses two seeds and budgets $K=2,4$.
+The two-dimensional mirror model is a separate development control.
+We use objective, price, and endpoint tolerances $2\times10^{-6}$,
+$2\times10^{-8}$, and $10^{-9}$, respectively. These are numerical search
+settings, distinct from the final verified gaps.
+
+The initial confirmation uses seeds 5100/5101, two methods, and three
+repetitions (132 runs). The stronger-reference study uses new seeds
+5400/5401, three methods, and three cyclically ordered repetitions
+(198 runs). Plans and source hashes were saved before their respective
+executions; these are local records, not externally registered protocols.
+Model generation and file saving are excluded from timings; cache building,
+search, recovery, and numerical continuous maximum evaluation are included.
+Certificate generation and independent checking are separate costs.
+Results use ratios of per-cell median times, excluding the mirror control
+from the primary summaries. No sample was removed for unfavorable timing.
+The recorded environment is Python 3.12.10, NumPy 2.5.2, SciPy 1.18.1, on
+Windows 11 with an AMD Ryzen 7 5800H processor. Hardware and library details
+accompany the artifact.
+
+Independent menu checks use a separate eigenvalue evaluation, verify basis
+orthogonality and segment partitions, and evaluate every affine crossing.
+A 101-point price grid is only a secondary consistency check. The initial
+and stronger studies have 44 and 66 independently checked saved menus,
+respectively. All paired numerical losses agree within $5\times10^{-6}$.
+
+\subsection{Stronger scalar references}
+The first Brent reference includes endpoint-aware early decisions and actual
+primal recovery, but does not reuse bounds across different endpoint queries.
+Its median time divided by the reuse method's time is $2.810$ on the 20
+new-seed cells, with range $[2.112,5.934]$. This is not the headline gain:
+warming the reference makes the comparison substantially closer.
+
+The stronger study compares cached slope bisection with (i) Brent bracketed
+by cached slopes, and (ii) hybrid Brent using both those brackets and the
+same cached primal/dual decisions. Both Brent references retain a checked
+recovery fallback if their parameter convergence does not close the objective
+gap; fallback time is charged. Table~\ref{tab:warm} reports the results.
+The median ratios are $1.630$ for bracket-warmed Brent and $1.367$ for
+hybrid Brent, with ranges $[1.375,2.033]$ and $[1.255,1.866]$.
+No reuse slowdown occurs in these 20 declared $K=2,4$ cells. This supports
+a modest implementation advantage in this regime, not universal superiority
+of bisection over Brent or a claim about prior authors' measured performance.
+
+A separate ablation holds slope bisection fixed and removes the supporting-line,
+dual-sample, and bracket reuse while retaining the same cache for identical
+spectral queries. It uses seed 5500 in each shape, $K=2,4$, three alternating
+repetitions, and the mirror control (72 runs, 24 checked saved menus).
+All numerical loss differences are below $5\times10^{-6}$. Over the ten
+new-seed cells, the plain-to-reuse median time ratio is $4.220$, with range
+$[2.756,7.378]$. This isolates the combined reuse mechanism; it does not
+isolate each cached-bound type, and it is a weaker comparison than hybrid Brent.
+
+\begin{table}[t]\centering
+\caption{Stronger-reference study. Each row aggregates four cells (two seeds,
+two budgets). Ratios are reference seconds divided by proposed seconds;
+larger values favor reuse with slope bisection. Memory is retained spectrum
+and sample storage, not process peak RSS.}\label{tab:warm}
+\input{tables/warm.tex}
+\end{table}
+
+\subsection{Dictionaries and special cases}
+The dictionary comparison selects presets over the continuous price domain,
+rather than judging them only on a grid. Uniform dictionaries contain
+every site's minimizing basis at 129, 513, 2049, or 8193 prices. Selection
+uses the same interval-covering geometry restricted to those candidates.
+An adaptive heuristic starts at three prices per site, refines around selected
+samples, and adds all-site minimizers at the menu's current worst price,
+for at most 20 rounds. It has no additional targeted tied-space recovery.
+This is our adaptive reference, not a reproduction of a published strongest
+possible sampling algorithm.
+
+Ten cases include the mirror model with $K=1,2,4$, three new random models
+(seed 5200) with $K=2,4$, and one commuting collision control with $K=1$.
+Stopping uses a generous oracle-assisted target: the proposed menu's
+numerical loss plus $10^{-5}$. The dictionary is given that target, but
+not the proposed preset directions. All candidate construction, refinement,
+and repeated selection work is charged cumulatively. Final endpoint upper
+bounds are verified independently. The reference menus also have global
+certificates of width $10^{-5}$. Comparing the verified upper bounds with
+those global lower bounds gives gaps below $1.94\times10^{-5}$ for every
+dictionary menu that meets its target.
+
+Uniform dictionaries meet their target in 1 of 10 cases within the cap;
+the adaptive heuristic meets it in 6 of 10. Table~\ref{tab:dictionary}
+reports every case, including failures to attain the target. These are
+single-run descriptive timings. Coarser dictionaries can be faster when
+less accuracy is required; these capped tests do not refute sampling with
+other refinement rules or collision recovery. The separate commuting control
+has one-preset loss $1/2$, while sampled coordinate eigenbases give $1$.
+Unlike Proposition~\ref{prop:separation}, that control depends on which
+basis the eigensolver chooses at a tie and does not exclude all choices there.
+
+\begin{table}[t]\centering\small
+\caption{Dictionary screen: cumulative seconds and target attainment at the
+stopping stage or cap. ``No'' is failure to reach the accuracy target, not a
+software failure. Verification time is excluded for all methods.}
+\label{tab:dictionary}\input{tables/dictionary.tex}
+\end{table}
+
+The original mirror example has
+$A=\left(\begin{smallmatrix}1&0.6\\0.6&2\end{smallmatrix}\right)$,
+$C_1=\diag(0.2,3)$, $C_2=\diag(3,0.2)$, and overheads $0,1$.
+It admits an independent analytic angular endpoint construction.
+At matched stopping resolution it is much faster than the general method
+(Table~\ref{tab:special}). This limits the practical recommendation:
+use specialized formulas when available. Development one-preset tests also
+favor Brent on several smooth examples; no $K=1$ speed advantage is claimed.
+
+\begin{table}[t]\centering
+\caption{Specialized mirror solver versus general reuse, median seconds from
+three repetitions. All numerical loss differences are below $5\times10^{-6}$.}
+\label{tab:special}\input{tables/special.tex}
+\end{table}
+
+\subsection{Checks of the structural results}
+The script \texttt{check\_structural\_theory.py} checks six values of
+$\kappa$ in \eqref{eq:kappa}, each with and without a positive definite
+shift. All 12 cases have optimizer-independent outward upper/lower bounds
+of width below $10^{-10}$ matching the exact formula. A further 54 numerical
+endpoint checks use dimensions $2,6,8$, ranks $1,2,4$, one or three sites,
+three seeds, and three intervals per instance. They check the factor-two
+bound and single-site equality; these are diagnostics, not interval proofs.
+An exact one-site crossing and three short Model M intervals check the
+distinction in the remark following Theorem~\ref{thm:exactness}.
+
+A three-coordinate, three-site example has $A=\diag(2,1,0)$,
+$C_1=\diag(3,8,8)$, $C_2=\diag(8,1,8)$,
+$C_3=\diag(8,8,0)$, zero overheads, $r=1$, and $B=2$.
+Its adaptive curve is $\min(-2+3p,-1+p,0)$, with slope gaps at
+$p=1/2$ and $p=1$. The relaxed two-cover splits at $2/3$, with
+endpoint error $1/4$ on both segments. Direct selection from the three
+globally optimal coordinate presets gives two-menu loss $1/3$ and
+three-menu loss zero. The numerical unrestricted two-menu construction
+also gives $1/3$; this last numerical value is not used as a proof.
+These examples illustrate conservative repair counts and the distinction
+between convexification and restriction to supported presets.
+
+\subsection{Verification, stress cases, and retained failures}
+The 22 proposed menus in each confirmation study and the 10 dictionary
+reference menus have independently replayed global upper/lower bounds of
+width $10^{-5}$. These are 54 saved certificate artifacts, including repeated
+mirror controls, not 54 distinct random problems. They prove bounds for
+their exact binary64 instances under Appendix~\ref{app:interval}'s contract.
+Certificate generation may fail and is not asserted to succeed for all inputs.
+
+We checked 24 site SDP solves on 12 instances with CVXPY and Clarabel
+(agreement within $2\times10^{-7}$); some SDP statuses
+include the recorded \texttt{optimal\_inaccurate} status. Twelve orthogonal
+rotation checks agree within $2\times10^{-9}$. Twenty analytic stress cases
+cover exact and near crossings, scales $10^{-6}$ through $10^6$, an eightfold
+tie with several ranks including full rank, and dimension one. Interval
+primitive checks compare 600 scalar cases and 87 matrix entries with exact
+fractions, 84 eigenvalues with 80-digit arithmetic, and 18 perturbed-basis
+polar objectives with high-precision calculations. These checks support the
+implementation; they are not formal software verification.
+
+Two development failures are retained. An initial certificate generator
+mistook a cached primal basis's source price for a dual witness price;
+one out-of-range proposal was rejected by the verifier. A revised generator
+proposes a separate in-range price for each site and pair, and all 22 cases
+then pass. A dictionary run initially stopped on serialization of a NumPy
+Boolean; the corrected version changes serialization only. Neither incident
+is hidden by deleting its result directory.
+
+\input{sparse_study}
+
+
+\section{Outward bounds for eigenvalues and actual subspaces}\label{app:interval}
+The arithmetic contract interprets each binary64 input as an exact real
+number. Elementary $+,-,\times,/$ operations are widened using
+\texttt{nextafter}; matrix products use explicit interval sums, not
+uncontrolled BLAS reductions. Correctly rounded IEEE-754 binary64 elementary
+operations and gradual underflow are assumed. Nonfinite intermediates or
+failed rank checks preclude certification. There is no formal proof-assistant
+verification or independent external audit of the code.
+
+For an exact symmetric $H=-A+pC_L$, an approximate eigensystem $V,D$ is
+only a proposal, with $D$ sorted. Interval products enclose
+$G=V^TV$ and $M=V^THV$. Let $\eta\ge\|G-I\|_2<1$ and
+$\rho\ge\|M-D\|_2$, obtained from absolute row-sum bounds for the
+enclosed symmetric matrices. The generalized Rayleigh quotient differs from
+the Rayleigh quotient of $D$ by at most
+\begin{equation}
+ \delta=\frac{\rho+\|D\|_2\eta}{1-\eta}.                  \label{eq:delta}
+\end{equation}
+Indeed $x^TGx\ge(1-\eta)\|x\|^2$; subtracting the two quotients and
+bounding the residual numerator gives \eqref{eq:delta} uniformly in $x$.
+Since $\eta<1$, $V$ is invertible. Generalized Courant--Fischer then yields
+$|\lambda_j(H)-D_{jj}|\le\delta$ for every $j$. Summing the first $r$
+enclosures and adding an interval for $pd_L$ encloses $F_L$.
+Taking the minimum of all lower endpoints and the minimum of all upper
+endpoints encloses $F$.
+
+For a stored preset basis $U$, let
+$\eta_U\ge\|U^TU-I\|_2<1$. Its polar basis
+$Q=U(U^TU)^{-1/2}$ exists and
+\begin{equation}
+ \|UU^T-QQ^T\|_*=
+ \sum_{j=1}^r|\sigma_j(U)^2-1|\le r\eta_U.
+\end{equation}
+Therefore an interval for $\tr(U^THU)$, enlarged by
+$r\|H\|_2\eta_U$, contains the objective of the exact realizable
+projector $QQ^T$. Adding $pd_L$ and subtracting the enclosure for $F$
+gives endpoint regret bounds. On each saved segment the verifier chooses
+one fixed site and uses its two endpoint bounds; convexity extends them
+to the interval. Lower witnesses use outward arithmetic for every quantity
+in \eqref{eq:packing}. This checks the final optimization gap without
+running or importing the menu optimizer.
+
+\input{sparse_verification}
+
+\input{prior_art_comparison}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

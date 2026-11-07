@@ -1,0 +1,167 @@
+{
+  "status": "PASS_DEVELOPMENT_COMPARISON",
+  "rows": [
+    {
+      "model": "mirror",
+      "K": 1,
+      "method": "brent",
+      "loss": 0.5730211031151624,
+      "seconds": 0.006446600003982894,
+      "eigen_calls": 47,
+      "brent_fallbacks": 1
+    },
+    {
+      "model": "mirror",
+      "K": 1,
+      "method": "reused",
+      "loss": 0.5730211031151624,
+      "seconds": 0.004252299986546859,
+      "eigen_calls": 35,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "mirror",
+      "K": 2,
+      "method": "brent",
+      "loss": 0.0414338282894291,
+      "seconds": 0.6829983000061475,
+      "eigen_calls": 4437,
+      "brent_fallbacks": 0
+    },
+    {
+      "model": "mirror",
+      "K": 2,
+      "method": "reused",
+      "loss": 0.04143382769704962,
+      "seconds": 0.168179100000998,
+      "eigen_calls": 1552,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "mirror",
+      "K": 4,
+      "method": "brent",
+      "loss": 0.010302130714587632,
+      "seconds": 1.3238191999989795,
+      "eigen_calls": 9250,
+      "brent_fallbacks": 0
+    },
+    {
+      "model": "mirror",
+      "K": 4,
+      "method": "reused",
+      "loss": 0.010302130419196143,
+      "seconds": 0.4158789999928558,
+      "eigen_calls": 3558,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 1,
+      "method": "brent",
+      "loss": 0.604479871253063,
+      "seconds": 0.026343900011852384,
+      "eigen_calls": 133,
+      "brent_fallbacks": 3
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 1,
+      "method": "reused",
+      "loss": 0.604479871253063,
+      "seconds": 0.018561199991381727,
+      "eigen_calls": 93,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 2,
+      "method": "brent",
+      "loss": 0.18389682996580525,
+      "seconds": 1.5627091999922413,
+      "eigen_calls": 5990,
+      "brent_fallbacks": 0
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 2,
+      "method": "reused",
+      "loss": 0.18389683254479472,
+      "seconds": 0.42018270000698976,
+      "eigen_calls": 2269,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 4,
+      "method": "brent",
+      "loss": 0.039150391314631605,
+      "seconds": 2.7524725000112085,
+      "eigen_calls": 11741,
+      "brent_fallbacks": 7
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 4,
+      "method": "reused",
+      "loss": 0.03915039152821009,
+      "seconds": 0.9770099000015762,
+      "eigen_calls": 5208,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 1,
+      "method": "brent",
+      "loss": 1.60858085309523,
+      "seconds": 0.06556380000256468,
+      "eigen_calls": 110,
+      "brent_fallbacks": 2
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 1,
+      "method": "reused",
+      "loss": 1.60858085309523,
+      "seconds": 0.059537499997531995,
+      "eigen_calls": 97,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 2,
+      "method": "brent",
+      "loss": 0.3681972628821164,
+      "seconds": 3.5224940000043716,
+      "eigen_calls": 5670,
+      "brent_fallbacks": 0
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 2,
+      "method": "reused",
+      "loss": 0.36819726330267244,
+      "seconds": 1.156420800005435,
+      "eigen_calls": 2178,
+      "brent_fallbacks": null
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 4,
+      "method": "brent",
+      "loss": 0.09817022955325783,
+      "seconds": 8.376377099993988,
+      "eigen_calls": 14483,
+      "brent_fallbacks": 12
+    },
+    {
+      "model": "n64_r8_s3",
+      "K": 4,
+      "method": "reused",
+      "loss": 0.09817022899361305,
+      "seconds": 3.234991799996351,
+      "eigen_calls": 6206,
+      "brent_fallbacks": null
+    }
+  ]
+}

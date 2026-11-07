@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "banded_verifier.py": "c71d60d9312a8e418233afcb9a2ca05eba5ec87cb9c581ab41311f6e932232bb",
+    "banded_certificate_support.py": "6b3dcb760b5505061316ca0f7abb89c6d72c0eb6e2d0d6f3f35b17adae706f11",
+    "certify_banded_artifacts.py": "ba07d8d8e61b9036e2de20b461aee0cc86637b57e22f519ffb521cddf7bdcb9e",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08",
+    "sparse_artifacts.py": "cd123da68eec45a6ecca7a089ffbad85510ad0dd030d07c116e36f65f23be1cf",
+    "sparse_spectral.py": "b038d923b998d1299b94d40c9d3cf716a022469e5dbee9e1fd828858b8260aeb",
+    "BANDED_VERIFICATION_PROTOCOL.md": "7b04dddcf6395f20aa16ab4a1fd704c57a79bc6bc1dab40fc0b0774282e798a8"
+  },
+  "workers": 6
+}

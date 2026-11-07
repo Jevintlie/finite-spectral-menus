@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED_AFTER_REPRODUCIBLE_FAILURE",
+  "recorded_runs": 18,
+  "planned_runs": 72,
+  "failures": 6,
+  "reason": "Both backends fail objective recovery at an avoided crossing; failed attempt preserved; v2 requires a fix and fresh seeds."
+}

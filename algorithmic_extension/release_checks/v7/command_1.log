@@ -1,0 +1,19 @@
+Using a shorter Windows reproduction path: C:\Users\Crude\AppData\Local\Temp\spectral_menu_20261107T163757052865Z
+Running verify_confirmation.py
+Running verify_warm_confirmation.py
+Running verify_reuse_ablation.py
+Running check_interval_arithmetic.py
+Running check_structural_example.py
+Running check_structural_theory.py
+Running check_certificates.py --source results/confirmation_v1 --certificates results/certificates_v2
+Running check_certificates.py --source results/warm_confirmation_v1 --certificates results/warm_certificates_v1
+Running check_certificates.py --source results/dictionary_comparison_v2 --certificates results/dictionary_certificates_v1
+Running check_sparse_backend.py
+Running verify_sparse_confirmation_v2.py
+Running verify_sparse_scaling.py
+Running check_sparse_certificates.py --source results/sparse_confirmation_v2 --certificates results/sparse_grid_certificates_v1
+Running check_sparse_certificates.py --source results/sparse_scaling_v1 --certificates results/sparse_path_certificates_v1
+Running check_banded_verifier.py
+Running check_banded_certificates_v2.py --workers 6
+{"status": "PASS", "mode": "verify", "report": "C:\\Users\\Crude\\AppData\\Local\\Temp\\spectral_menu_20261107T163757052865Z\\reproduction_report.json"}
+

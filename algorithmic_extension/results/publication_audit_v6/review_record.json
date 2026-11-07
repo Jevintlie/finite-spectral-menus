@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "review_type": "Internal assistant review; not independent peer review",
+  "rendered_manuscript_pages": 22,
+  "visual_review": "All 22 pages inspected in rendered contact sheets; no clipping, overlap, blank unintended pages or missing glyphs observed. Cover letter separately rendered and inspected.",
+  "proof_review": "See PRIORITY_AUDIT_20261011.md; central statements and edge cases checked against source. No unresolved logical gap found in these checks; not formal proof verification.",
+  "literature_review": "Eleven primary-source records; passage-level scope in literature_sources.json. No exhaustive priority claim.",
+  "hashes": {
+    "manuscript/main.tex": "4e6090db9fe8c2e835db4d833cf0b479eaade151eb826c670a3db1804f57759e",
+    "manuscript/structural_theory.tex": "342861161e3acdd8951f4f73e0f8d000f77698545dbbd86e3a45944737807107",
+    "manuscript/prior_art_comparison.tex": "7216b71b75571d3a82fb269235de1cb3e32b3ef5a85845363abecfc220c09a3c",
+    "manuscript/references.bib": "b2decb81df567cb60d5167f3bc28fe7c5fb947610e1e990b68a146a6000b9b3b",
+    "manuscript/main.pdf": "be949d543c0a90dbbc75578382bdf5ee1e5d14817836c3543156bd81d84a0ef0",
+    "submission/cover_letter.tex": "148da2a3424fd1010548ebbadadf7537566390747095cc64380b61c67d53a5f6",
+    "submission/cover_letter.pdf": "59143303d93467a63b11b34fe949b2f0a52e39748a520826b903c7d8e5d2d38e",
+    "PRIORITY_AUDIT_20261011.md": "4ddb7399e82dbd61dc5721bc764c49296b6c12edc1be9c68ccce55081af99e2b"
+  }
+}

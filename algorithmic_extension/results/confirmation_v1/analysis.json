@@ -1,0 +1,455 @@
+{
+  "status": "PASS",
+  "runs": 132,
+  "failures": [],
+  "saved_menu_checks": [
+    {
+      "artifact": "mirror_K2_brent.npz",
+      "independent_max": 0.0414338282894291,
+      "grid_max": 0.0414338282894291
+    },
+    {
+      "artifact": "mirror_K2_reused.npz",
+      "independent_max": 0.04143382769704962,
+      "grid_max": 0.04143382769704962
+    },
+    {
+      "artifact": "mirror_K4_brent.npz",
+      "independent_max": 0.010302130714587632,
+      "grid_max": 0.010302130616484106
+    },
+    {
+      "artifact": "mirror_K4_reused.npz",
+      "independent_max": 0.010302130419196143,
+      "grid_max": 0.010302130419196143
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K2_brent.npz",
+      "independent_max": 0.2086882075616252,
+      "grid_max": 0.2086882075616252
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K2_reused.npz",
+      "independent_max": 0.20868821636084078,
+      "grid_max": 0.20868821636084078
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K4_brent.npz",
+      "independent_max": 0.051848402724415266,
+      "grid_max": 0.051848402724415266
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K4_reused.npz",
+      "independent_max": 0.05184840130736745,
+      "grid_max": 0.0518483999303605
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K2_brent.npz",
+      "independent_max": 0.1660451176749227,
+      "grid_max": 0.1660451176749227
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K2_reused.npz",
+      "independent_max": 0.1660451158353009,
+      "grid_max": 0.1660451158353009
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K4_brent.npz",
+      "independent_max": 0.04019578944882696,
+      "grid_max": 0.04019578926082623
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K4_reused.npz",
+      "independent_max": 0.04019578968522275,
+      "grid_max": 0.040195789674088545
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K2_brent.npz",
+      "independent_max": 0.26998562565985296,
+      "grid_max": 0.26998562565985296
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K2_reused.npz",
+      "independent_max": 0.26998562207267796,
+      "grid_max": 0.26998562207267796
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K4_brent.npz",
+      "independent_max": 0.07057377403822329,
+      "grid_max": 0.07057377281203614
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K4_reused.npz",
+      "independent_max": 0.07057377528522579,
+      "grid_max": 0.07057377129212483
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K2_brent.npz",
+      "independent_max": 0.2699378823861984,
+      "grid_max": 0.2699378823861984
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K2_reused.npz",
+      "independent_max": 0.26993788428455545,
+      "grid_max": 0.26993788428455545
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K4_brent.npz",
+      "independent_max": 0.06813068476784778,
+      "grid_max": 0.06813068412213497
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K4_reused.npz",
+      "independent_max": 0.06813068538869871,
+      "grid_max": 0.06813068538869871
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K2_brent.npz",
+      "independent_max": 0.6465692098821378,
+      "grid_max": 0.6465692098821378
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K2_reused.npz",
+      "independent_max": 0.6465691968928198,
+      "grid_max": 0.6465691968928198
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K4_brent.npz",
+      "independent_max": 0.16279597327897477,
+      "grid_max": 0.1627959711085296
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K4_reused.npz",
+      "independent_max": 0.16279597960730285,
+      "grid_max": 0.1627959632152738
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K2_brent.npz",
+      "independent_max": 0.6258676327676156,
+      "grid_max": 0.6258676327676156
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K2_reused.npz",
+      "independent_max": 0.6258676320970409,
+      "grid_max": 0.6258676320970409
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K4_brent.npz",
+      "independent_max": 0.15510537071422448,
+      "grid_max": 0.15510536851424206
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K4_reused.npz",
+      "independent_max": 0.15510537387928025,
+      "grid_max": 0.15510536445481193
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K2_brent.npz",
+      "independent_max": 0.14822847789916693,
+      "grid_max": 0.14822847789916693
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K2_reused.npz",
+      "independent_max": 0.14822847898733116,
+      "grid_max": 0.14822847898733116
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K4_brent.npz",
+      "independent_max": 0.03730599416152458,
+      "grid_max": 0.03730599279637481
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K4_reused.npz",
+      "independent_max": 0.037305994486679595,
+      "grid_max": 0.037305994486679595
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K2_brent.npz",
+      "independent_max": 0.1574084169417027,
+      "grid_max": 0.1574084169417027
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K2_reused.npz",
+      "independent_max": 0.15740841833880737,
+      "grid_max": 0.15740841833880737
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K4_brent.npz",
+      "independent_max": 0.03939938995395309,
+      "grid_max": 0.039399389191418166
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K4_reused.npz",
+      "independent_max": 0.039399390334414974,
+      "grid_max": 0.039399390334414974
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K2_brent.npz",
+      "independent_max": 0.11732655867978758,
+      "grid_max": 0.11732655867978758
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K2_reused.npz",
+      "independent_max": 0.11732655504368905,
+      "grid_max": 0.11732655504368905
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K4_brent.npz",
+      "independent_max": 0.028861290607790746,
+      "grid_max": 0.028861290607790746
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K4_reused.npz",
+      "independent_max": 0.028861289616253893,
+      "grid_max": 0.028861288007977492
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K2_brent.npz",
+      "independent_max": 0.07500599235855088,
+      "grid_max": 0.07500599235855088
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K2_reused.npz",
+      "independent_max": 0.07500599119094664,
+      "grid_max": 0.07500599119094664
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K4_brent.npz",
+      "independent_max": 0.014259818841373395,
+      "grid_max": 0.014259812986694875
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K4_reused.npz",
+      "independent_max": 0.014259817792569685,
+      "grid_max": 0.014259809310944949
+    }
+  ],
+  "paired_cells": [
+    {
+      "case": "mirror",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 5.923794788031955e-10,
+      "brent_over_reuse_time": 3.8727974639278675,
+      "brent_eigen_calls": 4437,
+      "reuse_eigen_calls": 1552,
+      "reuse_memory_bytes": 164864
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 2.953914890468923e-10,
+      "brent_over_reuse_time": 3.414641535825299,
+      "brent_eigen_calls": 9250,
+      "reuse_eigen_calls": 3558,
+      "reuse_memory_bytes": 358784
+    },
+    {
+      "case": "n16_r4_s3_seed5100",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 8.79921380203541e-09,
+      "brent_over_reuse_time": 4.205230893709692,
+      "brent_eigen_calls": 5940,
+      "reuse_eigen_calls": 2093,
+      "reuse_memory_bytes": 5724288
+    },
+    {
+      "case": "n16_r4_s3_seed5100",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.4170460360674042e-09,
+      "brent_over_reuse_time": 3.1158911281170796,
+      "brent_eigen_calls": 12643,
+      "reuse_eigen_calls": 5476,
+      "reuse_memory_bytes": 14981632
+    },
+    {
+      "case": "n16_r4_s3_seed5101",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.8396271173060086e-09,
+      "brent_over_reuse_time": 3.8537017600994146,
+      "brent_eigen_calls": 6847,
+      "reuse_eigen_calls": 2552,
+      "reuse_memory_bytes": 6990848
+    },
+    {
+      "case": "n16_r4_s3_seed5101",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 2.3640289725790353e-10,
+      "brent_over_reuse_time": 2.800472615221257,
+      "brent_eigen_calls": 11461,
+      "reuse_eigen_calls": 5295,
+      "reuse_memory_bytes": 14495104
+    },
+    {
+      "case": "n32_r8_s6_seed5100",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 3.5871785541985446e-09,
+      "brent_over_reuse_time": 2.664680315755852,
+      "brent_eigen_calls": 7706,
+      "reuse_eigen_calls": 4158,
+      "reuse_memory_bytes": 42291968
+    },
+    {
+      "case": "n32_r8_s6_seed5100",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.2470060539726546e-09,
+      "brent_over_reuse_time": 2.176852482095831,
+      "brent_eigen_calls": 17654,
+      "reuse_eigen_calls": 10025,
+      "reuse_memory_bytes": 54536960
+    },
+    {
+      "case": "n32_r8_s6_seed5101",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.8983570271302597e-09,
+      "brent_over_reuse_time": 2.7180888466963897,
+      "brent_eigen_calls": 8413,
+      "reuse_eigen_calls": 4159,
+      "reuse_memory_bytes": 42294016
+    },
+    {
+      "case": "n32_r8_s6_seed5101",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 6.208580316524603e-10,
+      "brent_over_reuse_time": 2.1122164926150937,
+      "brent_eigen_calls": 18076,
+      "reuse_eigen_calls": 10394,
+      "reuse_memory_bytes": 55292672
+    },
+    {
+      "case": "n64_r16_s3_seed5100",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.298931806559267e-08,
+      "brent_over_reuse_time": 3.1403759392187927,
+      "brent_eigen_calls": 7560,
+      "reuse_eigen_calls": 2765,
+      "reuse_memory_bytes": 56279040
+    },
+    {
+      "case": "n64_r16_s3_seed5100",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 6.328335189209611e-09,
+      "brent_over_reuse_time": 2.725883809800888,
+      "brent_eigen_calls": 14115,
+      "reuse_eigen_calls": 5784,
+      "reuse_memory_bytes": 81117184
+    },
+    {
+      "case": "n64_r16_s3_seed5101",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 6.705818123009522e-10,
+      "brent_over_reuse_time": 2.820491476170239,
+      "brent_eigen_calls": 5426,
+      "reuse_eigen_calls": 2191,
+      "reuse_memory_bytes": 51625984
+    },
+    {
+      "case": "n64_r16_s3_seed5101",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 3.1650344567424327e-09,
+      "brent_over_reuse_time": 2.50570337272035,
+      "brent_eigen_calls": 14080,
+      "reuse_eigen_calls": 6096,
+      "reuse_memory_bytes": 83640320
+    },
+    {
+      "case": "n64_r4_s3_seed5100",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.0881642253934842e-09,
+      "brent_over_reuse_time": 2.735456362063399,
+      "brent_eigen_calls": 6292,
+      "reuse_eigen_calls": 2587,
+      "reuse_memory_bytes": 38944768
+    },
+    {
+      "case": "n64_r4_s3_seed5100",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 3.2514435588382185e-10,
+      "brent_over_reuse_time": 2.535304340369144,
+      "brent_eigen_calls": 11715,
+      "reuse_eigen_calls": 5174,
+      "reuse_memory_bytes": 44384256
+    },
+    {
+      "case": "n64_r4_s3_seed5101",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.397104654188297e-09,
+      "brent_over_reuse_time": 3.060144906010326,
+      "brent_eigen_calls": 6235,
+      "reuse_eigen_calls": 2309,
+      "reuse_memory_bytes": 38406144
+    },
+    {
+      "case": "n64_r4_s3_seed5101",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 3.8046721329010325e-10,
+      "brent_over_reuse_time": 2.4637443800308465,
+      "brent_eigen_calls": 11747,
+      "reuse_eigen_calls": 5200,
+      "reuse_memory_bytes": 44390400
+    },
+    {
+      "case": "n8_r1_s1_seed5100",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 3.6360985333772078e-09,
+      "brent_over_reuse_time": 4.7728948879659,
+      "brent_eigen_calls": 4464,
+      "reuse_eigen_calls": 1106,
+      "reuse_memory_bytes": 773376
+    },
+    {
+      "case": "n8_r1_s1_seed5100",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 9.915390730697027e-10,
+      "brent_over_reuse_time": 4.17679622147219,
+      "brent_eigen_calls": 9232,
+      "reuse_eigen_calls": 2528,
+      "reuse_memory_bytes": 1748992
+    },
+    {
+      "case": "n8_r1_s1_seed5101",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.167604235519093e-09,
+      "brent_over_reuse_time": 5.933940069601025,
+      "brent_eigen_calls": 5194,
+      "reuse_eigen_calls": 1017,
+      "reuse_memory_bytes": 683648
+    },
+    {
+      "case": "n8_r1_s1_seed5101",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.048793496494227e-09,
+      "brent_over_reuse_time": 4.452194154564705,
+      "brent_eigen_calls": 9725,
+      "reuse_eigen_calls": 2452,
+      "reuse_memory_bytes": 1700352
+    }
+  ],
+  "new_seed_speed_ratio_median": 2.810482045695748,
+  "new_seed_speed_ratio_range": [
+    2.1122164926150937,
+    5.933940069601025
+  ],
+  "scope": "Held-out seeds for declared synthetic families and implementations. Numerical verification; interval certificates separate."
+}

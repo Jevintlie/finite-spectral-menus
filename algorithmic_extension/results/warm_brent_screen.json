@@ -1,0 +1,276 @@
+{
+  "status": "PASS_DEVELOPMENT",
+  "endpoint_checks": 90,
+  "rows": [
+    {
+      "case": "mirror",
+      "K": 1,
+      "method": "reused",
+      "seconds": 0.004304800007957965,
+      "loss": 0.5730211031151624,
+      "eigen_calls": 35,
+      "fallbacks": 0
+    },
+    {
+      "case": "mirror",
+      "K": 1,
+      "method": "warm_brent",
+      "seconds": 0.002577100007329136,
+      "loss": 0.573021103193835,
+      "eigen_calls": 18,
+      "fallbacks": 1
+    },
+    {
+      "case": "mirror",
+      "K": 1,
+      "method": "hybrid_brent",
+      "seconds": 0.002533699997002259,
+      "loss": 0.573021103193835,
+      "eigen_calls": 18,
+      "fallbacks": 1
+    },
+    {
+      "case": "mirror",
+      "K": 2,
+      "method": "reused",
+      "seconds": 0.16772970001329668,
+      "loss": 0.04143382769704962,
+      "eigen_calls": 1552,
+      "fallbacks": 0
+    },
+    {
+      "case": "mirror",
+      "K": 2,
+      "method": "warm_brent",
+      "seconds": 0.33086590000311844,
+      "loss": 0.041433827805190226,
+      "eigen_calls": 1790,
+      "fallbacks": 4
+    },
+    {
+      "case": "mirror",
+      "K": 2,
+      "method": "hybrid_brent",
+      "seconds": 0.2607957999862265,
+      "loss": 0.041433827805190226,
+      "eigen_calls": 1790,
+      "fallbacks": 4
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "method": "reused",
+      "seconds": 0.3838046999881044,
+      "loss": 0.010302130419196143,
+      "eigen_calls": 3558,
+      "fallbacks": 0
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "method": "warm_brent",
+      "seconds": 0.6618489999964368,
+      "loss": 0.010302130804897836,
+      "eigen_calls": 3922,
+      "fallbacks": 3
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "method": "hybrid_brent",
+      "seconds": 0.5593335000157822,
+      "loss": 0.010302130804897836,
+      "eigen_calls": 3922,
+      "fallbacks": 3
+    },
+    {
+      "case": "collision",
+      "K": 1,
+      "method": "reused",
+      "seconds": 0.0005711000121664256,
+      "loss": 0.5000000000000001,
+      "eigen_calls": 3,
+      "fallbacks": 0
+    },
+    {
+      "case": "collision",
+      "K": 1,
+      "method": "warm_brent",
+      "seconds": 0.0010445000079926103,
+      "loss": 0.5000000000000001,
+      "eigen_calls": 6,
+      "fallbacks": 0
+    },
+    {
+      "case": "collision",
+      "K": 1,
+      "method": "hybrid_brent",
+      "seconds": 0.0009549999958835542,
+      "loss": 0.5000000000000001,
+      "eigen_calls": 6,
+      "fallbacks": 0
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 1,
+      "method": "reused",
+      "seconds": 0.01792869999189861,
+      "loss": 0.8226728332257514,
+      "eigen_calls": 93,
+      "fallbacks": 0
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 1,
+      "method": "warm_brent",
+      "seconds": 0.00806300001568161,
+      "loss": 0.8226728326923798,
+      "eigen_calls": 38,
+      "fallbacks": 1
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 1,
+      "method": "hybrid_brent",
+      "seconds": 0.008115400007227436,
+      "loss": 0.8226728326923798,
+      "eigen_calls": 38,
+      "fallbacks": 1
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 2,
+      "method": "reused",
+      "seconds": 0.38082109999959357,
+      "loss": 0.19075992935675856,
+      "eigen_calls": 2315,
+      "fallbacks": 0
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 2,
+      "method": "warm_brent",
+      "seconds": 0.6835659999924246,
+      "loss": 0.19075992792568996,
+      "eigen_calls": 2902,
+      "fallbacks": 15
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 2,
+      "method": "hybrid_brent",
+      "seconds": 0.5994381999771576,
+      "loss": 0.19075992792568996,
+      "eigen_calls": 2902,
+      "fallbacks": 15
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 4,
+      "method": "reused",
+      "seconds": 0.8994988999911584,
+      "loss": 0.04901220745906443,
+      "eigen_calls": 5453,
+      "fallbacks": 0
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 4,
+      "method": "warm_brent",
+      "seconds": 1.5355633000144735,
+      "loss": 0.049012205479385784,
+      "eigen_calls": 6592,
+      "fallbacks": 27
+    },
+    {
+      "case": "n24_r4_s3",
+      "K": 4,
+      "method": "hybrid_brent",
+      "seconds": 1.335139100003289,
+      "loss": 0.049012205479385784,
+      "eigen_calls": 6592,
+      "fallbacks": 27
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 1,
+      "method": "reused",
+      "seconds": 0.0512585999967996,
+      "loss": 1.2321276800212075,
+      "eigen_calls": 95,
+      "fallbacks": 0
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 1,
+      "method": "warm_brent",
+      "seconds": 0.0323385999945458,
+      "loss": 1.232127680211736,
+      "eigen_calls": 58,
+      "fallbacks": 3
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 1,
+      "method": "hybrid_brent",
+      "seconds": 0.03262759998324327,
+      "loss": 1.232127680211736,
+      "eigen_calls": 58,
+      "fallbacks": 3
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 2,
+      "method": "reused",
+      "seconds": 1.0802434000070207,
+      "loss": 0.3204178935198456,
+      "eigen_calls": 2198,
+      "fallbacks": 0
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 2,
+      "method": "warm_brent",
+      "seconds": 1.6017820999841206,
+      "loss": 0.3204178933977033,
+      "eigen_calls": 2723,
+      "fallbacks": 15
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 2,
+      "method": "hybrid_brent",
+      "seconds": 1.4538260999834165,
+      "loss": 0.3204178933977033,
+      "eigen_calls": 2722,
+      "fallbacks": 15
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 4,
+      "method": "reused",
+      "seconds": 2.556268499989528,
+      "loss": 0.07988392341999884,
+      "eigen_calls": 5293,
+      "fallbacks": 0
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 4,
+      "method": "warm_brent",
+      "seconds": 3.6935986000171397,
+      "loss": 0.07988392127237276,
+      "eigen_calls": 6466,
+      "fallbacks": 25
+    },
+    {
+      "case": "n64_r8_s3",
+      "K": 4,
+      "method": "hybrid_brent",
+      "seconds": 3.370704200002365,
+      "loss": 0.07988392127237276,
+      "eigen_calls": 6375,
+      "fallbacks": 25
+    }
+  ]
+}

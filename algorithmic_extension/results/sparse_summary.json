@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "runs": 72,
+  "saved_menus": 24,
+  "scaling_runs": 7,
+  "median_ratio": 0.5643871079165579,
+  "per_n_median_ratio": {
+    "128": 0.25894667514457337,
+    "256": 0.5643871079165579,
+    "512": 1.8526361186180633
+  },
+  "grid1024_single_ratio": 7.58517610735531,
+  "max_loss_crosscheck_error": 2.4868995751603507e-14,
+  "sparse_dense_fallbacks": 0,
+  "certificate_artifacts": 8
+}

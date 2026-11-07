@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "studies": [
+    {
+      "study": "confirmation_v1",
+      "runs": 132,
+      "menus": 44,
+      "status": "PASS"
+    },
+    {
+      "study": "warm_confirmation_v1",
+      "runs": 198,
+      "menus": 66,
+      "status": "PASS"
+    },
+    {
+      "study": "reuse_ablation_v1",
+      "runs": 72,
+      "menus": 24,
+      "status": "PASS"
+    }
+  ],
+  "total_timing_runs": 402,
+  "total_checked_menus": 134,
+  "certificate_collections": [
+    {
+      "collection": "certificates_v2",
+      "artifacts": 22,
+      "max_gap": 1.0000000000010001e-05
+    },
+    {
+      "collection": "warm_certificates_v1",
+      "artifacts": 22,
+      "max_gap": 1.0000000000010001e-05
+    },
+    {
+      "collection": "dictionary_certificates_v1",
+      "artifacts": 10,
+      "max_gap": 1.0000000000010001e-05
+    }
+  ],
+  "total_certificate_artifacts": 54,
+  "dictionary_target_counts": {
+    "uniform": 1,
+    "adaptive": 6
+  },
+  "special_case_runs": 18,
+  "structural_checks": {
+    "interval_cases": 12,
+    "numerical_endpoint_cases": 54,
+    "active_face_cases": 2,
+    "local_distinctions": 3,
+    "two_gap_example": true
+  },
+  "max_successful_dictionary_global_gap": 1.9371245104982115e-05,
+  "manuscript_sha256": "be949d543c0a90dbbc75578382bdf5ee1e5d14817836c3543156bd81d84a0ef0",
+  "scope": "Counts, source provenance, saved verification evidence, and typesetting; mathematical claim audit is separate."
+}

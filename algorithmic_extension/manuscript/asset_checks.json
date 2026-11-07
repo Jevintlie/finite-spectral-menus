@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "dictionary_target_counts": {
+    "uniform": 1,
+    "adaptive": 6
+  },
+  "warm_summary": {
+    "warm_brent": {
+      "cells": 20,
+      "median": 1.6298271887019116,
+      "minimum": 1.3753109033724509,
+      "maximum": 2.0327246059424016,
+      "losses": []
+    },
+    "hybrid_brent": {
+      "cells": 20,
+      "median": 1.3668288334987215,
+      "minimum": 1.2546346048255248,
+      "maximum": 1.8657604956427585,
+      "losses": []
+    }
+  },
+  "special_case": [
+    {
+      "K": 1,
+      "analytic_seconds": 0.0014612000086344779,
+      "reused_seconds": 0.004210799990687519
+    },
+    {
+      "K": 2,
+      "analytic_seconds": 0.0067014000087510794,
+      "reused_seconds": 0.16518660000292584
+    },
+    {
+      "K": 4,
+      "analytic_seconds": 0.012825499987229705,
+      "reused_seconds": 0.3772156999912113
+    }
+  ]
+}

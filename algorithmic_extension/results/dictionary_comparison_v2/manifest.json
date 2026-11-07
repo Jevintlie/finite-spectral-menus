@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "baselines.py": "985fd0d89715ef433db2d055a2e93721ac8ef7f0b6c281f18086d88cc8f134f1",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08",
+    "compare_dictionaries.py": "09e5bbcb4d85d7675588b2aabffb67659facd6570474abd16f237635f9dbae68",
+    "DICTIONARY_PROTOCOL.md": "ee4f45fe5f362362b2375da41cda8de7c818f89b7e7b6b67db5f5ccee0d9040f"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PASS_DEVELOPMENT_REUSE",
+  "rows": [
+    {
+      "model": "mirror",
+      "K": 1,
+      "loss": 0.5730211031151624,
+      "seconds": 0.004557699998258613,
+      "eigen_calls": 35,
+      "cached_decisions": 1,
+      "previous_seconds": 0.4300138000107836,
+      "previous_eigen_calls": 3144
+    },
+    {
+      "model": "mirror",
+      "K": 2,
+      "loss": 0.04143382769704962,
+      "seconds": 0.16943960000935476,
+      "eigen_calls": 1552,
+      "cached_decisions": 1235,
+      "previous_seconds": 0.9629312000033678,
+      "previous_eigen_calls": 7427
+    },
+    {
+      "model": "mirror",
+      "K": 4,
+      "loss": 0.010302130419196143,
+      "seconds": 0.3880736999999499,
+      "eigen_calls": 3558,
+      "cached_decisions": 2518,
+      "previous_seconds": 1.7861184000066714,
+      "previous_eigen_calls": 14817
+    },
+    {
+      "model": "n8_r3_s3",
+      "K": 1,
+      "loss": 0.5390755318580132,
+      "seconds": 0.013756400003330782,
+      "eigen_calls": 94,
+      "cached_decisions": 0,
+      "previous_seconds": 0.49153020000085235,
+      "previous_eigen_calls": 2868
+    },
+    {
+      "model": "n8_r3_s3",
+      "K": 2,
+      "loss": 0.12169504523706554,
+      "seconds": 0.2803145000070799,
+      "eigen_calls": 2202,
+      "cached_decisions": 2178,
+      "previous_seconds": 1.3729827999923145,
+      "previous_eigen_calls": 8835
+    },
+    {
+      "model": "n8_r3_s3",
+      "K": 4,
+      "loss": 0.03058478054442837,
+      "seconds": 0.636023800005205,
+      "eigen_calls": 5141,
+      "cached_decisions": 4491,
+      "previous_seconds": 2.489544500000193,
+      "previous_eigen_calls": 17374
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 1,
+      "loss": 0.604479871253063,
+      "seconds": 0.0187218000064604,
+      "eigen_calls": 93,
+      "cached_decisions": 0,
+      "previous_seconds": 0.5513621999998577,
+      "previous_eigen_calls": 2502
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 2,
+      "loss": 0.18389683254479472,
+      "seconds": 0.421252000000095,
+      "eigen_calls": 2269,
+      "cached_decisions": 2219,
+      "previous_seconds": 1.9686717999866232,
+      "previous_eigen_calls": 9324
+    },
+    {
+      "model": "n24_r4_s3",
+      "K": 4,
+      "loss": 0.03915039152821009,
+      "seconds": 0.9988809999922523,
+      "eigen_calls": 5208,
+      "cached_decisions": 4457,
+      "previous_seconds": 3.500449099999969,
+      "previous_eigen_calls": 17873
+    }
+  ],
+  "source_sha256": {
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "check_reuse.py": "4ca824ef299d1d1c1d1cdf8bfd931be714d633eb89ceb6f88b974a338b0bb7b0"
+  }
+}

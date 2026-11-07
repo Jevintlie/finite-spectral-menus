@@ -1,0 +1,150 @@
+\begin{thebibliography}{10}
+
+\bibitem{barbarino2022}
+Giovanni Barbarino and Vanni Noferini.
+\newblock On the {Rellich} eigendecomposition of para-{Hermitian} matrices and
+  the sign characteristics of $*$-palindromic matrix polynomials.
+\newblock {\em Linear Algebra and its Applications}, 672:1--27, 2023.
+\newblock \url{https://doi.org/10.1016/j.laa.2023.04.022}.
+
+\bibitem{bazgan2022}
+Cristina Bazgan, Stefan Ruzika, Clemens Thielen, and Daniel Vanderpooten.
+\newblock The power of the weighted sum scalarization for approximating
+  multiobjective optimization problems.
+\newblock {\em Theory of Computing Systems}, 66:395--415, 2022.
+\newblock \url{https://doi.org/10.1007/s00224-021-10066-5}.
+
+\bibitem{buchheim2017}
+Christoph Buchheim and Jannis Kurtz.
+\newblock Min--max--min robust combinatorial optimization.
+\newblock {\em Mathematical Programming}, 163:1--23, 2017.
+\newblock \url{https://doi.org/10.1007/s10107-016-1053-z}.
+
+\bibitem{cao2017}
+Wei Cao, Jian Li, Haitao Wang, Kangning Wang, Ruosong Wang, Raymond Chi-Wing
+  Wong, and Wei Zhan.
+\newblock {k}-regret minimizing set: Efficient algorithms and hardness.
+\newblock In {\em 20th International Conference on Database Theory (ICDT
+  2017)}, volume~68 of {\em Leibniz International Proceedings in Informatics},
+  pages 11:1--11:19. Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik,
+  2017.
+\newblock \url{https://doi.org/10.4230/LIPIcs.ICDT.2017.11}.
+
+\bibitem{cardinal2025}
+Jean Cardinal, Xavier Goaoc, and Sarah Wajsbrot.
+\newblock Hitting and covering affine families of convex polyhedra, with
+  applications to robust optimization.
+\newblock In {\em 50th International Symposium on Mathematical Foundations of
+  Computer Science}, volume 345 of {\em Leibniz International Proceedings in
+  Informatics}, pages 33:1--33:18, 2025.
+\newblock \url{https://doi.org/10.4230/LIPIcs.MFCS.2025.33}.
+
+\bibitem{demmel1993}
+James~W. Demmel, Michael~T. Heath, and Henk~A. van~der Vorst.
+\newblock Parallel numerical linear algebra.
+\newblock Technical Report UT CS-93-192, LAPACK Working Note 60, University of
+  Tennessee, 1993.
+\newblock \url{https://www.netlib.org/lapack/lawnspdf/lawn60.pdf}.
+
+\bibitem{diakonikolas2011}
+Ilias Diakonikolas.
+\newblock {\em Approximation of Multiobjective Optimization Problems}.
+\newblock PhD thesis, Columbia University, 2011.
+\newblock \url{https://doi.org/10.7916/D80K2GR9}.
+
+\bibitem{diakonikolas2008}
+Ilias Diakonikolas and Mihalis Yannakakis.
+\newblock Succinct approximate convex {Pareto} curves.
+\newblock In {\em Proceedings of the Nineteenth Annual ACM-SIAM Symposium on
+  Discrete Algorithms}, pages 74--83. SIAM, 2008.
+\newblock \url{https://www.cs.columbia.edu/~ilias/papers/convex-pareto.html}.
+
+\bibitem{gaubert2011}
+St{\'e}phane Gaubert, William McEneaney, and Zheng Qu.
+\newblock Curse of dimensionality reduction in max-plus based approximation
+  methods: Theoretical estimates and improved pruning algorithms.
+\newblock In {\em 50th IEEE Conference on Decision and Control and European
+  Control Conference}, pages 1054--1061, 2011.
+\newblock \url{https://doi.org/10.1109/CDC.2011.6161386}.
+
+\bibitem{hanasusanto2015}
+Grani~A. Hanasusanto, Daniel Kuhn, and Wolfram Wiesemann.
+\newblock $k$-adaptability in two-stage robust binary programming.
+\newblock {\em Operations Research}, 63(4):877--891, 2015.
+\newblock \url{https://doi.org/10.1287/opre.2015.1392}.
+
+\bibitem{helfrich2024}
+Stephan Helfrich, Arne Herzel, Stefan Ruzika, and Clemens Thielen.
+\newblock Using scalarizations for the approximation of multiobjective
+  optimization problems: Towards a general theory.
+\newblock {\em Mathematical Methods of Operations Research}, 100:27--63, 2024.
+\newblock \url{https://doi.org/10.1007/s00186-023-00823-2}.
+
+\bibitem{imamoto2008}
+A.~Imamoto and B.~Tang.
+\newblock Optimal piecewise linear approximation of convex functions.
+\newblock In {\em Proceedings of the World Congress on Engineering and Computer
+  Science}, pages 1191--1194, 2008.
+\newblock
+  \url{https://iaeng.org/publication/WCECS2008/WCECS2008_pp1191-1194.pdf}.
+
+\bibitem{kurtz2026}
+Jannis Kurtz.
+\newblock Bounding the optimal number of policies for robust
+  {$K$}-adaptability.
+\newblock {\em Mathematical Programming}, 2026.
+\newblock \url{https://doi.org/10.1007/s10107-026-02329-1}.
+
+\bibitem{magnanti2012}
+Thomas~L. Magnanti and Dan Stratila.
+\newblock Separable concave optimization approximately equals piecewise-linear
+  optimization.
+\newblock Technical Report 6-2012, RUTCOR, Rutgers University, 2012.
+\newblock \url{https://arxiv.org/abs/1201.3148}.
+
+\bibitem{pythondecimal}
+{Python Software Foundation}.
+\newblock Decimal fixed-point and floating-point arithmetic.
+\newblock Python 3.12 documentation, 2026.
+\newblock Accessed 5 October 2026;
+  \url{https://docs.python.org/3.12/library/decimal.html}.
+
+\bibitem{rote1992}
+G{\"u}nter Rote.
+\newblock The convergence rate of the sandwich algorithm for approximating
+  convex functions.
+\newblock {\em Computing}, 48:337--361, 1992.
+\newblock \url{https://doi.org/10.1007/BF02238642}.
+
+\bibitem{rump2022}
+Siegfried~M. Rump.
+\newblock Verified error bounds for all eigenvalues and eigenvectors of a
+  matrix.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  43(4):1736--1754, 2022.
+\newblock \url{https://doi.org/10.1137/21M1451440}.
+
+\bibitem{scipyeigsh}
+{SciPy developers}.
+\newblock {scipy.sparse.linalg.eigsh}.
+\newblock SciPy reference documentation, 2026.
+\newblock Accessed 5 October 2026;
+  \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigsh.html}.
+
+\bibitem{shen2026}
+Junhui Shen, Aaron Davis, Ding Lu, and Zhaojun Bai.
+\newblock Fair principal component analysis via eigenvalue optimization.
+\newblock {\em BIT Numerical Mathematics}, 66:17, 2026.
+\newblock \url{https://doi.org/10.1007/s10543-026-01109-9}.
+
+\bibitem{tantipongpipat2019}
+Uthaipon Tantipongpipat, Samira Samadi, Mohit Singh, Jamie Morgenstern, and
+  Santosh Vempala.
+\newblock Multi-criteria dimensionality reduction with applications to
+  fairness.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~32, 2019.
+\newblock
+  \url{https://papers.nips.cc/paper_files/paper/2019/hash/2201611d7a08ffda97e3e8c6b667a1bc-Abstract.html}.
+
+\end{thebibliography}

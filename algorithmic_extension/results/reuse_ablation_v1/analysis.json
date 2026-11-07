@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "runs": 72,
+  "failures": [],
+  "saved_menu_checks": [
+    {
+      "artifact": "mirror_K2_plain.npz",
+      "independent_max": 0.041433826985769695,
+      "grid_max": 0.041433826985769695
+    },
+    {
+      "artifact": "mirror_K2_reused.npz",
+      "independent_max": 0.04143382769704962,
+      "grid_max": 0.04143382769704962
+    },
+    {
+      "artifact": "mirror_K4_plain.npz",
+      "independent_max": 0.01030213057906626,
+      "grid_max": 0.010302129349203604
+    },
+    {
+      "artifact": "mirror_K4_reused.npz",
+      "independent_max": 0.010302130419196143,
+      "grid_max": 0.010302130419196143
+    },
+    {
+      "artifact": "n16_r4_s3_seed5500_K2_plain.npz",
+      "independent_max": 0.12713002936222395,
+      "grid_max": 0.12713002936222395
+    },
+    {
+      "artifact": "n16_r4_s3_seed5500_K2_reused.npz",
+      "independent_max": 0.12713002787523564,
+      "grid_max": 0.12713002787523564
+    },
+    {
+      "artifact": "n16_r4_s3_seed5500_K4_plain.npz",
+      "independent_max": 0.03739544466782707,
+      "grid_max": 0.03739544393284966
+    },
+    {
+      "artifact": "n16_r4_s3_seed5500_K4_reused.npz",
+      "independent_max": 0.03739544501719383,
+      "grid_max": 0.03739544419981655
+    },
+    {
+      "artifact": "n32_r8_s6_seed5500_K2_plain.npz",
+      "independent_max": 0.28685625467790743,
+      "grid_max": 0.28685625467790743
+    },
+    {
+      "artifact": "n32_r8_s6_seed5500_K2_reused.npz",
+      "independent_max": 0.28685625073546817,
+      "grid_max": 0.28685625073546817
+    },
+    {
+      "artifact": "n32_r8_s6_seed5500_K4_plain.npz",
+      "independent_max": 0.0737055314176871,
+      "grid_max": 0.07370552618806059
+    },
+    {
+      "artifact": "n32_r8_s6_seed5500_K4_reused.npz",
+      "independent_max": 0.07370552959002552,
+      "grid_max": 0.07370552288585586
+    },
+    {
+      "artifact": "n64_r16_s3_seed5500_K2_plain.npz",
+      "independent_max": 0.6910422589435399,
+      "grid_max": 0.6910422589435399
+    },
+    {
+      "artifact": "n64_r16_s3_seed5500_K2_reused.npz",
+      "independent_max": 0.6910422572273518,
+      "grid_max": 0.6910422572273518
+    },
+    {
+      "artifact": "n64_r16_s3_seed5500_K4_plain.npz",
+      "independent_max": 0.166779820583411,
+      "grid_max": 0.16677981455953983
+    },
+    {
+      "artifact": "n64_r16_s3_seed5500_K4_reused.npz",
+      "independent_max": 0.16677982131447777,
+      "grid_max": 0.16677981452934176
+    },
+    {
+      "artifact": "n64_r4_s3_seed5500_K2_plain.npz",
+      "independent_max": 0.15694645231511828,
+      "grid_max": 0.15694645231511828
+    },
+    {
+      "artifact": "n64_r4_s3_seed5500_K2_reused.npz",
+      "independent_max": 0.15694645108979977,
+      "grid_max": 0.15694645108979977
+    },
+    {
+      "artifact": "n64_r4_s3_seed5500_K4_plain.npz",
+      "independent_max": 0.039269165867155564,
+      "grid_max": 0.039269165867155564
+    },
+    {
+      "artifact": "n64_r4_s3_seed5500_K4_reused.npz",
+      "independent_max": 0.03926916599426988,
+      "grid_max": 0.03926916483377241
+    },
+    {
+      "artifact": "n8_r1_s1_seed5500_K2_plain.npz",
+      "independent_max": 0.021089325468062192,
+      "grid_max": 0.021089325468062192
+    },
+    {
+      "artifact": "n8_r1_s1_seed5500_K2_reused.npz",
+      "independent_max": 0.021089325451353336,
+      "grid_max": 0.021089325451353336
+    },
+    {
+      "artifact": "n8_r1_s1_seed5500_K4_plain.npz",
+      "independent_max": 0.005276934183177762,
+      "grid_max": 0.005276933606856105
+    },
+    {
+      "artifact": "n8_r1_s1_seed5500_K4_reused.npz",
+      "independent_max": 0.00527693392450912,
+      "grid_max": 0.005276933917591542
+    }
+  ],
+  "paired_cells": [
+    {
+      "case": "mirror",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 7.112799238484513e-10,
+      "plain_over_reuse_time": 6.057271369544596,
+      "plain_eigen_calls": 7427,
+      "reuse_eigen_calls": 1552,
+      "reuse_memory_bytes": 164864
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.5987011714457822e-10,
+      "plain_over_reuse_time": 4.9103676251707915,
+      "plain_eigen_calls": 14817,
+      "reuse_eigen_calls": 3558,
+      "reuse_memory_bytes": 358784
+    },
+    {
+      "case": "n16_r4_s3_seed5500",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.4869865339051103e-09,
+      "plain_over_reuse_time": 4.8772069350976475,
+      "plain_eigen_calls": 9445,
+      "reuse_eigen_calls": 2346,
+      "reuse_memory_bytes": 6404352
+    },
+    {
+      "case": "n16_r4_s3_seed5500",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 3.4936942228114276e-10,
+      "plain_over_reuse_time": 4.149441523876943,
+      "plain_eigen_calls": 18156,
+      "reuse_eigen_calls": 5228,
+      "reuse_memory_bytes": 14249472
+    },
+    {
+      "case": "n32_r8_s6_seed5500",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 3.942439263937558e-09,
+      "plain_over_reuse_time": 3.445139670893231,
+      "plain_eigen_calls": 11718,
+      "reuse_eigen_calls": 4250,
+      "reuse_memory_bytes": 42480384
+    },
+    {
+      "case": "n32_r8_s6_seed5500",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.8276562485652903e-09,
+      "plain_over_reuse_time": 2.756122554378364,
+      "plain_eigen_calls": 24437,
+      "reuse_eigen_calls": 10402,
+      "reuse_memory_bytes": 55309056
+    },
+    {
+      "case": "n64_r16_s3_seed5500",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.7161809751087276e-09,
+      "plain_over_reuse_time": 4.608224239381756,
+      "plain_eigen_calls": 11075,
+      "reuse_eigen_calls": 2617,
+      "reuse_memory_bytes": 55033856
+    },
+    {
+      "case": "n64_r16_s3_seed5500",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 7.310667626825307e-10,
+      "plain_over_reuse_time": 3.944937360546795,
+      "plain_eigen_calls": 21507,
+      "reuse_eigen_calls": 5791,
+      "reuse_memory_bytes": 81248256
+    },
+    {
+      "case": "n64_r4_s3_seed5500",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.2253167369635776e-09,
+      "plain_over_reuse_time": 4.291399057396169,
+      "plain_eigen_calls": 9322,
+      "reuse_eigen_calls": 2269,
+      "reuse_memory_bytes": 38324224
+    },
+    {
+      "case": "n64_r4_s3_seed5500",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 1.2711787178432132e-10,
+      "plain_over_reuse_time": 3.8468899105631746,
+      "plain_eigen_calls": 19566,
+      "reuse_eigen_calls": 5349,
+      "reuse_memory_bytes": 44730368
+    },
+    {
+      "case": "n8_r1_s1_seed5500",
+      "K": 2,
+      "status": "PASS",
+      "loss_difference": 1.6708856520608606e-11,
+      "plain_over_reuse_time": 7.377757608270057,
+      "plain_eigen_calls": 6332,
+      "reuse_eigen_calls": 870,
+      "reuse_memory_bytes": 589568
+    },
+    {
+      "case": "n8_r1_s1_seed5500",
+      "K": 4,
+      "status": "PASS",
+      "loss_difference": 2.5866775388294627e-10,
+      "plain_over_reuse_time": 6.484886107518473,
+      "plain_eigen_calls": 13294,
+      "reuse_eigen_calls": 2007,
+      "reuse_memory_bytes": 1350016
+    }
+  ],
+  "new_seed_speed_ratio_median": 4.2204202906365555,
+  "new_seed_speed_ratio_range": [
+    2.756122554378364,
+    7.377757608270057
+  ],
+  "scope": "Held-out seeds for declared synthetic families and implementations. Numerical verification; interval certificates separate."
+}

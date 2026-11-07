@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "sparse_spectral.py": "b038d923b998d1299b94d40c9d3cf716a022469e5dbee9e1fd828858b8260aeb",
+    "sparse_artifacts.py": "cd123da68eec45a6ecca7a089ffbad85510ad0dd030d07c116e36f65f23be1cf",
+    "run_sparse_scaling.py": "2bdc0736339f130f7943e9b9cb8eb985d7b34950073861f59b99605f0915c389",
+    "SPARSE_SCALING_PROTOCOL.md": "318b2cf5eb8404402093d2f4ea9f4a3726c452be9b4fed3d7744fff66e255ec1"
+  },
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1"
+}

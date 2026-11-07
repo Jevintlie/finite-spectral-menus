@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "brent_reference.py": "731cc39b276234ee151b910446de659aaac965dae4ada90e5f06eac9216fb482",
+    "run_reuse_ablation.py": "14aa9c465e99f4860303bcc6ddb750e8c227eb10d34a3e169de6bc714b0e6c8f",
+    "REUSE_ABLATION_PROTOCOL.md": "856fda3410481e9e9e06ed1a8f1f4093b297a36670a556f3a0c6addb10acff03"
+  },
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "started_utc": "2026-10-04T05:50:31Z"
+}

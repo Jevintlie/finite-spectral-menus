@@ -1,0 +1,8 @@
+{
+  "artifact": "n32_r8_s6_seed5100_K4_reused.npz",
+  "artifact_sha256": "15608ce273393545061f1d28554ec1b8a3916f0a54548e5c75ba230dcb5e6bed",
+  "status": "FAILED_TO_CERTIFY",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\generate_certificates.py\", line 37, in <module>\n    checked=verifier.pair_lower(a,b,prices)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\interval_verifier.py\", line 157, in pair_lower\n    assert a<=p<=b\n           ^^^^^^^\nAssertionError\n",
+  "seconds": 0.5087929000001168
+}

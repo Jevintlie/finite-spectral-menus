@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ENCLOSURE_DEVELOPMENT_TESTS",
+  "counts": {
+    "scalar_operations": 600,
+    "matrix_entries": 87,
+    "eigenvalues": 84,
+    "objectives": 18
+  },
+  "scope": "Exact rational basic arithmetic checks and high-precision reference checks; not a formal software proof.",
+  "source_sha256": {
+    "check_interval_arithmetic.py": "27541d7f02d9c3f4546146e0bc2b2144a0c7c3d81dd155f21ae161eda295416c",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08"
+  }
+}

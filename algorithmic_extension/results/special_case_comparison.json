@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "K": 1,
+      "repeat": 0,
+      "method": "analytic",
+      "seconds": 0.001423700014129281,
+      "loss": 0.5730215497403663
+    },
+    {
+      "K": 1,
+      "repeat": 0,
+      "method": "reused",
+      "seconds": 0.004460500000277534,
+      "loss": 0.5730211031151624
+    },
+    {
+      "K": 1,
+      "repeat": 1,
+      "method": "reused",
+      "seconds": 0.004149099986534566,
+      "loss": 0.5730211031151624
+    },
+    {
+      "K": 1,
+      "repeat": 1,
+      "method": "analytic",
+      "seconds": 0.001489599992055446,
+      "loss": 0.5730215497403663
+    },
+    {
+      "K": 1,
+      "repeat": 2,
+      "method": "analytic",
+      "seconds": 0.0014612000086344779,
+      "loss": 0.5730215497403663
+    },
+    {
+      "K": 1,
+      "repeat": 2,
+      "method": "reused",
+      "seconds": 0.004210799990687519,
+      "loss": 0.5730211031151624
+    },
+    {
+      "K": 2,
+      "repeat": 0,
+      "method": "analytic",
+      "seconds": 0.0067014000087510794,
+      "loss": 0.041433333960502416
+    },
+    {
+      "K": 2,
+      "repeat": 0,
+      "method": "reused",
+      "seconds": 0.16921130000264384,
+      "loss": 0.04143382769704962
+    },
+    {
+      "K": 2,
+      "repeat": 1,
+      "method": "reused",
+      "seconds": 0.16482200002064928,
+      "loss": 0.04143382769704962
+    },
+    {
+      "K": 2,
+      "repeat": 1,
+      "method": "analytic",
+      "seconds": 0.006636900012381375,
+      "loss": 0.041433333960502416
+    },
+    {
+      "K": 2,
+      "repeat": 2,
+      "method": "analytic",
+      "seconds": 0.006706400017719716,
+      "loss": 0.041433333960502416
+    },
+    {
+      "K": 2,
+      "repeat": 2,
+      "method": "reused",
+      "seconds": 0.16518660000292584,
+      "loss": 0.04143382769704962
+    },
+    {
+      "K": 4,
+      "repeat": 0,
+      "method": "analytic",
+      "seconds": 0.012756299984175712,
+      "loss": 0.01030349698268096
+    },
+    {
+      "K": 4,
+      "repeat": 0,
+      "method": "reused",
+      "seconds": 0.3772156999912113,
+      "loss": 0.010302130419196143
+    },
+    {
+      "K": 4,
+      "repeat": 1,
+      "method": "reused",
+      "seconds": 0.38078890001634136,
+      "loss": 0.010302130419196143
+    },
+    {
+      "K": 4,
+      "repeat": 1,
+      "method": "analytic",
+      "seconds": 0.012825499987229705,
+      "loss": 0.01030349698268096
+    },
+    {
+      "K": 4,
+      "repeat": 2,
+      "method": "analytic",
+      "seconds": 0.01290479997987859,
+      "loss": 0.01030349698268096
+    },
+    {
+      "K": 4,
+      "repeat": 2,
+      "method": "reused",
+      "seconds": 0.37643150001531467,
+      "loss": 0.010302130419196143
+    }
+  ],
+  "pairs": [
+    {
+      "K": 1,
+      "analytic_seconds": 0.0014612000086344779,
+      "reused_seconds": 0.004210799990687519
+    },
+    {
+      "K": 2,
+      "analytic_seconds": 0.0067014000087510794,
+      "reused_seconds": 0.16518660000292584
+    },
+    {
+      "K": 4,
+      "analytic_seconds": 0.012825499987229705,
+      "reused_seconds": 0.3772156999912113
+    }
+  ],
+  "old_source_sha256": "31eadc4e83642738a170fb92815907ea6c8132ad8f2bba9b9b3b6cb2a26f3b8e",
+  "scope": "Special two-dimensional analytic competitor, three repetitions, matched stopping resolution; no general-rank applicability."
+}

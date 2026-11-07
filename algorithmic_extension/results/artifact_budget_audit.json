@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "studies": [
+    {
+      "study": "confirmation_v1",
+      "menus": 44,
+      "budget_labels_match": true
+    },
+    {
+      "study": "warm_confirmation_v1",
+      "menus": 66,
+      "budget_labels_match": true
+    },
+    {
+      "study": "reuse_ablation_v1",
+      "menus": 24,
+      "budget_labels_match": true
+    }
+  ]
+}

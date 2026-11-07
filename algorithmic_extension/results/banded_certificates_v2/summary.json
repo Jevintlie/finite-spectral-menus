@@ -1,0 +1,4425 @@
+{
+  "status": "PASS",
+  "cases": 14,
+  "rows": [
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n128_r2_s2_seed6400_sparse.npz",
+      "artifact_sha256": "fabd612280a25ce3b3eb7ff91fadb1677881843f75618657d180a535d4e18684",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.17182538855654492,
+      "upper": 0.17183538862621187,
+      "gap": 1.0000069666948887e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5604772567749023,
+          "upper": 0.17183538862621187,
+          "site": 0
+        },
+        {
+          "left": 0.5604772567749023,
+          "right": 2.0,
+          "upper": 0.1718343475885993,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.5604592121595741,
+        1.999897340207965
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.5604592121595741,
+          "dual_prices": [
+            0.31685373938829453,
+            0.19219374342538315
+          ],
+          "lower": 0.17182591267169564,
+          "site_lower_bounds": [
+            0.17182591267169564,
+            0.1818157157185256
+          ]
+        },
+        {
+          "left": 0.5604592121595741,
+          "right": 1.999897340207965,
+          "dual_prices": [
+            0.8216180820360531,
+            1.2351242729942822
+          ],
+          "lower": 0.17182550303027663,
+          "site_lower_bounds": [
+            0.17462638714135267,
+            0.17182550303027663
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.1447373171602493e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -5.6116572179258,
+            -5.61165721778245
+          ],
+          "seconds": 0.024873799993656576,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.19219374342538315,
+          "site": 1,
+          "bound": [
+            -4.945329259216841,
+            -4.945329259087151
+          ],
+          "seconds": 0.02561400001286529,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -5.6116572179258,
+            -5.61165721778245
+          ],
+          "seconds": 0.026542299980064854,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.31685373938829453,
+          "site": 0,
+          "bound": [
+            -4.641056520929969,
+            -4.641056520809035
+          ],
+          "seconds": 0.025617300008889288,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.5604592121595741,
+          "site": 0,
+          "bound": [
+            -4.091490454178162,
+            -4.091490454071005
+          ],
+          "seconds": 0.026016699994215742,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.5604592121595741,
+          "site": 1,
+          "bound": [
+            -4.198763410485817,
+            -4.198763410377278
+          ],
+          "seconds": 0.024695900006918237,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.8216180820360531,
+          "site": 0,
+          "bound": [
+            -3.7011762917977697,
+            -3.701176291696798
+          ],
+          "seconds": 0.024217899976065382,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.5604772567749023,
+          "site": 1,
+          "bound": [
+            -4.198734677618852,
+            -4.198734677510313
+          ],
+          "seconds": 0.024671299994224682,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 0.5604772567749023,
+          "site": 0,
+          "bound": [
+            -4.091450698998561,
+            -4.091450698891404
+          ],
+          "seconds": 0.02564940002048388,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 1.2351242729942822,
+          "site": 1,
+          "bound": [
+            -3.192616937793103,
+            -3.1926169376911755
+          ],
+          "seconds": 0.024876499985111877,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 1.999897340207965,
+          "site": 0,
+          "bound": [
+            -2.4186898832278563,
+            -2.41868988304753
+          ],
+          "seconds": 0.025505199999315664,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 1.999897340207965,
+          "site": 1,
+          "bound": [
+            -2.319881961474242,
+            -2.3198819612800663
+          ],
+          "seconds": 0.024595399998361245,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.4185881499051067,
+            -2.418588149724768
+          ],
+          "seconds": 0.02395319999777712,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.3197673219215407,
+            -2.3197673217273524
+          ],
+          "seconds": 0.024446099996566772,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 128,
+      "half_bandwidth": 11,
+      "input_band_bytes": 36864,
+      "factor_interval_bytes": 24576,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n128_r2_s2_seed6401_sparse.npz",
+      "artifact_sha256": "f7041ef58ef42d2d41bf8452977f26d1c0b2c0efc4565a9fd366e01c6c304aa9",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.08897684695182537,
+      "upper": 0.08898684702329442,
+      "gap": 1.0000071469049023e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.8167952001094818,
+          "upper": 0.08898684702329442,
+          "site": 1
+        },
+        {
+          "left": 0.8167952001094818,
+          "right": 2.0,
+          "upper": 0.08898536034014583,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.8167383426258564,
+        1.9998844851694615
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.8167383426258564,
+          "dual_prices": [
+            0.40129309977781985,
+            0.35262083524530025
+          ],
+          "lower": 0.08897701890260822,
+          "site_lower_bounds": [
+            0.16412168749048914,
+            0.08897701890260822
+          ]
+        },
+        {
+          "left": 0.8167383426258564,
+          "right": 1.9998844851694615,
+          "dual_prices": [
+            1.2772955182577947,
+            1.606667110375104
+          ],
+          "lower": 0.08897697558348659,
+          "site_lower_bounds": [
+            0.08897697558348659,
+            0.09549659832908251
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.2863166122534242e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -5.704029361064621,
+            -5.704029360917208
+          ],
+          "seconds": 0.02470280000125058,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -5.704029361064621,
+            -5.704029360917208
+          ],
+          "seconds": 0.024322599987499416,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.35262083524530025,
+          "site": 1,
+          "bound": [
+            -4.777455569331128,
+            -4.777455569207973
+          ],
+          "seconds": 0.029930599994258955,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.40129309977781985,
+          "site": 0,
+          "bound": [
+            -4.58669739292748,
+            -4.586697392803369
+          ],
+          "seconds": 0.02429990001837723,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.8167383426258564,
+          "site": 1,
+          "bound": [
+            -3.7639925522578284,
+            -3.7639925521609405
+          ],
+          "seconds": 0.02600969999912195,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.8167383426258564,
+          "site": 0,
+          "bound": [
+            -3.7108588504965208,
+            -3.7108588503910087
+          ],
+          "seconds": 0.02801869998802431,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.8167952001094818,
+          "site": 0,
+          "bound": [
+            -3.7107489014593567,
+            -3.7107489013538473
+          ],
+          "seconds": 0.025980300008086488,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 0.8167952001094818,
+          "site": 1,
+          "bound": [
+            -3.763880259195563,
+            -3.763880259098679
+          ],
+          "seconds": 0.02516960000502877,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 1.606667110375104,
+          "site": 1,
+          "bound": [
+            -2.272929478239062,
+            -2.2729294780920917
+          ],
+          "seconds": 0.023629100003745407,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 1.2772955182577947,
+          "site": 0,
+          "bound": [
+            -2.8613496099144116,
+            -2.8613496098087583
+          ],
+          "seconds": 0.0257710000150837,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 1.9998844851694615,
+          "site": 0,
+          "bound": [
+            -1.6737292784045916,
+            -1.6737292782135287
+          ],
+          "seconds": 0.024269499990623444,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -1.6735634326318223,
+            -1.6735634324407462
+          ],
+          "seconds": 0.024225100001785904,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 1.9998844851694615,
+          "site": 1,
+          "bound": [
+            -1.645443668040311,
+            -1.645443667844544
+          ],
+          "seconds": 0.02799040000536479,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -1.6452681054075813,
+            -1.6452681052118001
+          ],
+          "seconds": 0.034289400005945936,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 128,
+      "half_bandwidth": 11,
+      "input_band_bytes": 36864,
+      "factor_interval_bytes": 24576,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n128_r8_s2_seed6400_sparse.npz",
+      "artifact_sha256": "0404380aceb0304c6ad9bf9194a9f57140acc41ec21c4b5ee91db2f733518afc",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.45662309979099336,
+      "upper": 0.4566330999960418,
+      "gap": 1.0000205048432688e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.6632248610258102,
+          "upper": 0.4566330999960418,
+          "site": 0
+        },
+        {
+          "left": 0.6632248610258102,
+          "right": 2.0,
+          "upper": 0.4566327644868072,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.6632201091775894,
+        1.9999394292234751
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.6632201091775894,
+          "dual_prices": [
+            0.45660024202435234,
+            0.3074658910899917
+          ],
+          "lower": 0.456624834275896,
+          "site_lower_bounds": [
+            0.456624834275896,
+            0.5835197616052382
+          ]
+        },
+        {
+          "left": 0.6632201091775894,
+          "right": 1.9999394292234751,
+          "dual_prices": [
+            1.2195196497092207,
+            1.0950896478428962
+          ],
+          "lower": 0.4566233491413047,
+          "site_lower_bounds": [
+            0.9687064275161051,
+            0.4566233491413047
+          ]
+        }
+      ],
+      "min_exclusion_margin": 2.493503113432105e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.6632201091775894,
+          "site": 0,
+          "bound": [
+            -14.855406264347687,
+            -14.855406263929003
+          ],
+          "seconds": 0.15469579998170957,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.6632201091775894,
+          "site": 1,
+          "bound": [
+            -15.169858235205645,
+            -15.169858234791292
+          ],
+          "seconds": 0.13343270000768825,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.45660024202435234,
+          "site": 0,
+          "bound": [
+            -16.727085217716123,
+            -16.727085217269213
+          ],
+          "seconds": 0.18876919997273944,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.3074658910899917,
+          "site": 1,
+          "bound": [
+            -18.05375082052437,
+            -18.053750820038367
+          ],
+          "seconds": 0.2557241999893449,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.6632248610258102,
+          "site": 0,
+          "bound": [
+            -14.855367399062487,
+            -14.855367398643804
+          ],
+          "seconds": 0.10732360000838526,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.6632248610258102,
+          "site": 1,
+          "bound": [
+            -15.169823898882258,
+            -15.169823898467905
+          ],
+          "seconds": 0.10812590000568889,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 1.0950896478428962,
+          "site": 1,
+          "bound": [
+            -12.402736092351933,
+            -12.402736091967284
+          ],
+          "seconds": 0.09445000000414439,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -21.63403344016637,
+            -21.634033439592955
+          ],
+          "seconds": 0.30313039998873137,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -21.63403344016637,
+            -21.634033439592955
+          ],
+          "seconds": 0.3012155999895185,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 1.2195196497092207,
+          "site": 0,
+          "bound": [
+            -11.224953437084721,
+            -11.224953436676287
+          ],
+          "seconds": 0.09851159999379888,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 1.9999394292234751,
+          "site": 1,
+          "bound": [
+            -8.018419897293048,
+            -8.018419896516322
+          ],
+          "seconds": 0.10152750002453104,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -8.018142777660481,
+            -8.018142776883725
+          ],
+          "seconds": 0.100044999999227,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -7.331990671853992,
+            -7.331990671132639
+          ],
+          "seconds": 0.17536850000033155,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6400_sparse.npz",
+          "p": 1.9999394292234751,
+          "site": 0,
+          "bound": [
+            -7.332277969011864,
+            -7.332277968290539
+          ],
+          "seconds": 0.2518661000067368,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        }
+      ],
+      "n": 128,
+      "half_bandwidth": 11,
+      "input_band_bytes": 36864,
+      "factor_interval_bytes": 24576,
+      "successful_counts": 224,
+      "rejected_counts": 9,
+      "bracket_expansions": 0,
+      "decimal_counts": 9
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n128_r8_s2_seed6401_sparse.npz",
+      "artifact_sha256": "422b8fbc6ec67bc158c99b38209c084e2b944e0d5e2c44ad8c583e51034c5398",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.4202752564205273,
+      "upper": 0.4202852567066842,
+      "gap": 1.0000286156885975e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.7090445905923843,
+          "upper": 0.4202852567066842,
+          "site": 1
+        },
+        {
+          "left": 0.7090445905923843,
+          "right": 2.0,
+          "upper": 0.4202833915169287,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.7090371444279552,
+        1.9999491218343086
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.7090371444279552,
+          "dual_prices": [
+            0.349765803727404,
+            0.3623650557743681
+          ],
+          "lower": 0.4202764387091377,
+          "site_lower_bounds": [
+            0.6288047312328543,
+            0.4202764387091377
+          ]
+        },
+        {
+          "left": 0.7090371444279552,
+          "right": 1.9999491218343086,
+          "dual_prices": [
+            1.1181958519796455,
+            1.8644601470127515
+          ],
+          "lower": 0.42027562710221383,
+          "site_lower_bounds": [
+            0.42027562710221383,
+            0.8304241519819148
+          ]
+        }
+      ],
+      "min_exclusion_margin": 3.706816865123308e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.3623650557743681,
+          "site": 1,
+          "bound": [
+            -18.063790053059552,
+            -18.06379005256917
+          ],
+          "seconds": 0.09278430000995286,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.7090371444279552,
+          "site": 0,
+          "bound": [
+            -14.780520506337322,
+            -14.780520505895982
+          ],
+          "seconds": 0.09983210000791587,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.7090371444279552,
+          "site": 1,
+          "bound": [
+            -14.784841446868985,
+            -14.784841446457982
+          ],
+          "seconds": 0.09371409998857416,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.7090445905923843,
+          "site": 0,
+          "bound": [
+            -14.780460370524652,
+            -14.780460370083313
+          ],
+          "seconds": 0.11036310001509264,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.349765803727404,
+          "site": 0,
+          "bound": [
+            -17.989704279128347,
+            -17.98970427862266
+          ],
+          "seconds": 0.2574638999940362,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.7090445905923843,
+          "site": 1,
+          "bound": [
+            -14.784779236085923,
+            -14.784779235674922
+          ],
+          "seconds": 0.0985748999810312,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 1.1181958519796455,
+          "site": 0,
+          "bound": [
+            -11.847459484830054,
+            -11.847459484440684
+          ],
+          "seconds": 0.09634500002721325,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 1.8644601470127515,
+          "site": 1,
+          "bound": [
+            -6.846362387700102,
+            -6.846362386984255
+          ],
+          "seconds": 0.09370450000278652,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999491218343086,
+          "site": 0,
+          "bound": [
+            -6.8432709620478045,
+            -6.84327096128352
+          ],
+          "seconds": 0.09549199999310076,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -22.350746083069332,
+            -22.350746082479667
+          ],
+          "seconds": 0.44108540000161156,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 4,
+          "bracket_expansions": 0,
+          "decimal_counts": 4
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999491218343086,
+          "site": 1,
+          "bound": [
+            -6.019378361740387,
+            -6.019378360957283
+          ],
+          "seconds": 0.0967172000091523,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -22.350746083069332,
+            -22.350746082479667
+          ],
+          "seconds": 0.4118233000044711,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 4,
+          "bracket_expansions": 0,
+          "decimal_counts": 4
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -6.843017593700427,
+            -6.843017592936119
+          ],
+          "seconds": 0.09553880000021309,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n128_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -6.019070204967468,
+            -6.01907020418434
+          ],
+          "seconds": 0.09399900000425987,
+          "n": 128,
+          "half_bandwidth": 11,
+          "input_band_bytes": 36864,
+          "factor_interval_bytes": 24576,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 128,
+      "half_bandwidth": 11,
+      "input_band_bytes": 36864,
+      "factor_interval_bytes": 24576,
+      "successful_counts": 224,
+      "rejected_counts": 9,
+      "bracket_expansions": 0,
+      "decimal_counts": 9
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n256_r2_s2_seed6400_sparse.npz",
+      "artifact_sha256": "5125fa306062f8b1a0fe103dff876705eccbe62add6d1b79a50133ba42a1fd6c",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.07223601803396437,
+      "upper": 0.07224601810781374,
+      "gap": 1.0000073849367188e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.32637983560562134,
+          "upper": 0.07224601810781374,
+          "site": 0
+        },
+        {
+          "left": 0.32637983560562134,
+          "right": 2.0,
+          "upper": 0.07224502850870619,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.32633601453495026,
+        1.9997725788626035
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.32633601453495026,
+          "dual_prices": [
+            0.15183492861708758,
+            0.32633601453495026
+          ],
+          "lower": 0.07223645432002888,
+          "site_lower_bounds": [
+            0.07223645432002888,
+            0.2532987234919996
+          ]
+        },
+        {
+          "left": 0.32633601453495026,
+          "right": 1.9997725788626035,
+          "dual_prices": [
+            1.0664416004198585,
+            1.0129890811391402
+          ],
+          "lower": 0.07223614342219696,
+          "site_lower_bounds": [
+            0.07223614342219696,
+            0.568152733414962
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.2538823258856358e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -5.745004754635893,
+            -5.745004754488283
+          ],
+          "seconds": 0.05613760001142509,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -5.745004754635893,
+            -5.745004754488283
+          ],
+          "seconds": 0.06588529999135062,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.32633601453495026,
+          "site": 0,
+          "bound": [
+            -5.064313038210669,
+            -5.06431303807685
+          ],
+          "seconds": 0.05521069999667816,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.15183492861708758,
+          "site": 0,
+          "bound": [
+            -5.356061673966242,
+            -5.356061673825049
+          ],
+          "seconds": 0.06210600002668798,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.32637983560562134,
+          "site": 0,
+          "bound": [
+            -5.064242191067076,
+            -5.06424219093326
+          ],
+          "seconds": 0.055258800013689324,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.32633601453495026,
+          "site": 1,
+          "bound": [
+            -4.81101431458484,
+            -4.811014314460488
+          ],
+          "seconds": 0.06857060000766069,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 0.32637983560562134,
+          "site": 1,
+          "bound": [
+            -4.810896208000595,
+            -4.8108962078762465
+          ],
+          "seconds": 0.05531739999423735,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 1.0129890811391402,
+          "site": 1,
+          "bound": [
+            -3.5459770762566425,
+            -3.5459770761582456
+          ],
+          "seconds": 0.055411400011507794,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 1.0664416004198585,
+          "site": 0,
+          "bound": [
+            -3.967926637182277,
+            -3.9679266370732824
+          ],
+          "seconds": 0.055754899978637695,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 1.9997725788626035,
+          "site": 0,
+          "bound": [
+            -2.748629275167214,
+            -2.748629274967995
+          ],
+          "seconds": 0.06693200001609512,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 1.9997725788626035,
+          "site": 1,
+          "bound": [
+            -2.2546381028427507,
+            -2.2546381026477094
+          ],
+          "seconds": 0.055863299989141524,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.748346936023436,
+            -2.748346935824189
+          ],
+          "seconds": 0.0563716999895405,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.254356024464749,
+            -2.254356024269681
+          ],
+          "seconds": 0.05592319997958839,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 256,
+      "half_bandwidth": 16,
+      "input_band_bytes": 104448,
+      "factor_interval_bytes": 69632,
+      "successful_counts": 52,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n256_r2_s2_seed6401_sparse.npz",
+      "artifact_sha256": "4089825183887a54d29f01146062a451cab32541b29fb2665214f92415b3164d",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.14373940887148748,
+      "upper": 0.1437494089271452,
+      "gap": 1.0000055657710673e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.7490566223859787,
+          "upper": 0.1437494089271452,
+          "site": 0
+        },
+        {
+          "left": 0.7490566223859787,
+          "right": 2.0,
+          "upper": 0.14374748441438226,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.7490402194519042,
+        1.9997952472494107
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.7490402194519042,
+          "dual_prices": [
+            0.5408380155558484,
+            0.5516565180660067
+          ],
+          "lower": 0.14374049455666513,
+          "site_lower_bounds": [
+            0.14374049455666513,
+            0.19029166334407407
+          ]
+        },
+        {
+          "left": 0.7490402194519042,
+          "right": 1.9997952472494107,
+          "dual_prices": [
+            1.1148792085617942,
+            1.4616214538720635
+          ],
+          "lower": 0.14373953875848808,
+          "site_lower_bounds": [
+            0.14373953875848808,
+            0.3935970960823005
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.2988700059946012e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -6.191539467731305,
+            -6.191539467577432
+          ],
+          "seconds": 0.05452760000480339,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -6.191539467731305,
+            -6.191539467577432
+          ],
+          "seconds": 0.054652599996188655,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.5408380155558484,
+          "site": 0,
+          "bound": [
+            -4.699824641813893,
+            -4.699824641691728
+          ],
+          "seconds": 0.055384599982062355,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.7490402194519042,
+          "site": 1,
+          "bound": [
+            -4.203071576686338,
+            -4.203071576579487
+          ],
+          "seconds": 0.05740180000429973,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.7490566223859787,
+          "site": 0,
+          "bound": [
+            -4.324617404721694,
+            -4.324617404610461
+          ],
+          "seconds": 0.05540300000575371,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.7490566223859787,
+          "site": 1,
+          "bound": [
+            -4.203037338183312,
+            -4.20303733807646
+          ],
+          "seconds": 0.055689599976176396,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.5516565180660067,
+          "site": 1,
+          "bound": [
+            -4.62630964417876,
+            -4.626309644061764
+          ],
+          "seconds": 0.08989000000292435,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 0.7490402194519042,
+          "site": 0,
+          "bound": [
+            -4.324645943525029,
+            -4.324645943413795
+          ],
+          "seconds": 0.09316449999460019,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 1.1148792085617942,
+          "site": 0,
+          "bound": [
+            -3.7156705515831066,
+            -3.715670551480856
+          ],
+          "seconds": 0.05549219998647459,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 1.4616214538720635,
+          "site": 1,
+          "bound": [
+            -3.0248623873117197,
+            -3.024862387189161
+          ],
+          "seconds": 0.05572870001196861,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 1.9997952472494107,
+          "site": 0,
+          "bound": [
+            -2.7340662086374943,
+            -2.734066208439388
+          ],
+          "seconds": 0.054954799998085946,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 1.9997952472494107,
+          "site": 1,
+          "bound": [
+            -2.3790751159202785,
+            -2.3790751157311862
+          ],
+          "seconds": 0.05772579999756999,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.733851573055358,
+            -2.7338515728572266
+          ],
+          "seconds": 0.056509300018660724,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.378837744274714,
+            -2.378837744085596
+          ],
+          "seconds": 0.056131499994080514,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 256,
+      "half_bandwidth": 16,
+      "input_band_bytes": 104448,
+      "factor_interval_bytes": 69632,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n256_r8_s2_seed6400_sparse.npz",
+      "artifact_sha256": "da5a7691cf19d97696eb7e23fedb92c8a741b2db4d065f08946e582cc18481a8",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.3250482068692865,
+      "upper": 0.3250582071137878,
+      "gap": 1.0000244501318091e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.6062200963497162,
+          "upper": 0.3250582071137878,
+          "site": 0
+        },
+        {
+          "left": 0.6062200963497162,
+          "right": 2.0,
+          "upper": 0.3250567218922314,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.6062082242999672,
+        1.999942585400666
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.6062082242999672,
+          "dual_prices": [
+            0.26912682135426724,
+            0.42641192424242275
+          ],
+          "lower": 0.32504964711060674,
+          "site_lower_bounds": [
+            0.32504964711060674,
+            0.9956239228586304
+          ]
+        },
+        {
+          "left": 0.6062082242999672,
+          "right": 1.999942585400666,
+          "dual_prices": [
+            1.1744460675021153,
+            1.1151644646573597
+          ],
+          "lower": 0.3250488647742901,
+          "site_lower_bounds": [
+            0.3250488647742901,
+            1.4824349962934844
+          ]
+        }
+      ],
+      "min_exclusion_margin": 6.579050036426004e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.6062082242999672,
+          "site": 1,
+          "bound": [
+            -15.890363363028294,
+            -15.890363362584582
+          ],
+          "seconds": 0.21797420000075363,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.6062082242999672,
+          "site": 0,
+          "bound": [
+            -16.786750574787757,
+            -16.786750574299784
+          ],
+          "seconds": 0.22412050000275485,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.42641192424242275,
+          "site": 1,
+          "bound": [
+            -17.45712613522959,
+            -17.457126134754876
+          ],
+          "seconds": 0.22908960000495426,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 1.1151644646573597,
+          "site": 1,
+          "bound": [
+            -12.328214462367674,
+            -12.328214461970864
+          ],
+          "seconds": 0.21803890002775006,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.6062200963497162,
+          "site": 0,
+          "bound": [
+            -16.786659845336086,
+            -16.786659844848113
+          ],
+          "seconds": 0.23156309998012148,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.6062200963497162,
+          "site": 1,
+          "bound": [
+            -15.890263825687018,
+            -15.890263825243306
+          ],
+          "seconds": 0.29912869998952374,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 1.999942585400666,
+          "site": 0,
+          "bound": [
+            -8.636945035699135,
+            -8.63694503490217
+          ],
+          "seconds": 0.22975790000054985,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 1.1744460675021153,
+          "site": 0,
+          "bound": [
+            -13.138953809009582,
+            -13.138953808565542
+          ],
+          "seconds": 0.2537249999877531,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 1.999942585400666,
+          "site": 1,
+          "bound": [
+            -7.527784801193816,
+            -7.527784800413572
+          ],
+          "seconds": 0.24193419999210164,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.26912682135426724,
+          "site": 0,
+          "bound": [
+            -19.585110269441984,
+            -19.585110268897026
+          ],
+          "seconds": 0.8806100999936461,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -7.527493689607336,
+            -7.527493688827063
+          ],
+          "seconds": 0.21871919999830425,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -8.636655705979281,
+            -8.636655705182289
+          ],
+          "seconds": 0.5620982999971602,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -22.40389947299787,
+            -22.403899472407417
+          ],
+          "seconds": 2.3842777000099886,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 6,
+          "bracket_expansions": 0,
+          "decimal_counts": 6
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -22.40389947299787,
+            -22.403899472407417
+          ],
+          "seconds": 2.501154500001576,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 6,
+          "bracket_expansions": 0,
+          "decimal_counts": 6
+        }
+      ],
+      "n": 256,
+      "half_bandwidth": 16,
+      "input_band_bytes": 104448,
+      "factor_interval_bytes": 69632,
+      "successful_counts": 224,
+      "rejected_counts": 15,
+      "bracket_expansions": 0,
+      "decimal_counts": 15
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n256_r8_s2_seed6401_sparse.npz",
+      "artifact_sha256": "0df0ab76bc503f4bb4b4a2220ad2df2cbb31a5febf7171d771705f4cdfd26690",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.4700222640474362,
+      "upper": 0.4700322643558757,
+      "gap": 1.0000308439506169e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5677173137664795,
+          "upper": 0.4700322643558757,
+          "site": 0
+        },
+        {
+          "left": 0.5677173137664795,
+          "right": 2.0,
+          "upper": 0.47003016706567463,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.5677106608484387,
+        1.9999630174227065
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.5677106608484387,
+          "dual_prices": [
+            0.2412908795834418,
+            0.2917264936503725
+          ],
+          "lower": 0.47002457373294243,
+          "site_lower_bounds": [
+            0.47002457373294243,
+            0.555958226544547
+          ]
+        },
+        {
+          "left": 0.5677106608484387,
+          "right": 1.9999630174227065,
+          "dual_prices": [
+            1.1118883281058598,
+            1.3767921689049993
+          ],
+          "lower": 0.47002303616049973,
+          "site_lower_bounds": [
+            0.47002303616049973,
+            0.7236225754096778
+          ]
+        }
+      ],
+      "min_exclusion_margin": 7.721130635407469e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -23.39013376464276,
+            -23.39013376402725
+          ],
+          "seconds": 0.9168090000166558,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -23.39013376464276,
+            -23.39013376402725
+          ],
+          "seconds": 0.9535017000162043,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.2412908795834418,
+          "site": 0,
+          "bound": [
+            -20.342199379298368,
+            -20.342199378742283
+          ],
+          "seconds": 0.9640944999991916,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.5677106608484387,
+          "site": 0,
+          "bound": [
+            -17.32481175592535,
+            -17.32481175544272
+          ],
+          "seconds": 0.22581340000033379,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.5677173137664795,
+          "site": 0,
+          "bound": [
+            -17.32475876626975,
+            -17.32475876578713
+          ],
+          "seconds": 0.21741040001506917,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.2917264936503725,
+          "site": 1,
+          "bound": [
+            -19.717420393620447,
+            -19.71742039308565
+          ],
+          "seconds": 0.9169811999890953,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 1.1118883281058598,
+          "site": 0,
+          "bound": [
+            -13.535181585376627,
+            -13.535181584967823
+          ],
+          "seconds": 0.21757780000916682,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.5677106608484387,
+          "site": 1,
+          "bound": [
+            -17.20298285871047,
+            -17.202982858246436
+          ],
+          "seconds": 0.5516627000179142,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 0.5677173137664795,
+          "site": 1,
+          "bound": [
+            -17.202931846339485,
+            -17.20293184587545
+          ],
+          "seconds": 0.6285610999912024,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999630174227065,
+          "site": 0,
+          "bound": [
+            -8.587747693317864,
+            -8.587747692525351
+          ],
+          "seconds": 0.2582068000047002,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999630174227065,
+          "site": 1,
+          "bound": [
+            -8.06126473587579,
+            -8.061264735119332
+          ],
+          "seconds": 0.265270200005034,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -8.587559719809665,
+            -8.587559719017136
+          ],
+          "seconds": 0.2628217000165023,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -8.061056355857598,
+            -8.06105635510112
+          ],
+          "seconds": 0.2802512999915052,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n256_r8_s2_seed6401_sparse.npz",
+          "p": 1.3767921689049993,
+          "site": 1,
+          "bound": [
+            -11.665608564253878,
+            -11.665608563805582
+          ],
+          "seconds": 0.6057431999943219,
+          "n": 256,
+          "half_bandwidth": 16,
+          "input_band_bytes": 104448,
+          "factor_interval_bytes": 69632,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        }
+      ],
+      "n": 256,
+      "half_bandwidth": 16,
+      "input_band_bytes": 104448,
+      "factor_interval_bytes": 69632,
+      "successful_counts": 224,
+      "rejected_counts": 11,
+      "bracket_expansions": 0,
+      "decimal_counts": 11
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n512_r2_s2_seed6400_sparse.npz",
+      "artifact_sha256": "e737e5bc46b10b8fe8fc6bf21dfa7ba66fae0638f62da6189aa6a8ff5a0874af",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.09069024032113635,
+      "upper": 0.0907002403956625,
+      "gap": 1.0000074526159143e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.6707679182291031,
+          "upper": 0.0907002403956625,
+          "site": 0
+        },
+        {
+          "left": 0.6707679182291031,
+          "right": 2.0,
+          "upper": 0.09069962639174102,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.6707301870767474,
+        1.9998610313330316
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.6707301870767474,
+          "dual_prices": [
+            0.2774208597198149,
+            0.2817618844477482
+          ],
+          "lower": 0.09069074318803326,
+          "site_lower_bounds": [
+            0.09069074318803326,
+            0.24465235955084627
+          ]
+        },
+        {
+          "left": 0.6707301870767474,
+          "right": 1.9998610313330316,
+          "dual_prices": [
+            1.242019446198908,
+            1.1582936352257718
+          ],
+          "lower": 0.09069047118032313,
+          "site_lower_bounds": [
+            0.09069047118032313,
+            0.20522209446180104
+          ]
+        }
+      ],
+      "min_exclusion_margin": 2.3085918678111828e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.2774208597198149,
+          "site": 0,
+          "bound": [
+            -5.138370685643015,
+            -5.138370685511133
+          ],
+          "seconds": 0.14472519999253564,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.2817618844477482,
+          "site": 1,
+          "bound": [
+            -4.974063165596275,
+            -4.974063165465878
+          ],
+          "seconds": 0.13358150000567548,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.6707301870767474,
+          "site": 0,
+          "bound": [
+            -4.291692795076088,
+            -4.291692794959536
+          ],
+          "seconds": 0.13669109999318607,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.6707301870767474,
+          "site": 1,
+          "bound": [
+            -4.153476243564149,
+            -4.153476243448906
+          ],
+          "seconds": 0.13335869999718852,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.6707679182291031,
+          "site": 1,
+          "bound": [
+            -4.153411826000223,
+            -4.153411825884982
+          ],
+          "seconds": 0.13180440000724047,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.6707679182291031,
+          "site": 0,
+          "bound": [
+            -4.2916258321195215,
+            -4.291625832002971
+          ],
+          "seconds": 0.13572779999230988,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 1.1582936352257718,
+          "site": 1,
+          "bound": [
+            -3.399913300054969,
+            -3.3999132999503985
+          ],
+          "seconds": 0.1493371999822557,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 1.9998610313330316,
+          "site": 0,
+          "bound": [
+            -2.4200910154412165,
+            -2.4200910152420896
+          ],
+          "seconds": 0.12981030001537874,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 1.242019446198908,
+          "site": 0,
+          "bound": [
+            -3.3965472930897493,
+            -3.396547292983317
+          ],
+          "seconds": 0.14385249998304062,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 1.9998610313330316,
+          "site": 1,
+          "bound": [
+            -2.2644202481235913,
+            -2.2644202479122484
+          ],
+          "seconds": 0.1428009000082966,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.4199327681365665,
+            -2.4199327679374227
+          ],
+          "seconds": 0.16796170000452548,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.2642390738728833,
+            -2.2642390736615225
+          ],
+          "seconds": 0.1427247000101488,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -5.890234694385479,
+            -5.890234694236557
+          ],
+          "seconds": 2.964012400014326,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -5.890234694385479,
+            -5.890234694236557
+          ],
+          "seconds": 2.9726466000138316,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        }
+      ],
+      "n": 512,
+      "half_bandwidth": 22,
+      "input_band_bytes": 282624,
+      "factor_interval_bytes": 188416,
+      "successful_counts": 56,
+      "rejected_counts": 4,
+      "bracket_expansions": 0,
+      "decimal_counts": 4
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n512_r2_s2_seed6401_sparse.npz",
+      "artifact_sha256": "aeefdbfab048267b5dc1d0ed3083fec7608c47d7b1afe7471d07fdacbcaff66e",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.1354744971605367,
+      "upper": 0.13548449723783576,
+      "gap": 1.0000077299066048e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.4397375136613846,
+          "upper": 0.13548449723783576,
+          "site": 0
+        },
+        {
+          "left": 0.4397375136613846,
+          "right": 2.0,
+          "upper": 0.13548341578494763,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.43971817706120014,
+        1.999871720016759
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.43971817706120014,
+          "dual_prices": [
+            0.21639910151940192,
+            0.2178780638432731
+          ],
+          "lower": 0.13547543404346293,
+          "site_lower_bounds": [
+            0.13547543404346293,
+            0.1496554100835352
+          ]
+        },
+        {
+          "left": 0.43971817706120014,
+          "right": 1.999871720016759,
+          "dual_prices": [
+            1.8550937278085156,
+            1.193411944657834
+          ],
+          "lower": 0.1354747404802987,
+          "site_lower_bounds": [
+            0.29209124361432476,
+            0.1354747404802987
+          ]
+        }
+      ],
+      "min_exclusion_margin": 2.4331976200553385e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -6.104333720639188,
+            -6.104333720484748
+          ],
+          "seconds": 0.13208359997952357,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -6.104333720639188,
+            -6.104333720484748
+          ],
+          "seconds": 0.15302490000613034,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.21639910151940192,
+          "site": 0,
+          "bound": [
+            -5.329838896464142,
+            -5.3298388963280425
+          ],
+          "seconds": 0.12917770000058226,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.2178780638432731,
+          "site": 1,
+          "bound": [
+            -5.311291593594319,
+            -5.311291593457849
+          ],
+          "seconds": 0.13127549999626353,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.43971817706120014,
+          "site": 0,
+          "bound": [
+            -4.796481013617214,
+            -4.79648101349334
+          ],
+          "seconds": 0.15265949998865835,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.43971817706120014,
+          "site": 1,
+          "bound": [
+            -4.805860486228148,
+            -4.805860486101588
+          ],
+          "seconds": 0.13469330000225455,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.4397375136613846,
+          "site": 1,
+          "bound": [
+            -4.80582180221197,
+            -4.8058218020854095
+          ],
+          "seconds": 0.14007609998225234,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 0.4397375136613846,
+          "site": 0,
+          "bound": [
+            -4.796441971616267,
+            -4.796441971492395
+          ],
+          "seconds": 0.14927799999713898,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 1.8550937278085156,
+          "site": 0,
+          "bound": [
+            -2.6660032293819538,
+            -2.666003229202165
+          ],
+          "seconds": 0.13494249997893348,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 1.193411944657834,
+          "site": 1,
+          "bound": [
+            -3.6864421362244504,
+            -3.6864421361154256
+          ],
+          "seconds": 0.17860370001289994,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 1.999871720016759,
+          "site": 1,
+          "bound": [
+            -2.7690874967044286,
+            -2.7690874965038823
+          ],
+          "seconds": 0.13398000001325272,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 1.999871720016759,
+          "site": 0,
+          "bound": [
+            -2.4781182249053795,
+            -2.4781182247073708
+          ],
+          "seconds": 0.13494179997360334,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.4779527360117246,
+            -2.4779527358137
+          ],
+          "seconds": 0.15045489999465644,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r2_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.76895237057078,
+            -2.7689523703702177
+          ],
+          "seconds": 0.13060249999398366,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 512,
+      "half_bandwidth": 22,
+      "input_band_bytes": 282624,
+      "factor_interval_bytes": 188416,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n512_r8_s2_seed6400_sparse.npz",
+      "artifact_sha256": "bb5e22b8123ea902cbc0919a291052d35ea7632be00ef4432a2e6742171e0e03",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.3921264201106208,
+      "upper": 0.39213642034250645,
+      "gap": 1.0000231885631818e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.6963111311197281,
+          "upper": 0.39213642034250645,
+          "site": 0
+        },
+        {
+          "left": 0.6963111311197281,
+          "right": 2.0,
+          "upper": 0.39213395541176516,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.6963020046089291,
+        1.999928150941128
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.6963020046089291,
+          "dual_prices": [
+            0.29364684071040936,
+            0.3131050577298416
+          ],
+          "lower": 0.39212821535178216,
+          "site_lower_bounds": [
+            0.39212821535178216,
+            0.6841899275783127
+          ]
+        },
+        {
+          "left": 0.6963020046089291,
+          "right": 1.999928150941128,
+          "dual_prices": [
+            1.1556072247882805,
+            1.6548658521266846
+          ],
+          "lower": 0.39212696260069885,
+          "site_lower_bounds": [
+            0.39212696260069885,
+            0.8389240372626644
+          ]
+        }
+      ],
+      "min_exclusion_margin": 5.424900780259811e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.29364684071040936,
+          "site": 0,
+          "bound": [
+            -19.88810643691715,
+            -19.888106436393592
+          ],
+          "seconds": 0.5154953000019304,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.6963020046089291,
+          "site": 0,
+          "bound": [
+            -16.312291746513285,
+            -16.312291746050704
+          ],
+          "seconds": 0.533372000005329,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.6963020046089291,
+          "site": 1,
+          "bound": [
+            -16.303021641226035,
+            -16.303021640768296
+          ],
+          "seconds": 0.5479832999990322,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.6963111311197281,
+          "site": 0,
+          "bound": [
+            -16.312221254016546,
+            -16.312221253553968
+          ],
+          "seconds": 0.5423715999932028,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.6963111311197281,
+          "site": 1,
+          "bound": [
+            -16.302956790611233,
+            -16.302956790153498
+          ],
+          "seconds": 0.537412800011225,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 1.1556072247882805,
+          "site": 0,
+          "bound": [
+            -13.420699604290716,
+            -13.42069960387209
+          ],
+          "seconds": 0.5663704000180587,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 1.999928150941128,
+          "site": 0,
+          "bound": [
+            -9.218167804326876,
+            -9.21816780353033
+          ],
+          "seconds": 0.5367023999860976,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 1.999928150941128,
+          "site": 1,
+          "bound": [
+            -8.553697040754454,
+            -8.553697039909041
+          ],
+          "seconds": 0.5730522999947425,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.3131050577298416,
+          "site": 1,
+          "bound": [
+            -19.40429480785764,
+            -19.40429480734187
+          ],
+          "seconds": 3.1902085000183433,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 2,
+          "bracket_expansions": 0,
+          "decimal_counts": 2
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -9.217832230478555,
+            -9.217832229681973
+          ],
+          "seconds": 0.5910447999776807,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -8.553362431976588,
+            -8.553362431131138
+          ],
+          "seconds": 0.573015400004806,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 1.6548658521266846,
+          "site": 1,
+          "bound": [
+            -10.257017330849768,
+            -10.257017330182093
+          ],
+          "seconds": 1.9245327000098769,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 1,
+          "bracket_expansions": 0,
+          "decimal_counts": 1
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -23.17396110417604,
+            -23.173961103580336
+          ],
+          "seconds": 4.518056600005366,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 3,
+          "bracket_expansions": 0,
+          "decimal_counts": 3
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6400_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -23.17396110417604,
+            -23.173961103580336
+          ],
+          "seconds": 4.591200800001388,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 3,
+          "bracket_expansions": 0,
+          "decimal_counts": 3
+        }
+      ],
+      "n": 512,
+      "half_bandwidth": 22,
+      "input_band_bytes": 282624,
+      "factor_interval_bytes": 188416,
+      "successful_counts": 224,
+      "rejected_counts": 9,
+      "bracket_expansions": 0,
+      "decimal_counts": 9
+    },
+    {
+      "artifact": "results/sparse_confirmation_v2/grid_n512_r8_s2_seed6401_sparse.npz",
+      "artifact_sha256": "813975c803a30657651ff79c1e02bea96da6b7ab1fbf5b36e85fa65382e67cf0",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.5177046941942434,
+      "upper": 0.517714694504143,
+      "gap": 1.000030989961598e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5323090851306915,
+          "upper": 0.517714694504143,
+          "site": 1
+        },
+        {
+          "left": 0.5323090851306915,
+          "right": 2.0,
+          "upper": 0.5177142520312473,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.5323052233864068,
+        1.9999712871850581
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.5323052233864068,
+          "dual_prices": [
+            0.2934158578291857,
+            0.2656041616267259
+          ],
+          "lower": 0.5177081044730051,
+          "site_lower_bounds": [
+            0.5659289763190677,
+            0.5177081044730051
+          ]
+        },
+        {
+          "left": 0.5323052233864068,
+          "right": 1.9999712871850581,
+          "dual_prices": [
+            1.9999712871850581,
+            1.1947306234281208
+          ],
+          "lower": 0.5177055732287562,
+          "site_lower_bounds": [
+            2.04978277410151,
+            0.5177055732287562
+          ]
+        }
+      ],
+      "min_exclusion_margin": 8.790345128462107e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -23.716296908152877,
+            -23.716296907535103
+          ],
+          "seconds": 0.5622574999870267,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -23.716296908152877,
+            -23.716296907535103
+          ],
+          "seconds": 0.5854697999893688,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.2656041616267259,
+          "site": 1,
+          "bound": [
+            -20.390645101123198,
+            -20.390645100589808
+          ],
+          "seconds": 0.5833159999747295,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.2934158578291857,
+          "site": 0,
+          "bound": [
+            -20.048401437188186,
+            -20.048401436663053
+          ],
+          "seconds": 0.5490487999923062,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.5323052233864068,
+          "site": 0,
+          "bound": [
+            -17.80541434793785,
+            -17.805414347459145
+          ],
+          "seconds": 0.5566146000055596,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.5323052233864068,
+          "site": 1,
+          "bound": [
+            -18.088813172974103,
+            -18.088813172481206
+          ],
+          "seconds": 0.5201673000119627,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.5323090851306915,
+          "site": 0,
+          "bound": [
+            -17.805380881495008,
+            -17.8053808810163
+          ],
+          "seconds": 0.577216400008183,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 0.5323090851306915,
+          "site": 1,
+          "bound": [
+            -18.08878555191252,
+            -18.088785551419623
+          ],
+          "seconds": 0.5176406000100542,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 1.1947306234281208,
+          "site": 1,
+          "bound": [
+            -14.141174819438936,
+            -14.141174819002748
+          ],
+          "seconds": 0.5758916000195313,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999712871850581,
+          "site": 0,
+          "bound": [
+            -8.439690243660598,
+            -8.439690242868508
+          ],
+          "seconds": 0.5413083999883384,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 1.9999712871850581,
+          "site": 1,
+          "bound": [
+            -10.489473018564373,
+            -10.489473017762132
+          ],
+          "seconds": 0.5275743999809492,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -8.439534674764598,
+            -8.439534673972494
+          ],
+          "seconds": 0.5838087000011001,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_confirmation_v2\\grid_n512_r8_s2_seed6401_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -10.489352361647017,
+            -10.48935236084476
+          ],
+          "seconds": 0.5244166000047699,
+          "n": 512,
+          "half_bandwidth": 22,
+          "input_band_bytes": 282624,
+          "factor_interval_bytes": 188416,
+          "successful_counts": 16,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 512,
+      "half_bandwidth": 22,
+      "input_band_bytes": 282624,
+      "factor_interval_bytes": 188416,
+      "successful_counts": 208,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_scaling_v1/grid_n1024_r2_s2_seed6500_sparse.npz",
+      "artifact_sha256": "bad74521665b6cdb54ff30ce390aff424ce89b874a5cd19bb36e5dc862a99893",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.11445594385536015,
+      "upper": 0.11446594393114574,
+      "gap": 1.0000075785596143e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5901506394147873,
+          "upper": 0.11446594393114574,
+          "site": 1
+        },
+        {
+          "left": 0.5901506394147873,
+          "right": 2.0,
+          "upper": 0.11446574086403595,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.590068491626203,
+        1.9993562687748336
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.590068491626203,
+          "dual_prices": [
+            0.16760819426164328,
+            0.15190004068624757
+          ],
+          "lower": 0.11445618065010608,
+          "site_lower_bounds": [
+            0.13910762481066283,
+            0.11445618065010608
+          ]
+        },
+        {
+          "left": 0.590068491626203,
+          "right": 1.9993562687748336,
+          "dual_prices": [
+            1.7756534726746327,
+            1.0346475627279035
+          ],
+          "lower": 0.1144560669154515,
+          "site_lower_bounds": [
+            0.2658809085272988,
+            0.1144560669154515
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.2306009135321094e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -6.041569865653921,
+            -6.041569865502586
+          ],
+          "seconds": 0.43592389998957515,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -6.041569865653921,
+            -6.041569865502586
+          ],
+          "seconds": 0.38789169999654405,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.15190004068624757,
+          "site": 1,
+          "bound": [
+            -5.579302786020858,
+            -5.579302785877348
+          ],
+          "seconds": 0.4045977000205312,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.16760819426164328,
+          "site": 0,
+          "bound": [
+            -5.5186838267144145,
+            -5.518683826571718
+          ],
+          "seconds": 0.3866544999764301,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.590068491626203,
+          "site": 0,
+          "bound": [
+            -4.6645335199702895,
+            -4.664533519845294
+          ],
+          "seconds": 0.3964241000066977,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.5901506394147873,
+          "site": 0,
+          "bound": [
+            -4.664392471214942,
+            -4.6643924710899505
+          ],
+          "seconds": 0.3810794999881182,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.590068491626203,
+          "site": 1,
+          "bound": [
+            -4.690469158102081,
+            -4.690469157974553
+          ],
+          "seconds": 0.42838600001414306,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 0.5901506394147873,
+          "site": 1,
+          "bound": [
+            -4.690318983028514,
+            -4.690318982900988
+          ],
+          "seconds": 0.41544450001674704,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 1.0346475627279035,
+          "site": 1,
+          "bound": [
+            -4.003501611492381,
+            -4.0035016113781365
+          ],
+          "seconds": 0.41797609999775887,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 1.7756534726746327,
+          "site": 0,
+          "bound": [
+            -2.897838440982145,
+            -2.8978384407986093
+          ],
+          "seconds": 0.423867200006498,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 1.9993562687748336,
+          "site": 0,
+          "bound": [
+            -2.644843461099113,
+            -2.6448434608871767
+          ],
+          "seconds": 0.42648140000528656,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 1.9993562687748336,
+          "site": 1,
+          "bound": [
+            -2.8756436684702,
+            -2.8756436682562483
+          ],
+          "seconds": 0.40862210001796484,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.6441231140874435,
+            -2.6441231138754255
+          ],
+          "seconds": 0.4223659000126645,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n1024_r2_s2_seed6500_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -2.874940966765821,
+            -2.8749409665517858
+          ],
+          "seconds": 0.42808849998982623,
+          "n": 1024,
+          "half_bandwidth": 32,
+          "input_band_bytes": 811008,
+          "factor_interval_bytes": 540672,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 1024,
+      "half_bandwidth": 32,
+      "input_band_bytes": 811008,
+      "factor_interval_bytes": 540672,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    },
+    {
+      "artifact": "results/sparse_scaling_v1/grid_n4096_r2_s2_seed6500_sparse.npz",
+      "artifact_sha256": "c95a2e11a6b2656556d6c5d8480a92246a93a524d695a8434fe5a08ac7a87557",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "lower": 0.11261635454987359,
+      "upper": 0.11262635462602778,
+      "gap": 1.0000076154190187e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5746547281742096,
+          "upper": 0.11262635462602778,
+          "site": 0
+        },
+        {
+          "left": 0.5746547281742096,
+          "right": 2.0,
+          "upper": 0.11262448018569905,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.5746212578226327,
+        1.9997483768947995
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.5746212578226327,
+          "dual_prices": [
+            0.26955249628028616,
+            0.23032328634888685
+          ],
+          "lower": 0.1126169178938836,
+          "site_lower_bounds": [
+            0.1126169178938836,
+            0.12392238631474227
+          ]
+        },
+        {
+          "left": 0.5746212578226327,
+          "right": 1.9997483768947995,
+          "dual_prices": [
+            1.494960440938873,
+            1.1681257048350757
+          ],
+          "lower": 0.11261649806192596,
+          "site_lower_bounds": [
+            0.24565787224847166,
+            0.11261649806192596
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.435120523668454e-07,
+      "branches": [
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.0,
+          "site": 0,
+          "bound": [
+            -6.167332011910569,
+            -6.1673320117586155
+          ],
+          "seconds": 4.675486199994339,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.23032328634888685,
+          "site": 1,
+          "bound": [
+            -5.494829106758967,
+            -5.494829106618688
+          ],
+          "seconds": 4.78340690000914,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.5746212578226327,
+          "site": 0,
+          "bound": [
+            -4.792544863357036,
+            -4.792544863230943
+          ],
+          "seconds": 4.87483409998822,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.0,
+          "site": 1,
+          "bound": [
+            -6.167332011910569,
+            -6.1673320117586155
+          ],
+          "seconds": 5.087764700001571,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.26955249628028616,
+          "site": 0,
+          "bound": [
+            -5.412699036494573,
+            -5.41269903635645
+          ],
+          "seconds": 4.977479900000617,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.5746212578226327,
+          "site": 1,
+          "bound": [
+            -4.798707793897769,
+            -4.798707793770449
+          ],
+          "seconds": 5.188405900000362,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.5746547281742096,
+          "site": 0,
+          "bound": [
+            -4.792481178150369,
+            -4.792481178024276
+          ],
+          "seconds": 4.785641499998746,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 1.1681257048350757,
+          "site": 1,
+          "bound": [
+            -3.9377251312946164,
+            -3.937725131179099
+          ],
+          "seconds": 4.694133200013312,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 1.494960440938873,
+          "site": 0,
+          "bound": [
+            -3.392568803148677,
+            -3.3925688029910814
+          ],
+          "seconds": 4.674987000005785,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 0.5746547281742096,
+          "site": 1,
+          "bound": [
+            -4.798648191659284,
+            -4.798648191531965
+          ],
+          "seconds": 5.044220400013728,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 1.9997483768947995,
+          "site": 0,
+          "bound": [
+            -2.811066411897098,
+            -2.8110664116731274
+          ],
+          "seconds": 4.928616999997757,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 1.9997483768947995,
+          "site": 1,
+          "bound": [
+            -3.00172561251506,
+            -3.001725612304315
+          ],
+          "seconds": 4.799998600006802,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 2.0,
+          "site": 0,
+          "bound": [
+            -2.8108011394904833,
+            -2.8108011392664802
+          ],
+          "seconds": 4.129164700018009,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        },
+        {
+          "path": "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\results\\sparse_scaling_v1\\grid_n4096_r2_s2_seed6500_sparse.npz",
+          "p": 2.0,
+          "site": 1,
+          "bound": [
+            -3.001451890629583,
+            -3.0014518904188057
+          ],
+          "seconds": 4.122913300001528,
+          "n": 4096,
+          "half_bandwidth": 64,
+          "input_band_bytes": 6389760,
+          "factor_interval_bytes": 4259840,
+          "successful_counts": 4,
+          "rejected_counts": 0,
+          "bracket_expansions": 0,
+          "decimal_counts": 0
+        }
+      ],
+      "n": 4096,
+      "half_bandwidth": 64,
+      "input_band_bytes": 6389760,
+      "factor_interval_bytes": 4259840,
+      "successful_counts": 56,
+      "rejected_counts": 0,
+      "bracket_expansions": 0,
+      "decimal_counts": 0
+    }
+  ],
+  "parallel_verification_seconds": 28.645637900015572,
+  "workers": 6,
+  "scope": "Outward band LDL and exact-polar menu/packing bounds; exact binary64 arithmetic contract."
+}

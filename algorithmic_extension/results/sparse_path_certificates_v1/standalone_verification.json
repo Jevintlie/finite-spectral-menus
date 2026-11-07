@@ -1,0 +1,45 @@
+{
+  "status": "PASS_STANDALONE_INTERVAL_VERIFICATION",
+  "cases": 4,
+  "rows": [
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_sparse.npz",
+      "lower": 0.06397550069439237,
+      "upper": 0.06398550069439236,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 3.673369110279712e-08,
+      "seconds": 0.36878150000120513
+    },
+    {
+      "artifact": "path_n1024_r2_s2_seed6300_tridiagonal.npz",
+      "lower": 0.06397550069439503,
+      "upper": 0.06398550069439503,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 3.673368843826186e-08,
+      "seconds": 0.36869790000491776
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_sparse.npz",
+      "lower": 0.08531048014390094,
+      "upper": 0.08532048014390094,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.0476692881289384e-07,
+      "seconds": 1.4382919000054244
+    },
+    {
+      "artifact": "path_n4096_r2_s2_seed6300_tridiagonal.npz",
+      "lower": 0.08531048014390272,
+      "upper": 0.08532048014390271,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.04766927036537e-07,
+      "seconds": 1.4495536000176799
+    }
+  ],
+  "solver_imported": false,
+  "source_sha256": {
+    "check_sparse_certificates.py": "0b9081551e0c434326f8bc73336acdd65770fda17c5c782924c38fe7dce5efd1",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08",
+    "tridiagonal_verifier.py": "e45386ef3e8098310b6d1e0875c7c813dd54fc53b3a2dba730c0bcaa3e6a5722"
+  },
+  "scope": "Continuous-price global bounds under the documented IEEE-754/input contract; not a novelty assessment."
+}

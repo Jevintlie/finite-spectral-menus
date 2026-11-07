@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "release": "v7",
+  "checked_on": "2026-11-07",
+  "pages": 22,
+  "archive_hashes": {
+    "paper2_algorithmic_research_v7.zip": "f2a92d9dcd769e9e9d88e45c79272e50c67a8a98f84bf44d66a3c20c3259d3da",
+    "paper2_algorithmic_arxiv_source_v7.zip": "f59ae8114492ffbbe14a5d531e217df419e33e904db5f701ebde645c542bab75",
+    "paper2_journal_source_v7.zip": "07c865499d41efd843bc1f17570e442da02d55a4e9ecde065a8bedc1954fab2c"
+  },
+  "manuscript_pdf_sha256": "c513ab968cbd98c7ddfcb2e704feb7f4aa44e1a7c71bbb2275eaa1bc34d169d9",
+  "frozen_files_checked": 214,
+  "scientific_text_and_inputs_unchanged_from_v6": true,
+  "v6_archives_unchanged": true,
+  "clean_validation_commands": 11,
+  "author_fields_supplied": true,
+  "licenses_authorized": true,
+  "new_performance_benchmarks": false,
+  "independent_review": "Prepared; no reviewer contacted or response received",
+  "public_artifact_url": null,
+  "arxiv_submission": "Not performed",
+  "submission_ready": false,
+  "pending": [
+    "Final author approval",
+    "Prior/concurrent submission confirmation",
+    "Live GitHub artifact URL and manuscript update",
+    "Independent criticism",
+    "arXiv account/endorsement/upload"
+  ],
+  "scope": "PASS is a technical preparation gate, not proof, priority, peer review, or public submission."
+}

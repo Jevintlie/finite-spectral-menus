@@ -1,0 +1,1 @@
+{"case": "mirror", "K": 1, "method": "reused", "loss": 0.5730211031151624, "verified_upper": 0.5730211031151738, "seconds": 0.00458039999648463, "target": 0.5730311031151624, "eigen_calls": 35}

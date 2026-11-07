@@ -1,0 +1,14 @@
+Copyright (c) 2026 Jevint Felixciano
+
+Except for software and third-party material as described in LICENSE.md,
+the manuscript, documentation, figures, and author-generated results are
+licensed under the Creative Commons Attribution 4.0 International License.
+
+License identifier: CC-BY-4.0
+License summary: https://creativecommons.org/licenses/by/4.0/
+Full legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This notice incorporates the linked legal terms; it is not a replacement
+for those terms. To the extent rights exist, credit Jevint Felixciano,
+identify the paper and version, link the license, and indicate modifications.
+No endorsement of modified work is implied.

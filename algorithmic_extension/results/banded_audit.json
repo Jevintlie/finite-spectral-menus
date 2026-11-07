@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "grid_certificate_artifacts": 14,
+  "max_n": 4096,
+  "max_gap": 1.000030989961598e-05,
+  "decimal_counts": 57,
+  "binary64_only_large_cases": true,
+  "exact_count_checks_per_arithmetic": 144,
+  "retained_failure": true
+}

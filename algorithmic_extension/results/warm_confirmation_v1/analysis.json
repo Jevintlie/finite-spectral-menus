@@ -1,0 +1,928 @@
+{
+  "status": "PASS",
+  "runs": 198,
+  "failures": [],
+  "saved_menu_checks": [
+    {
+      "artifact": "mirror_K2_hybrid_brent.npz",
+      "independent_max": 0.041433827805190226,
+      "grid_max": 0.041433827805190226
+    },
+    {
+      "artifact": "mirror_K2_reused.npz",
+      "independent_max": 0.04143382769704962,
+      "grid_max": 0.04143382769704962
+    },
+    {
+      "artifact": "mirror_K2_warm_brent.npz",
+      "independent_max": 0.041433827805190226,
+      "grid_max": 0.041433827805190226
+    },
+    {
+      "artifact": "mirror_K4_hybrid_brent.npz",
+      "independent_max": 0.010302130804897836,
+      "grid_max": 0.010302130804897836
+    },
+    {
+      "artifact": "mirror_K4_reused.npz",
+      "independent_max": 0.010302130419196143,
+      "grid_max": 0.010302130419196143
+    },
+    {
+      "artifact": "mirror_K4_warm_brent.npz",
+      "independent_max": 0.010302130804897836,
+      "grid_max": 0.010302130804897836
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K2_hybrid_brent.npz",
+      "independent_max": 0.08331079749645909,
+      "grid_max": 0.08331079749645909
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K2_reused.npz",
+      "independent_max": 0.08331079805821595,
+      "grid_max": 0.08331079805821595
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K2_warm_brent.npz",
+      "independent_max": 0.08331079749645909,
+      "grid_max": 0.08331079749645909
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K4_hybrid_brent.npz",
+      "independent_max": 0.020930731816505954,
+      "grid_max": 0.020930731816505954
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K4_reused.npz",
+      "independent_max": 0.020930731475624853,
+      "grid_max": 0.020930731475624853
+    },
+    {
+      "artifact": "n16_r4_s3_seed5400_K4_warm_brent.npz",
+      "independent_max": 0.020930731816505954,
+      "grid_max": 0.020930731816505954
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K2_hybrid_brent.npz",
+      "independent_max": 0.21297332744929065,
+      "grid_max": 0.21297332744929065
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K2_reused.npz",
+      "independent_max": 0.21297332603480612,
+      "grid_max": 0.21297332603480612
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K2_warm_brent.npz",
+      "independent_max": 0.21297332744929065,
+      "grid_max": 0.21297332744929065
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K4_hybrid_brent.npz",
+      "independent_max": 0.04615706858758095,
+      "grid_max": 0.04615706858758095
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K4_reused.npz",
+      "independent_max": 0.04615706926533214,
+      "grid_max": 0.046157068056636774
+    },
+    {
+      "artifact": "n16_r4_s3_seed5401_K4_warm_brent.npz",
+      "independent_max": 0.046157069345918345,
+      "grid_max": 0.04615706858758095
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K2_hybrid_brent.npz",
+      "independent_max": 0.2593918606066268,
+      "grid_max": 0.2593918606066268
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K2_reused.npz",
+      "independent_max": 0.25939185804123355,
+      "grid_max": 0.25939185804123355
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K2_warm_brent.npz",
+      "independent_max": 0.2593918606066268,
+      "grid_max": 0.2593918606066268
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K4_hybrid_brent.npz",
+      "independent_max": 0.06495000891305125,
+      "grid_max": 0.06495000891305125
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K4_reused.npz",
+      "independent_max": 0.0649500067593749,
+      "grid_max": 0.06495000602024348
+    },
+    {
+      "artifact": "n32_r8_s6_seed5400_K4_warm_brent.npz",
+      "independent_max": 0.06495000891305125,
+      "grid_max": 0.06495000891305125
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K2_hybrid_brent.npz",
+      "independent_max": 0.30118118467059674,
+      "grid_max": 0.30118118467059674
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K2_reused.npz",
+      "independent_max": 0.3011811837333198,
+      "grid_max": 0.3011811837333198
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K2_warm_brent.npz",
+      "independent_max": 0.30118118467059674,
+      "grid_max": 0.30118118467059674
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K4_hybrid_brent.npz",
+      "independent_max": 0.07792319308293294,
+      "grid_max": 0.0779231930696227
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K4_reused.npz",
+      "independent_max": 0.07792319440370221,
+      "grid_max": 0.07792319440370221
+    },
+    {
+      "artifact": "n32_r8_s6_seed5401_K4_warm_brent.npz",
+      "independent_max": 0.07792319308293294,
+      "grid_max": 0.0779231930696227
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K2_hybrid_brent.npz",
+      "independent_max": 0.6161194675145083,
+      "grid_max": 0.6161194675145083
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K2_reused.npz",
+      "independent_max": 0.6161194705782833,
+      "grid_max": 0.6161194705782833
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K2_warm_brent.npz",
+      "independent_max": 0.6161194675145083,
+      "grid_max": 0.6161194675145083
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K4_hybrid_brent.npz",
+      "independent_max": 0.15496952375944772,
+      "grid_max": 0.15496952375944772
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K4_reused.npz",
+      "independent_max": 0.15496952545903753,
+      "grid_max": 0.15496952545903753
+    },
+    {
+      "artifact": "n64_r16_s3_seed5400_K4_warm_brent.npz",
+      "independent_max": 0.15496952375944772,
+      "grid_max": 0.15496952375944772
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K2_hybrid_brent.npz",
+      "independent_max": 0.6523935920804078,
+      "grid_max": 0.6523935920804078
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K2_reused.npz",
+      "independent_max": 0.6523935879227878,
+      "grid_max": 0.6523935879227878
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K2_warm_brent.npz",
+      "independent_max": 0.6523935920804078,
+      "grid_max": 0.6523935920804078
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K4_hybrid_brent.npz",
+      "independent_max": 0.16396627286618326,
+      "grid_max": 0.16396627275540254
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K4_reused.npz",
+      "independent_max": 0.16396627337017122,
+      "grid_max": 0.16396627274698972
+    },
+    {
+      "artifact": "n64_r16_s3_seed5401_K4_warm_brent.npz",
+      "independent_max": 0.16396627286618326,
+      "grid_max": 0.16396627275540254
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K2_hybrid_brent.npz",
+      "independent_max": 0.14983243880605635,
+      "grid_max": 0.14983243880605635
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K2_reused.npz",
+      "independent_max": 0.1498324411942722,
+      "grid_max": 0.1498324411942722
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K2_warm_brent.npz",
+      "independent_max": 0.14983243880605635,
+      "grid_max": 0.14983243880605635
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K4_hybrid_brent.npz",
+      "independent_max": 0.037604636529597,
+      "grid_max": 0.037604636529597
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K4_reused.npz",
+      "independent_max": 0.037604636565969685,
+      "grid_max": 0.03760463391235902
+    },
+    {
+      "artifact": "n64_r4_s3_seed5400_K4_warm_brent.npz",
+      "independent_max": 0.037604636529597,
+      "grid_max": 0.037604636529597
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K2_hybrid_brent.npz",
+      "independent_max": 0.16905210902296552,
+      "grid_max": 0.16905210902296552
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K2_reused.npz",
+      "independent_max": 0.16905211175688883,
+      "grid_max": 0.16905211175688883
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K2_warm_brent.npz",
+      "independent_max": 0.16905210902296552,
+      "grid_max": 0.16905210902296552
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K4_hybrid_brent.npz",
+      "independent_max": 0.04129260446842409,
+      "grid_max": 0.04129260446842409
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K4_reused.npz",
+      "independent_max": 0.04129260375803412,
+      "grid_max": 0.04129260375803412
+    },
+    {
+      "artifact": "n64_r4_s3_seed5401_K4_warm_brent.npz",
+      "independent_max": 0.04129260446842409,
+      "grid_max": 0.04129260446842409
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K2_hybrid_brent.npz",
+      "independent_max": 0.08657375769923625,
+      "grid_max": 0.08657375769923625
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K2_reused.npz",
+      "independent_max": 0.08657375793945477,
+      "grid_max": 0.08657375793945477
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K2_warm_brent.npz",
+      "independent_max": 0.08657375769923625,
+      "grid_max": 0.08657375769923625
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K4_hybrid_brent.npz",
+      "independent_max": 0.021322864778071438,
+      "grid_max": 0.02132286459195587
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K4_reused.npz",
+      "independent_max": 0.021322865541456792,
+      "grid_max": 0.021322864466754243
+    },
+    {
+      "artifact": "n8_r1_s1_seed5400_K4_warm_brent.npz",
+      "independent_max": 0.021322864778071438,
+      "grid_max": 0.02132286459195587
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K2_hybrid_brent.npz",
+      "independent_max": 0.052410766701845635,
+      "grid_max": 0.052410766701845635
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K2_reused.npz",
+      "independent_max": 0.05241076678562262,
+      "grid_max": 0.05241076678562262
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K2_warm_brent.npz",
+      "independent_max": 0.052410766701845635,
+      "grid_max": 0.052410766701845635
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K4_hybrid_brent.npz",
+      "independent_max": 0.013056538960464437,
+      "grid_max": 0.013056537379420252
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K4_reused.npz",
+      "independent_max": 0.013056538794598671,
+      "grid_max": 0.01305653826953046
+    },
+    {
+      "artifact": "n8_r1_s1_seed5401_K4_warm_brent.npz",
+      "independent_max": 0.013056538960464437,
+      "grid_max": 0.013056537379420252
+    }
+  ],
+  "paired_cells": [
+    {
+      "case": "mirror",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 1.081406075797986e-10,
+      "reference_seconds": 0.31040800001937896,
+      "reused_seconds": 0.16223479999462143,
+      "reference_over_reused": 1.9133256245248857,
+      "reference_eigen_calls": 1790,
+      "reused_eigen_calls": 1552,
+      "reference_fallbacks": 4,
+      "reused_retained_bytes": 164864
+    },
+    {
+      "case": "mirror",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 1.081406075797986e-10,
+      "reference_seconds": 0.2508627999923192,
+      "reused_seconds": 0.16223479999462143,
+      "reference_over_reused": 1.546294629762764,
+      "reference_eigen_calls": 1790,
+      "reused_eigen_calls": 1552,
+      "reference_fallbacks": 4,
+      "reused_retained_bytes": 164864
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 3.8570169280660593e-10,
+      "reference_seconds": 0.6508905999944545,
+      "reused_seconds": 0.36827960002119653,
+      "reference_over_reused": 1.767381630579028,
+      "reference_eigen_calls": 3922,
+      "reused_eigen_calls": 3558,
+      "reference_fallbacks": 3,
+      "reused_retained_bytes": 358784
+    },
+    {
+      "case": "mirror",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 3.8570169280660593e-10,
+      "reference_seconds": 0.5486500000115484,
+      "reused_seconds": 0.36827960002119653,
+      "reference_over_reused": 1.4897648416582687,
+      "reference_eigen_calls": 3922,
+      "reused_eigen_calls": 3558,
+      "reference_fallbacks": 3,
+      "reused_retained_bytes": 358784
+    },
+    {
+      "case": "n16_r4_s3_seed5400",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 5.617568632487746e-10,
+      "reference_seconds": 0.5054249000095297,
+      "reused_seconds": 0.2679475999902934,
+      "reference_over_reused": 1.886282616555771,
+      "reference_eigen_calls": 2413,
+      "reused_eigen_calls": 1966,
+      "reference_fallbacks": 12,
+      "reused_retained_bytes": 5350144
+    },
+    {
+      "case": "n16_r4_s3_seed5400",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 5.617568632487746e-10,
+      "reference_seconds": 0.42036519999965094,
+      "reused_seconds": 0.2679475999902934,
+      "reference_over_reused": 1.56883360782063,
+      "reference_eigen_calls": 2413,
+      "reused_eigen_calls": 1966,
+      "reference_fallbacks": 12,
+      "reused_retained_bytes": 5350144
+    },
+    {
+      "case": "n16_r4_s3_seed5400",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 3.4088110112406866e-10,
+      "reference_seconds": 1.2187159000022803,
+      "reused_seconds": 0.6744305999891367,
+      "reference_over_reused": 1.807029366730855,
+      "reference_eigen_calls": 6040,
+      "reused_eigen_calls": 4980,
+      "reference_fallbacks": 28,
+      "reused_retained_bytes": 13648384
+    },
+    {
+      "case": "n16_r4_s3_seed5400",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 3.4088110112406866e-10,
+      "reference_seconds": 1.0396917999896687,
+      "reused_seconds": 0.6744305999891367,
+      "reference_over_reused": 1.541584560377918,
+      "reference_eigen_calls": 6040,
+      "reused_eigen_calls": 4980,
+      "reference_fallbacks": 28,
+      "reused_retained_bytes": 13648384
+    },
+    {
+      "case": "n16_r4_s3_seed5401",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 1.414484529504989e-09,
+      "reference_seconds": 0.7125923999992665,
+      "reused_seconds": 0.3510731999995187,
+      "reference_over_reused": 2.029754478553884,
+      "reference_eigen_calls": 3001,
+      "reused_eigen_calls": 2459,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 6740864
+    },
+    {
+      "case": "n16_r4_s3_seed5401",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 1.414484529504989e-09,
+      "reference_seconds": 0.5521383000013884,
+      "reused_seconds": 0.3510731999995187,
+      "reference_over_reused": 1.5727156046150643,
+      "reference_eigen_calls": 3001,
+      "reused_eigen_calls": 2459,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 6740864
+    },
+    {
+      "case": "n16_r4_s3_seed5401",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 8.058087530571356e-11,
+      "reference_seconds": 1.4704184000147507,
+      "reused_seconds": 0.7550862000207417,
+      "reference_over_reused": 1.9473517063010282,
+      "reference_eigen_calls": 6575,
+      "reused_eigen_calls": 5348,
+      "reference_fallbacks": 31,
+      "reused_retained_bytes": 14637568
+    },
+    {
+      "case": "n16_r4_s3_seed5401",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 6.777494121479322e-10,
+      "reference_seconds": 1.1932196999841835,
+      "reused_seconds": 0.7550862000207417,
+      "reference_over_reused": 1.5802430238447036,
+      "reference_eigen_calls": 6575,
+      "reused_eigen_calls": 5348,
+      "reference_fallbacks": 31,
+      "reused_retained_bytes": 14637568
+    },
+    {
+      "case": "n32_r8_s6_seed5400",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 2.56538967846609e-09,
+      "reference_seconds": 1.3388314000039827,
+      "reused_seconds": 0.7900720000034198,
+      "reference_over_reused": 1.6945688494190245,
+      "reference_eigen_calls": 4522,
+      "reused_eigen_calls": 3932,
+      "reference_fallbacks": 15,
+      "reused_retained_bytes": 41499648
+    },
+    {
+      "case": "n32_r8_s6_seed5400",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 2.56538967846609e-09,
+      "reference_seconds": 1.064661000011256,
+      "reused_seconds": 0.7900720000034198,
+      "reference_over_reused": 1.347549337284004,
+      "reference_eigen_calls": 4522,
+      "reused_eigen_calls": 3932,
+      "reference_fallbacks": 15,
+      "reused_retained_bytes": 41499648
+    },
+    {
+      "case": "n32_r8_s6_seed5400",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 2.1536763483709365e-09,
+      "reference_seconds": 3.151838100020541,
+      "reused_seconds": 2.0138440000009723,
+      "reference_over_reused": 1.5650855279847988,
+      "reference_eigen_calls": 11204,
+      "reused_eigen_calls": 10052,
+      "reference_fallbacks": 30,
+      "reused_retained_bytes": 54592256
+    },
+    {
+      "case": "n32_r8_s6_seed5400",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 2.1536763483709365e-09,
+      "reference_seconds": 2.6524570000183303,
+      "reused_seconds": 2.0138440000009723,
+      "reference_over_reused": 1.317111454520335,
+      "reference_eigen_calls": 11190,
+      "reused_eigen_calls": 10052,
+      "reference_fallbacks": 30,
+      "reused_retained_bytes": 54592256
+    },
+    {
+      "case": "n32_r8_s6_seed5401",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 9.372840281685058e-10,
+      "reference_seconds": 1.4134882000216749,
+      "reused_seconds": 0.8119275000062771,
+      "reference_over_reused": 1.740904452689122,
+      "reference_eigen_calls": 4775,
+      "reused_eigen_calls": 4115,
+      "reference_fallbacks": 17,
+      "reused_retained_bytes": 42171136
+    },
+    {
+      "case": "n32_r8_s6_seed5401",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 9.372840281685058e-10,
+      "reference_seconds": 1.0908889999845996,
+      "reused_seconds": 0.8119275000062771,
+      "reference_over_reused": 1.3435793220160246,
+      "reference_eigen_calls": 4775,
+      "reused_eigen_calls": 4115,
+      "reference_fallbacks": 17,
+      "reused_retained_bytes": 42171136
+    },
+    {
+      "case": "n32_r8_s6_seed5401",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 1.3207728244424288e-09,
+      "reference_seconds": 2.9954316000221297,
+      "reused_seconds": 1.9800156000128482,
+      "reference_over_reused": 1.5128323231406322,
+      "reference_eigen_calls": 11591,
+      "reused_eigen_calls": 10243,
+      "reference_fallbacks": 33,
+      "reused_retained_bytes": 54983424
+    },
+    {
+      "case": "n32_r8_s6_seed5401",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 1.3207728244424288e-09,
+      "reference_seconds": 2.591178399976343,
+      "reused_seconds": 1.9800156000128482,
+      "reference_over_reused": 1.3086656488764679,
+      "reference_eigen_calls": 11558,
+      "reused_eigen_calls": 10243,
+      "reference_fallbacks": 33,
+      "reused_retained_bytes": 54983424
+    },
+    {
+      "case": "n64_r16_s3_seed5400",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 3.0637750114692608e-09,
+      "reference_seconds": 1.8589616999961436,
+      "reused_seconds": 1.2759436999913305,
+      "reference_over_reused": 1.4569308191331438,
+      "reference_eigen_calls": 3065,
+      "reused_eigen_calls": 2512,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 54255616
+    },
+    {
+      "case": "n64_r16_s3_seed5400",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 3.0637750114692608e-09,
+      "reference_seconds": 1.688156100019114,
+      "reused_seconds": 1.2759436999913305,
+      "reference_over_reused": 1.3230647245882279,
+      "reference_eigen_calls": 3064,
+      "reused_eigen_calls": 2512,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 54255616
+    },
+    {
+      "case": "n64_r16_s3_seed5400",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 1.6996040130834444e-09,
+      "reference_seconds": 4.239828600024339,
+      "reused_seconds": 2.891958699998213,
+      "reference_over_reused": 1.4660750860746934,
+      "reference_eigen_calls": 7239,
+      "reused_eigen_calls": 5868,
+      "reference_fallbacks": 29,
+      "reused_retained_bytes": 81846272
+    },
+    {
+      "case": "n64_r16_s3_seed5400",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 1.6996040130834444e-09,
+      "reference_seconds": 3.8671197000076063,
+      "reused_seconds": 2.891958699998213,
+      "reference_over_reused": 1.3371974157203546,
+      "reference_eigen_calls": 7135,
+      "reused_eigen_calls": 5868,
+      "reference_fallbacks": 29,
+      "reused_retained_bytes": 81846272
+    },
+    {
+      "case": "n64_r16_s3_seed5401",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 4.1576129206077894e-09,
+      "reference_seconds": 1.6568818999803625,
+      "reused_seconds": 1.124638400011463,
+      "reference_over_reused": 1.4732574487617303,
+      "reference_eigen_calls": 2724,
+      "reused_eigen_calls": 2253,
+      "reference_fallbacks": 11,
+      "reused_retained_bytes": 52101120
+    },
+    {
+      "case": "n64_r16_s3_seed5401",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 4.1576129206077894e-09,
+      "reference_seconds": 1.4775610000069719,
+      "reused_seconds": 1.124638400011463,
+      "reference_over_reused": 1.3138098432277536,
+      "reference_eigen_calls": 2724,
+      "reused_eigen_calls": 2253,
+      "reference_fallbacks": 11,
+      "reused_retained_bytes": 52101120
+    },
+    {
+      "case": "n64_r16_s3_seed5401",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 5.039950679019967e-10,
+      "reference_seconds": 4.586125400004676,
+      "reused_seconds": 3.0660493000177667,
+      "reference_over_reused": 1.495776796536866,
+      "reference_eigen_calls": 7801,
+      "reused_eigen_calls": 6113,
+      "reference_fallbacks": 40,
+      "reused_retained_bytes": 83828736
+    },
+    {
+      "case": "n64_r16_s3_seed5401",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 5.039950679019967e-10,
+      "reference_seconds": 4.202047400001902,
+      "reused_seconds": 3.0660493000177667,
+      "reference_over_reused": 1.37050875208613,
+      "reference_eigen_calls": 7675,
+      "reused_eigen_calls": 6113,
+      "reference_fallbacks": 40,
+      "reused_retained_bytes": 83828736
+    },
+    {
+      "case": "n64_r4_s3_seed5400",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 2.388215847304309e-09,
+      "reference_seconds": 1.509934899979271,
+      "reused_seconds": 0.9932792999898084,
+      "reference_over_reused": 1.5201513813836287,
+      "reference_eigen_calls": 2503,
+      "reused_eigen_calls": 1997,
+      "reference_fallbacks": 11,
+      "reused_retained_bytes": 37734400
+    },
+    {
+      "case": "n64_r4_s3_seed5400",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 2.388215847304309e-09,
+      "reference_seconds": 1.3539875999849755,
+      "reused_seconds": 0.9932792999898084,
+      "reference_over_reused": 1.3631489149113127,
+      "reference_eigen_calls": 2503,
+      "reused_eigen_calls": 1997,
+      "reference_fallbacks": 11,
+      "reused_retained_bytes": 37734400
+    },
+    {
+      "case": "n64_r4_s3_seed5400",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 3.638334078459593e-11,
+      "reference_seconds": 3.6979175000160467,
+      "reused_seconds": 2.6317715999903157,
+      "reference_over_reused": 1.4051057850269584,
+      "reference_eigen_calls": 6594,
+      "reused_eigen_calls": 5439,
+      "reference_fallbacks": 27,
+      "reused_retained_bytes": 44898304
+    },
+    {
+      "case": "n64_r4_s3_seed5400",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 3.638334078459593e-11,
+      "reference_seconds": 3.4105229999986477,
+      "reused_seconds": 2.6317715999903157,
+      "reference_over_reused": 1.2959038694737786,
+      "reference_eigen_calls": 6509,
+      "reused_eigen_calls": 5439,
+      "reference_fallbacks": 27,
+      "reused_retained_bytes": 44898304
+    },
+    {
+      "case": "n64_r4_s3_seed5401",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 2.7339233099610283e-09,
+      "reference_seconds": 1.6622715000121389,
+      "reused_seconds": 1.1035647000244353,
+      "reference_over_reused": 1.5062746207588305,
+      "reference_eigen_calls": 2947,
+      "reused_eigen_calls": 2309,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 38354944
+    },
+    {
+      "case": "n64_r4_s3_seed5401",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 2.7339233099610283e-09,
+      "reference_seconds": 1.514271899999585,
+      "reused_seconds": 1.1035647000244353,
+      "reference_over_reused": 1.3721641331641505,
+      "reference_eigen_calls": 2937,
+      "reused_eigen_calls": 2309,
+      "reference_fallbacks": 14,
+      "reused_retained_bytes": 38354944
+    },
+    {
+      "case": "n64_r4_s3_seed5401",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 7.103899690719118e-10,
+      "reference_seconds": 3.3461184999905527,
+      "reused_seconds": 2.4329906000057235,
+      "reference_over_reused": 1.3753109033724509,
+      "reference_eigen_calls": 5976,
+      "reused_eigen_calls": 5044,
+      "reference_fallbacks": 19,
+      "reused_retained_bytes": 44070912
+    },
+    {
+      "case": "n64_r4_s3_seed5401",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 7.103899690719118e-10,
+      "reference_seconds": 3.0525141999823973,
+      "reused_seconds": 2.4329906000057235,
+      "reference_over_reused": 1.2546346048255248,
+      "reference_eigen_calls": 5885,
+      "reused_eigen_calls": 5044,
+      "reference_fallbacks": 19,
+      "reused_retained_bytes": 44070912
+    },
+    {
+      "case": "n8_r1_s1_seed5400",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 2.402189558381451e-10,
+      "reference_seconds": 0.2805348999972921,
+      "reused_seconds": 0.13800930001889355,
+      "reference_over_reused": 2.0327246059424016,
+      "reference_eigen_calls": 1452,
+      "reused_eigen_calls": 1004,
+      "reference_fallbacks": 10,
+      "reused_retained_bytes": 675328
+    },
+    {
+      "case": "n8_r1_s1_seed5400",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 2.402189558381451e-10,
+      "reference_seconds": 0.257492300006561,
+      "reused_seconds": 0.13800930001889355,
+      "reference_over_reused": 1.8657604956427585,
+      "reference_eigen_calls": 1452,
+      "reused_eigen_calls": 1004,
+      "reference_fallbacks": 10,
+      "reused_retained_bytes": 675328
+    },
+    {
+      "case": "n8_r1_s1_seed5400",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 7.633902399106773e-10,
+      "reference_seconds": 0.6338294000015594,
+      "reused_seconds": 0.3458053999929689,
+      "reference_over_reused": 1.832907756832157,
+      "reference_eigen_calls": 3353,
+      "reused_eigen_calls": 2511,
+      "reference_fallbacks": 18,
+      "reused_retained_bytes": 1738112
+    },
+    {
+      "case": "n8_r1_s1_seed5400",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 7.633902399106773e-10,
+      "reference_seconds": 0.6116731000074651,
+      "reused_seconds": 0.3458053999929689,
+      "reference_over_reused": 1.768836172078001,
+      "reference_eigen_calls": 3353,
+      "reused_eigen_calls": 2511,
+      "reference_fallbacks": 18,
+      "reused_retained_bytes": 1738112
+    },
+    {
+      "case": "n8_r1_s1_seed5401",
+      "K": 2,
+      "reference": "warm_brent",
+      "loss_difference": 8.377698534900446e-11,
+      "reference_seconds": 0.2567620000045281,
+      "reused_seconds": 0.12791549999383278,
+      "reference_over_reused": 2.0072782424093045,
+      "reference_eigen_calls": 1337,
+      "reused_eigen_calls": 939,
+      "reference_fallbacks": 9,
+      "reused_retained_bytes": 633728
+    },
+    {
+      "case": "n8_r1_s1_seed5401",
+      "K": 2,
+      "reference": "hybrid_brent",
+      "loss_difference": 8.377698534900446e-11,
+      "reference_seconds": 0.23674320001737215,
+      "reused_seconds": 0.12791549999383278,
+      "reference_over_reused": 1.8507780529238935,
+      "reference_eigen_calls": 1337,
+      "reused_eigen_calls": 939,
+      "reference_fallbacks": 9,
+      "reused_retained_bytes": 633728
+    },
+    {
+      "case": "n8_r1_s1_seed5401",
+      "K": 4,
+      "reference": "warm_brent",
+      "loss_difference": 1.6586620965597376e-10,
+      "reference_seconds": 0.5294660999788903,
+      "reused_seconds": 0.2922502000001259,
+      "reference_over_reused": 1.8116877250337626,
+      "reference_eigen_calls": 2764,
+      "reused_eigen_calls": 2158,
+      "reference_fallbacks": 13,
+      "reused_retained_bytes": 1512192
+    },
+    {
+      "case": "n8_r1_s1_seed5401",
+      "K": 4,
+      "reference": "hybrid_brent",
+      "loss_difference": 1.6586620965597376e-10,
+      "reference_seconds": 0.4981341000238899,
+      "reused_seconds": 0.2922502000001259,
+      "reference_over_reused": 1.7044782177178162,
+      "reference_eigen_calls": 2764,
+      "reused_eigen_calls": 2158,
+      "reference_fallbacks": 13,
+      "reused_retained_bytes": 1512192
+    }
+  ],
+  "new_seed_summaries": {
+    "warm_brent": {
+      "cells": 20,
+      "median": 1.6298271887019116,
+      "minimum": 1.3753109033724509,
+      "maximum": 2.0327246059424016,
+      "losses": []
+    },
+    "hybrid_brent": {
+      "cells": 20,
+      "median": 1.3668288334987215,
+      "minimum": 1.2546346048255248,
+      "maximum": 1.8657604956427585,
+      "losses": []
+    }
+  },
+  "scope": "Declared dense synthetic families, own implementations, repeated timings. Global certificates separate."
+}

@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "archives": {
+    "research": {
+      "name": "paper2_algorithmic_research_v7.zip",
+      "sha256": "f2a92d9dcd769e9e9d88e45c79272e50c67a8a98f84bf44d66a3c20c3259d3da"
+    },
+    "arxiv": {
+      "name": "paper2_algorithmic_arxiv_source_v7.zip",
+      "sha256": "f59ae8114492ffbbe14a5d531e217df419e33e904db5f701ebde645c542bab75"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "verify_distribution.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.496746599999824,
+      "log": "command_0.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "reproduce.py",
+        "--mode",
+        "verify"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 122.01689830000032,
+      "log": "command_1.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "reproduce.py",
+        "--mode",
+        "smoke"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.620325399999274,
+      "log": "command_2.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "manuscript/build.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.8060970999995334,
+      "log": "command_3.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "audit_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.2841651000017009,
+      "log": "command_4.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "audit_sparse_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.08750250000048254,
+      "log": "command_5.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\Downloads\\Research Aima Lecia\\paper2_development\\algorithmic_extension\\.venv\\Scripts\\python.exe",
+        "audit_banded_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.08669149999877845,
+      "log": "command_6.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.8888989000006404,
+      "log": "command_7.log"
+    },
+    {
+      "command": [
+        "bibtex",
+        "main"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.23673980000057782,
+      "log": "command_8.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.8315258999991784,
+      "log": "command_9.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.8310058000006393,
+      "log": "command_10.log"
+    }
+  ],
+  "scope": "Clean extraction and distributed hashes; original 134 menu checks/54 certificate replays; sparse 31 menu checks/8 certificate replays; 14 banded grid certificate replays and both arithmetic paths; structural diagnostics; fresh smoke solve/certificate; both PDF builds. Significance and priority assessed separately."
+}

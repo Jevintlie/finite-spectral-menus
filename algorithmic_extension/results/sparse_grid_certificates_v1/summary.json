@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "cases": 4,
+  "rows": [
+    {
+      "artifact": "grid_n128_r2_s2_seed6400_sparse.npz",
+      "artifact_sha256": "fabd612280a25ce3b3eb7ff91fadb1677881843f75618657d180a535d4e18684",
+      "verifier": "dense",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.17183538855654493,
+      "lower": 0.17182538855654492,
+      "gap": 1.0000000000010001e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.5604772567749023,
+          "upper": 0.17183538855654493,
+          "site": 0
+        },
+        {
+          "left": 0.5604772567749023,
+          "right": 2.0,
+          "upper": 0.17183434753500484,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.5604592121595741,
+        1.999897340207965
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.5604592121595741,
+          "dual_prices": [
+            0.31685373938829453,
+            0.19219374342538315
+          ],
+          "lower": 0.17182591279190437,
+          "site_lower_bounds": [
+            0.17182591279190437,
+            0.1818157158464437
+          ]
+        },
+        {
+          "left": 0.5604592121595741,
+          "right": 1.999897340207965,
+          "dual_prices": [
+            0.8216180820360531,
+            1.2351242729942822
+          ],
+          "lower": 0.1718255031511524,
+          "site_lower_bounds": [
+            0.17462638725150811,
+            0.1718255031511524
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.145946074698756e-07,
+      "seconds": 6.21720740001183
+    },
+    {
+      "artifact": "grid_n128_r2_s2_seed6401_sparse.npz",
+      "artifact_sha256": "f7041ef58ef42d2d41bf8452977f26d1c0b2c0efc4565a9fd366e01c6c304aa9",
+      "verifier": "dense",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.08898684695182536,
+      "lower": 0.08897684695182537,
+      "gap": 9.999999999996123e-06,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.8167952001094818,
+          "upper": 0.08898684695182536,
+          "site": 1
+        },
+        {
+          "left": 0.8167952001094818,
+          "right": 2.0,
+          "upper": 0.08898536024583371,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.8167383426258564,
+        1.9998844851694615
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.8167383426258564,
+          "dual_prices": [
+            0.40129309977781985,
+            0.35262083524530025
+          ],
+          "lower": 0.08897701902472475,
+          "site_lower_bounds": [
+            0.16412168761178322,
+            0.08897701902472475
+          ]
+        },
+        {
+          "left": 0.8167383426258564,
+          "right": 1.9998844851694615,
+          "dual_prices": [
+            1.2772955182577947,
+            1.606667110375104
+          ],
+          "lower": 0.08897697570205619,
+          "site_lower_bounds": [
+            0.08897697570205619,
+            0.0954965984811089
+          ]
+        }
+      ],
+      "min_exclusion_margin": 1.2875023082392634e-07,
+      "seconds": 6.186503400007496
+    },
+    {
+      "artifact": "grid_n128_r8_s2_seed6400_sparse.npz",
+      "artifact_sha256": "0404380aceb0304c6ad9bf9194a9f57140acc41ec21c4b5ee91db2f733518afc",
+      "verifier": "dense",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.45663309979099337,
+      "lower": 0.45662309979099336,
+      "gap": 1.0000000000010001e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.6632248610258102,
+          "upper": 0.45663309979099337,
+          "site": 0
+        },
+        {
+          "left": 0.6632248610258102,
+          "right": 2.0,
+          "upper": 0.45663276410270465,
+          "site": 1
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.6632201091775894,
+        1.9999394292234751
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.6632201091775894,
+          "dual_prices": [
+            0.45660024202435234,
+            0.3074658910899917
+          ],
+          "lower": 0.45662483472483467,
+          "site_lower_bounds": [
+            0.45662483472483467,
+            0.5835197620895122
+          ]
+        },
+        {
+          "left": 0.6632201091775894,
+          "right": 1.9999394292234751,
+          "dual_prices": [
+            1.2195196497092207,
+            1.0950896478428962
+          ],
+          "lower": 0.45662334959573586,
+          "site_lower_bounds": [
+            0.9687064279989545,
+            0.45662334959573586
+          ]
+        }
+      ],
+      "min_exclusion_margin": 2.4980474250257956e-07,
+      "seconds": 6.258527900004992
+    },
+    {
+      "artifact": "grid_n128_r8_s2_seed6401_sparse.npz",
+      "artifact_sha256": "422b8fbc6ec67bc158c99b38209c084e2b944e0d5e2c44ad8c583e51034c5398",
+      "verifier": "dense",
+      "status": "PASS_OUTWARD_BOUNDS",
+      "upper": 0.42028525642052733,
+      "lower": 0.4202752564205273,
+      "gap": 1.0000000000010001e-05,
+      "upper_segments": [
+        {
+          "left": 0.0,
+          "right": 0.7090445905923843,
+          "upper": 0.42028525642052733,
+          "site": 1
+        },
+        {
+          "left": 0.7090445905923843,
+          "right": 2.0,
+          "upper": 0.4202833913134683,
+          "site": 0
+        }
+      ],
+      "witness_points": [
+        0.0,
+        0.7090371444279552,
+        1.9999491218343086
+      ],
+      "pairs": [
+        {
+          "left": 0.0,
+          "right": 0.7090371444279552,
+          "dual_prices": [
+            0.349765803727404,
+            0.3623650557743681
+          ],
+          "lower": 0.4202764391949891,
+          "site_lower_bounds": [
+            0.6288047317276976,
+            0.4202764391949891
+          ]
+        },
+        {
+          "left": 0.7090371444279552,
+          "right": 1.9999491218343086,
+          "dual_prices": [
+            1.1181958519796455,
+            1.8644601470127515
+          ],
+          "lower": 0.4202756275543819,
+          "site_lower_bounds": [
+            0.4202756275543819,
+            0.8304241526966959
+          ]
+        }
+      ],
+      "min_exclusion_margin": 3.7113385459308645e-07,
+      "seconds": 6.382709400000749
+    }
+  ],
+  "source": "results/sparse_confirmation_v2",
+  "arithmetic_contract": "Exact binary64 input matrices; IEEE-754 outward elementary interval arithmetic; see CERTIFICATE_DERIVATION.md.",
+  "source_sha256": {
+    "certify_sparse_artifacts.py": "2b58b96a7245d96741ea4e961f94e67082c2d28681ce61bf1eb4ac5a5042277a",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08",
+    "CERTIFICATE_DERIVATION.md": "08b4f37c1fe1045bbb6b20d34102ae0e395eb2fece6a2c2d2639c55e484ff517",
+    "tridiagonal_verifier.py": "e45386ef3e8098310b6d1e0875c7c813dd54fc53b3a2dba730c0bcaa3e6a5722",
+    "SPARSE_VERIFICATION.md": "c86732964589ede3debd677cab4863a3e50f5eb3b953a30b059e8760c88f1b5c"
+  }
+}

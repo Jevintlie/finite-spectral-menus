@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "brent_reference.py": "731cc39b276234ee151b910446de659aaac965dae4ada90e5f06eac9216fb482",
+    "run_confirmation.py": "0743efea12400f1a322bc6b35c2752b826bf72e5ca4c90cf1fd3d9684c914335",
+    "CONFIRMATION_PROTOCOL.md": "269cbfab21370a1ee3c6557ce9118c36137fe797db708397f4a9eaa403ac1a3e"
+  },
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "started_utc": "2026-10-03T20:24:12Z"
+}

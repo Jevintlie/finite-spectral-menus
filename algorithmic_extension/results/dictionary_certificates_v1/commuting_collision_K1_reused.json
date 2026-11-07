@@ -1,0 +1,35 @@
+{
+  "artifact": "commuting_collision_K1_reused.npz",
+  "artifact_sha256": "f3b9a08fd3ccc5f723dc68065a26c70cb8e457744f7e1f0628811ef99bedfd76",
+  "status": "PASS_OUTWARD_BOUNDS",
+  "upper": 0.500000000000009,
+  "lower": 0.499990000000009,
+  "gap": 1.0000000000010001e-05,
+  "upper_segments": [
+    {
+      "left": 0.0,
+      "right": 1.0,
+      "upper": 0.500000000000009,
+      "site": 0
+    }
+  ],
+  "witness_points": [
+    0.0,
+    0.9999809998477102
+  ],
+  "pairs": [
+    {
+      "left": 0.0,
+      "right": 0.9999809998477102,
+      "dual_prices": [
+        0.49999999464940154
+      ],
+      "lower": 0.49999049439284365,
+      "site_lower_bounds": [
+        0.49999049439284365
+      ]
+    }
+  ],
+  "min_exclusion_margin": 4.943928346712312e-07,
+  "seconds": 0.024230999988503754
+}

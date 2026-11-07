@@ -1,0 +1,70 @@
+\section{Comparison with representative-set and policy-count results}
+\label{app:comparison}
+The affine coefficient representation clarifies both the connection to
+prior work and the precise scope of the structural results. This section
+does not claim that additive regret creates an unrelated optimization
+problem: its supporting-line geometry is shared with established
+representative-set methods.
+
+\paragraph{Convex Pareto approximation.}
+For a finite coefficient menu $Q\subset\mathcal L$,
+\[
+ \min_{z\in Q}\langle(1,p),z\rangle
+ =\min_{z\in\operatorname{conv}Q}\langle(1,p),z\rangle.
+\]
+Thus taking a convex hull \emph{after selecting} the menu does not change
+its value at any price. Allowing its $K$ selected coefficient points to
+come from $\operatorname{conv}\mathcal L$, however, can change the optimum.
+This is the distinction between the representative's feasibility and
+convex evaluation of the selected set. In particular, use of convex
+combinations in a Pareto-approximation definition does not itself distinguish
+that literature from finite-menu evaluation.
+
+Diakonikolas' detailed treatment~\cite[Chapter~5]{diakonikolas2011},
+following~\cite{diakonikolas2008}, compares representatives selected from
+a finite set with representatives allowed in its convex hull. Its
+Section~5.2.2 explicitly recognizes the usefulness of points away from
+the lower convex envelope. Theorems~5.3.3 and~5.3.5 concern multiplicative
+approximation and cardinality with a weighted-optimization oracle;
+Remark~5.3.6 distinguishes objective-space points from recoverable decisions.
+Our separation example is a spectral realization of an established
+obstruction. Our contribution concerns the all-subinterval exactness
+criterion, pure spectral face recovery, and a repair count localized to
+missing-slope prices, with every tied optimal preset retained in
+$\mathcal G$. Merely changing multiplicative to additive error would not
+by itself establish a substantive contribution.
+
+\paragraph{Scalarization and replacement.}
+Weighted-sum approximation factors and supported-solution limitations
+are established in~\cite{bazgan2022,helfrich2024}. The factor-two proof
+here is their elementary endpoint-regret counterpart; the sharp examples
+place that loss inside the specified spectral model. Similarly,
+Magnanti and Stratila~\cite[Lemma~2]{magnanti2012} replace multiplicative
+piecewise-linear approximants with tangent pieces. Our refinement preserves
+an additive tolerance and counts the particular prices at which a
+realizable supporting line is unavailable. Rellich's theorem supplies
+spectral finiteness; neither supporting-line replacement nor analytic
+eigenvalue parameterization originates in this paper.
+
+\paragraph{Robust policy counts.}
+Finite-policy reductions based on convex representation appear in
+\cite[Theorem~1]{hanasusanto2015} and~\cite{buchheim2017}.
+Kurtz~\cite[Theorems~2 and~7]{kurtz2026} gives exactness and approximation
+bounds for objectives concave in the uncertain parameter over a convex
+uncertainty set, within a bounded integer-recourse setting. Here the
+candidate projectors form a continuum and
+$R(P,p)=\alpha(P)+pc(P)-F(p)$ is convex in price, so the required
+concavity is absent in general.
+
+Lifting to the cost vector $(1,p,-F(p))$ does not repair that mismatch:
+its image is generally nonconvex, and convexifying it can change the menu
+objective. For example, the two coordinate presets of Model M have zero
+regret at every actual price. The lifted endpoint vectors are $(1,0,1)$
+and $(1,1,0)$. At their midpoint $(1,1/2,1/2)$, both preset costs equal
+$1/2$. Thus the supremum over the lifted convex hull is at least $1/2$,
+although the original menu regret is zero. These policy-count results
+therefore do not directly supply \eqref{eq:repair} through a minimax swap.
+Conversely, our repair bound provides none of their algorithmic complexity
+guarantees. Continuous hitting and covering, including the farthest-reach
+characterization, already have explicit finite-adaptability treatments
+\cite{cardinal2025}.

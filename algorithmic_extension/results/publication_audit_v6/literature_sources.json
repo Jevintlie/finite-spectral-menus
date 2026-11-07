@@ -1,0 +1,97 @@
+{
+  "scope": "Focused internal proof-and-priority comparison, not exhaustive worldwide novelty certification. Full texts excluded from distribution; passages delimit actual inspection.",
+  "sources": [
+    {
+      "bib_key": "diakonikolas2011",
+      "url": "https://academiccommons.columbia.edu/doi/10.7916/D8SX6MGG/download",
+      "local_research_copy": "resources/priority_20261011/diakonikolas.pdf",
+      "sha256": "2b89f00e33ba32fb460ccb618f52ad7daf9e9d3d371a819574d5bb8c5b6db67b",
+      "passages_inspected": "Chapter 4 definitions and Remark 4.3.2; Chapter 5 sections 5.1-5.3, especially 5.2.2, Theorems 5.3.2-5.3.5, Remark 5.3.6",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "bazgan2022",
+      "url": "https://mediatum.ub.tum.de/doc/1705216/document.pdf",
+      "local_research_copy": "resources/priority_20261011/bazgan.pdf",
+      "sha256": "a43dcf65905d6f60d517e1a70bcc04bb10937cb83ac27e026c764a3b128dc3ee",
+      "passages_inspected": "Proposition 1, Theorem 2 and sharpness discussion",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "helfrich2024",
+      "url": "https://mediatum.ub.tum.de/doc/1761605/1761605.pdf",
+      "local_research_copy": "resources/priority_20261011/helfrich.pdf",
+      "sha256": "49351ad4c27af074fb9c07671f22c24fd786c92d7a5f3ce3405cb8811cdb68a6",
+      "passages_inspected": "Definitions 2.13-2.15; Theorems 4.4 and 5.5",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "magnanti2012",
+      "url": "https://arxiv.org/pdf/1201.3148",
+      "local_research_copy": "resources/priority_20261011/magnanti.pdf",
+      "sha256": "ab49472b8f0b9c738547c9f54bfdb30e62895f5407916777106d82a8084df61a",
+      "passages_inspected": "Section 2.1, Lemma 2 and proof; report number 6-2012 separately checked at https://rutcor.rutgers.edu/2012.html on 2026-10-19",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "hanasusanto2015",
+      "url": "https://optimization-online.org/wp-content/uploads/2014/03/4294.pdf",
+      "local_research_copy": "resources/priority_20261011/hanasusanto.pdf",
+      "sha256": "3c3b66eda3b37e180a01d1d0b71d431f6b5934c80fbc7ec4cd1b9a250adb4311",
+      "passages_inspected": "Theorem 1 and electronic-companion proof",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "buchheim2017",
+      "url": "https://www.lix.polytechnique.fr/~dambrosio/teaching/MPRO/INITREC/Files/ZA4.pdf",
+      "local_research_copy": "resources/priority_20261011/buchheim.pdf",
+      "sha256": "f6b1a69d5f5785c7f011e346f34919bec92015c14df4b6a24f9a9a9ee822dbda",
+      "passages_inspected": "Published full paper: Section 2, Lemma 1, Corollary 1 and Section 3",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "kurtz2026",
+      "url": "https://optimization-online.org/wp-content/uploads/2024/09/main-3.pdf",
+      "local_research_copy": "resources/priority_20261011/kurtz2026.pdf",
+      "sha256": "c382ce0ec75705c5125d84d3476a29e9ddde0130027d55f6f5afcdd123f30643",
+      "passages_inspected": "Definitions and sections 3-4; Theorems 2 and 7. Published full HTML also inspected at https://link.springer.com/article/10.1007/s10107-026-02329-1; this hash identifies the downloaded preprint, not the publisher version",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "cardinal2025",
+      "url": "https://arxiv.org/pdf/2504.16642",
+      "local_research_copy": "resources/priority_20261011/cardinal.pdf",
+      "sha256": "b2c0e568d5a1c73e0f4d29ab319636e8f67b34c2cf7c7f8e6c95c3ff25430d5b",
+      "passages_inspected": "Sections 1-4; Section 4.2, Lemmas 4.2-4.3 in the preprint. Citation uses published MFCS 2025 metadata",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "tantipongpipat2019",
+      "url": "https://arxiv.org/pdf/1902.11281",
+      "local_research_copy": "resources/priority_20261011/fairpca.pdf",
+      "sha256": "ad7027ccb68132545f56b895b53bff607401f29a1ba794355dd5612172ed6dd8",
+      "passages_inspected": "Theorems 1.2-1.3",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "barbarino2022",
+      "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/8fef8017-6bba-463c-b86d-3f25dd8800d7/content",
+      "local_research_copy": "resources/priority_20261011/rellich_published.pdf",
+      "sha256": "0b0f9f76a6a62a57cf597402bfb3927781baeb6b2188952b03efea9207de6feb",
+      "passages_inspected": "Published 2023 version: Theorem 1.1, confirmed again 2026-10-19; stable bibliography key retains 2022",
+      "audit_date": "2026-10-11"
+    },
+    {
+      "bib_key": "shen2026",
+      "url": "https://doi.org/10.1007/s10543-026-01109-9",
+      "local_research_copy": "resources/fair_pca_2026.pdf",
+      "sha256": "8c35340a5daf480050c3108fc8889f23503e23f1e92a4e78ca8bc5cd84947134",
+      "passages_inspected": "Theorem 4.1 and Appendix A.3",
+      "audit_date": "2026-10-11"
+    }
+  ],
+  "excluded_from_audited_list": [
+    "chord.pdf (download alone is not an audit)",
+    "2008 conference full text (comparison uses the complete 2011 thesis)"
+  ]
+}

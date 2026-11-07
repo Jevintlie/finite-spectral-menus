@@ -1,0 +1,188 @@
+{
+  "status": "PASS_STANDALONE_INTERVAL_VERIFICATION",
+  "cases": 22,
+  "rows": [
+    {
+      "artifact": "mirror_K2_reused.npz",
+      "lower": 0.04142382769706117,
+      "upper": 0.04143382769706117,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 3.045629174552866e-08,
+      "seconds": 0.0188860000052955
+    },
+    {
+      "artifact": "mirror_K4_reused.npz",
+      "lower": 0.010292130419207691,
+      "upper": 0.01030213041920769,
+      "gap": 9.999999999999593e-06,
+      "min_exclusion_margin": 1.680269683113078e-08,
+      "seconds": 0.011430700003984384
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K2_reused.npz",
+      "lower": 0.20867821636139502,
+      "upper": 0.20868821636139503,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 2.5919595836310094e-07,
+      "seconds": 0.045140700007323176
+    },
+    {
+      "artifact": "n16_r4_s3_seed5100_K4_reused.npz",
+      "lower": 0.05183840365106247,
+      "upper": 0.051848403651062476,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 1.2642567651793835e-07,
+      "seconds": 0.08270630000333767
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K2_reused.npz",
+      "lower": 0.16603511649220123,
+      "upper": 0.16604511649220124,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 2.9570452608762565e-07,
+      "seconds": 0.045275299999048
+    },
+    {
+      "artifact": "n16_r4_s3_seed5101_K4_reused.npz",
+      "lower": 0.04018579044729316,
+      "upper": 0.04019579044729316,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 6.493297047965862e-08,
+      "seconds": 0.08136759999615606
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K2_reused.npz",
+      "lower": 0.26997562764772776,
+      "upper": 0.26998562764772777,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 3.641903794648904e-07,
+      "seconds": 0.26562549998925533
+    },
+    {
+      "artifact": "n32_r8_s6_seed5100_K4_reused.npz",
+      "lower": 0.07056377529958588,
+      "upper": 0.07057377529958588,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.7454192259569457e-07,
+      "seconds": 0.4305061999912141
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K2_reused.npz",
+      "lower": 0.2699278842881828,
+      "upper": 0.26993788428818283,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 2.8914354671671916e-07,
+      "seconds": 0.26735460000054445
+    },
+    {
+      "artifact": "n32_r8_s6_seed5101_K4_reused.npz",
+      "lower": 0.06812068539216617,
+      "upper": 0.06813068539216617,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.500458480935274e-07,
+      "seconds": 0.5241625999915414
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K2_reused.npz",
+      "lower": 0.6465592297017968,
+      "upper": 0.6465692297017968,
+      "gap": 9.99999999995449e-06,
+      "min_exclusion_margin": 7.216270568877192e-07,
+      "seconds": 0.7521877999970457
+    },
+    {
+      "artifact": "n64_r16_s3_seed5100_K4_reused.npz",
+      "lower": 0.1627859802819703,
+      "upper": 0.16279598028197032,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 3.633640840439156e-07,
+      "seconds": 1.3205657999933464
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K2_reused.npz",
+      "lower": 0.6258576321153233,
+      "upper": 0.6258676321153233,
+      "gap": 9.99999999995449e-06,
+      "min_exclusion_margin": 6.567761766662628e-07,
+      "seconds": 0.7611314000096172
+    },
+    {
+      "artifact": "n64_r16_s3_seed5101_K4_reused.npz",
+      "lower": 0.15509537413208427,
+      "upper": 0.15510537413208428,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 3.308583668149012e-07,
+      "seconds": 1.4274049999949057
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K2_reused.npz",
+      "lower": 0.14821847899345428,
+      "upper": 0.1482284789934543,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 1.835952175843758e-07,
+      "seconds": 0.6972761000070022
+    },
+    {
+      "artifact": "n64_r4_s3_seed5100_K4_reused.npz",
+      "lower": 0.03729599469796836,
+      "upper": 0.037305994697968366,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 9.22367395031487e-08,
+      "seconds": 1.0476552000036463
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K2_reused.npz",
+      "lower": 0.15739842221585362,
+      "upper": 0.15740842221585363,
+      "gap": 1.0000000000010001e-05,
+      "min_exclusion_margin": 1.9084157043547378e-07,
+      "seconds": 0.7204240999999456
+    },
+    {
+      "artifact": "n64_r4_s3_seed5101_K4_reused.npz",
+      "lower": 0.03938939033817197,
+      "upper": 0.039399390338171976,
+      "gap": 1.0000000000003062e-05,
+      "min_exclusion_margin": 9.628631617714101e-08,
+      "seconds": 1.228344899995136
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K2_reused.npz",
+      "lower": 0.11731656173991531,
+      "upper": 0.1173265617399153,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 1.2855697008318234e-07,
+      "seconds": 0.009218200008035637
+    },
+    {
+      "artifact": "n8_r1_s1_seed5100_K4_reused.npz",
+      "lower": 0.02885129089219303,
+      "upper": 0.02886129089219303,
+      "gap": 9.999999999999593e-06,
+      "min_exclusion_margin": 6.114828835987463e-08,
+      "seconds": 0.015076900002895854
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K2_reused.npz",
+      "lower": 0.07499599119098974,
+      "upper": 0.07500599119098973,
+      "gap": 9.999999999996123e-06,
+      "min_exclusion_margin": 2.941178202375827e-08,
+      "seconds": 0.00871039999765344
+    },
+    {
+      "artifact": "n8_r1_s1_seed5101_K4_reused.npz",
+      "lower": 0.014249819071919646,
+      "upper": 0.014259819071919646,
+      "gap": 9.999999999999593e-06,
+      "min_exclusion_margin": 1.323249969320539e-08,
+      "seconds": 0.01623979999567382
+    }
+  ],
+  "solver_imported": false,
+  "source_sha256": {
+    "verify_saved_certificates.py": "de33d86584915bdb2f1cddbe5663b100dd841c8b384d2efdd6ea1175bb7825f3",
+    "interval_verifier.py": "c8a8f01e0b2686ffcfcb92380711f111186f70d2cd41be68c8f91d259a58df08"
+  },
+  "scope": "Continuous-price global bounds under the documented IEEE-754/input contract; not a novelty assessment."
+}

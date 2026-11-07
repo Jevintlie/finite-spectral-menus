@@ -1,0 +1,186 @@
+{
+  "status": "PASS_INDEPENDENT_SDP_AND_ROTATIONS",
+  "rows": [
+    {
+      "n": 2,
+      "rank": 1,
+      "seed": 4300,
+      "primal": 0.004210462046217334,
+      "dual": 0.004210461947284472,
+      "sdp": 0.004210461916950885,
+      "sdp_statuses": [
+        "optimal",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 1.2926644823996192e-10,
+      "rotation_error": 4.440892098500626e-16
+    },
+    {
+      "n": 2,
+      "rank": 1,
+      "seed": 4301,
+      "primal": 0.011694098470174885,
+      "dual": 0.01169409799095611,
+      "sdp": 0.01169409799087946,
+      "sdp_statuses": [
+        "optimal",
+        "optimal"
+      ],
+      "sdp_error": 4.792954245297354e-10,
+      "rotation_error": 2.220446049250313e-16
+    },
+    {
+      "n": 2,
+      "rank": 1,
+      "seed": 4302,
+      "primal": 0.0012533512671391023,
+      "dual": 0.0012533504694051123,
+      "sdp": 0.0012533504716013783,
+      "sdp_statuses": [
+        "optimal",
+        "optimal"
+      ],
+      "sdp_error": 7.955377240211753e-10,
+      "rotation_error": 8.881784197001252e-16
+    },
+    {
+      "n": 4,
+      "rank": 2,
+      "seed": 4300,
+      "primal": 0.06823451346088971,
+      "dual": 0.06823451341799502,
+      "sdp": 0.0682345133485007,
+      "sdp_statuses": [
+        "optimal",
+        "optimal"
+      ],
+      "sdp_error": 1.1238901476140484e-10,
+      "rotation_error": 8.881784197001252e-16
+    },
+    {
+      "n": 4,
+      "rank": 2,
+      "seed": 4301,
+      "primal": 0.14104564818219445,
+      "dual": 0.14104564745085968,
+      "sdp": 0.1410456474509062,
+      "sdp_statuses": [
+        "optimal",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 7.312882521759434e-10,
+      "rotation_error": 6.661338147750939e-16
+    },
+    {
+      "n": 4,
+      "rank": 2,
+      "seed": 4302,
+      "primal": 0.22578885847014707,
+      "dual": 0.2257888583209926,
+      "sdp": 0.22578885830765918,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 1.6248788425876626e-10,
+      "rotation_error": 4.440892098500626e-15
+    },
+    {
+      "n": 8,
+      "rank": 3,
+      "seed": 4300,
+      "primal": 0.16885207177178607,
+      "dual": 0.16885207159441418,
+      "sdp": 0.1688520715948399,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 1.769461799305816e-10,
+      "rotation_error": 1.7763568394002505e-15
+    },
+    {
+      "n": 8,
+      "rank": 3,
+      "seed": 4301,
+      "primal": 0.11541400249546818,
+      "dual": 0.11541400241009236,
+      "sdp": 0.11541400241001491,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 8.545326946052256e-11,
+      "rotation_error": 4.440892098500626e-16
+    },
+    {
+      "n": 8,
+      "rank": 3,
+      "seed": 4302,
+      "primal": 0.13027932007649712,
+      "dual": 0.13027931995014042,
+      "sdp": 0.13027931995016498,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal"
+      ],
+      "sdp_error": 1.2633213919421848e-10,
+      "rotation_error": 1.3322676295501878e-15
+    },
+    {
+      "n": 12,
+      "rank": 7,
+      "seed": 4300,
+      "primal": 0.465778465569314,
+      "dual": 0.465778465072221,
+      "sdp": 0.46577846691020475,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 1.3408907317824514e-09,
+      "rotation_error": 3.552713678800501e-15
+    },
+    {
+      "n": 12,
+      "rank": 7,
+      "seed": 4301,
+      "primal": 0.4184123740879855,
+      "dual": 0.4184123733926386,
+      "sdp": 0.4184123733928262,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 6.951592634862891e-10,
+      "rotation_error": 0.0
+    },
+    {
+      "n": 12,
+      "rank": 7,
+      "seed": 4302,
+      "primal": 0.5429515493293628,
+      "dual": 0.542951548571093,
+      "sdp": 0.5429515485711937,
+      "sdp_statuses": [
+        "optimal_inaccurate",
+        "optimal_inaccurate"
+      ],
+      "sdp_error": 7.581691940927726e-10,
+      "rotation_error": 1.7763568394002505e-15
+    }
+  ],
+  "collision": {
+    "continuous": 0.4999999999999998,
+    "sampled_4097": 1.0,
+    "scope": "Fails for the returned coordinate eigenbases, not all possible choices within the tied eigenspace."
+  },
+  "cvxpy_version": "1.9.3",
+  "scope": "SDP is numerically solved by a separate package, not interval-certified.",
+  "source_sha256": {
+    "verify_independent.py": "9d0ca880b0793902e3eab01f223dc750ba821d485dc3fbafb587397fa722f1a0",
+    "spectral_menu.py": "9042f87ef611c7511aef65105791cac6bdaac963e786f28ecf05c5c8988d1e32",
+    "reused_spectral.py": "fcdbe1a6ca4fc2a1810332adcc804e2c479d83287c2de1154102bd731641de67",
+    "baselines.py": "ccfbc2a0cec36d11b99e5ad35cd755d3163b200d9af43b7bbc33db448bc7fd46"
+  }
+}
