@@ -1,0 +1,26 @@
+{
+  "research_archive": "paper2_algorithmic_research_v9.zip",
+  "research_files": 550,
+  "research_sha256": "2c56d88c479dd64b65d85beddd6a34983e67694ec5276b42d98f6efd4138fb7a",
+  "arxiv_archive": "paper2_algorithmic_arxiv_source_v9.zip",
+  "arxiv_inputs": [
+    "author_info.tex",
+    "banded_results.tex",
+    "figures/structural.pdf",
+    "main.bbl",
+    "main.tex",
+    "prior_art_comparison.tex",
+    "references.bib",
+    "sparse_results.tex",
+    "sparse_study.tex",
+    "sparse_verification.tex",
+    "structural_theory.tex",
+    "tables/banded.tex",
+    "tables/dictionary.tex",
+    "tables/sparse.tex",
+    "tables/sparse_scaling.tex",
+    "tables/special.tex",
+    "tables/warm.tex"
+  ],
+  "arxiv_sha256": "596d9ab435f80f42ed57522c2a476e799f83591c96bfb25740b33716eef1bb15"
+}

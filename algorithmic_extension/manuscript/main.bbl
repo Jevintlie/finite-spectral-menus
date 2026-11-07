@@ -57,7 +57,9 @@ Ilias Diakonikolas and Mihalis Yannakakis.
 \newblock Succinct approximate convex {Pareto} curves.
 \newblock In {\em Proceedings of the Nineteenth Annual ACM-SIAM Symposium on
   Discrete Algorithms}, pages 74--83. SIAM, 2008.
-\newblock \url{https://www.cs.columbia.edu/~ilias/papers/convex-pareto.html}.
+\newblock \url{https://www.cs.columbia.edu/~ilias/papers/convex-pareto.html};
+  author manuscript:
+  \url{https://www.iliasdiakonikolas.org/papers/convex-pareto-soda.pdf}.
 
 \bibitem{gaubert2011}
 St{\'e}phane Gaubert, William McEneaney, and Zheng Qu.
@@ -127,15 +129,15 @@ Siegfried~M. Rump.
 \bibitem{scipyeigsh}
 {SciPy developers}.
 \newblock {scipy.sparse.linalg.eigsh}.
-\newblock SciPy reference documentation, 2026.
-\newblock Accessed 5 October 2026;
-  \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigsh.html}.
+\newblock SciPy 1.18.0 reference documentation, 2026.
+\newblock Implementation used: SciPy 1.18.1. Accessed 8 November 2026;
+  \url{https://docs.scipy.org/doc/scipy-1.18.0/reference/generated/scipy.sparse.linalg.eigsh.html}.
 
 \bibitem{shen2026}
 Junhui Shen, Aaron Davis, Ding Lu, and Zhaojun Bai.
 \newblock Fair principal component analysis via eigenvalue optimization.
-\newblock {\em BIT Numerical Mathematics}, 66:17, 2026.
-\newblock \url{https://doi.org/10.1007/s10543-026-01109-9}.
+\newblock {\em BIT Numerical Mathematics}, 66, 2026.
+\newblock Article~17; \url{https://doi.org/10.1007/s10543-026-01109-9}.
 
 \bibitem{tantipongpipat2019}
 Uthaipon Tantipongpipat, Samira Samadi, Mohit Singh, Jamie Morgenstern, and

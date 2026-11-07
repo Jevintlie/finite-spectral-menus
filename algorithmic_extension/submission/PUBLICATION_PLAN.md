@@ -1,3 +1,10 @@
+Current status (8 November 2026): v7/v8 public; v9 citation refinement and
+arXiv handoff prepared. See ARXIV_UPLOAD_GUIDE.md. The author authorized this
+step; actual arXiv submission and portal PDF review remain author actions.
+No independent human review or reviewer contact has occurred.
+
+The previous publication plan is retained below as preparation history.
+
 # GitHub and arXiv plan — 7 November 2026
 
 Status: v7 artifact published on GitHub; v8 availability revision prepared.

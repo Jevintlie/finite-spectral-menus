@@ -1,3 +1,29 @@
+# Citation-refined arXiv preparation (v9)
+
+Prepared 8 November 2026. V9 implements the four improvements from the
+20-reference audit: Kurtz assumptions, a working SODA author-PDF link,
+versioned SciPy documentation, and Shen's article-number formatting.
+Proofs, algorithms and frozen experimental evidence are unchanged from v8.
+
+Use `releases/paper2_algorithmic_arxiv_source_v9.zip` for arXiv upload.
+Read `submission/ARXIV_UPLOAD_GUIDE.md` and copy metadata from
+`submission/arxiv_metadata_copy_paste.txt`. The complete handoff is
+`releases/paper2_publication_bundle_v9.zip`. The matching public GitHub
+release is https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v9
+once publication completes. Historical v6/v7/v8 artifacts are preserved.
+
+The author authorized these refinements and arXiv submission preparation.
+No arXiv submission has been made. The author must complete the account,
+any required endorsement, review of the portal-generated PDF and submission.
+Independent human criticism has not been obtained; it is not claimed as a
+completed check or a prerequisite that this workflow has imposed on posting.
+
+The reference audit describes v8; `submission/CITATION_REFINEMENTS_V9.md`
+records how v9 addresses its recommendations. Prior audit scripts and
+reports below apply to their named historical archives only.
+
+---
+
 # Public artifact and manuscript revision (v8)
 
 The versioned research artifact is public:

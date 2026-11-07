@@ -1,4 +1,6 @@
-# Submission preparation: v8
+Current upload instructions: `submission/ARXIV_UPLOAD_GUIDE.md`.
+
+# Submission preparation: v9
 
 The current paper is **Finite Menus of Spectral Subspaces: Realizability and
 the Cost of Convexification**, 22 pages. The main result is an exact
@@ -37,9 +39,9 @@ arXiv submission remain pending.
 |---|---|
 | `manuscript/main.pdf` | Manuscript for review after author finalization |
 | `manuscript/main.tex` | Editable main source; all adjacent inputs are required |
-| `releases/paper2_journal_source_v8.zip` | Flat source package for journal upload; table paths flattened and figure named Fig1.pdf |
-| `releases/paper2_algorithmic_arxiv_source_v8.zip` | Minimal arXiv source package; entry point main.tex; bibliography source and bbl included |
-| `releases/paper2_algorithmic_research_v8.zip` | Complete code, frozen results, proofs, audit and reproducibility artifact |
+| `releases/paper2_journal_source_v9.zip` | Flat source package for journal upload; table paths flattened and figure named Fig1.pdf |
+| `releases/paper2_algorithmic_arxiv_source_v9.zip` | Minimal arXiv source package; entry point main.tex; bibliography source and bbl included |
+| `releases/paper2_algorithmic_research_v9.zip` | Complete code, frozen results, proofs, audit and reproducibility artifact |
 | `submission/cover_letter.pdf` and `.tex` | Cover-letter draft with an explicit final author-declaration paragraph to replace |
 | `submission/arxiv_metadata.json` | Title and exact LaTeX abstract; suggested category math.OC |
 | `submission/AUTHOR_FINALIZATION.md` | Required factual author, declaration, license and account actions |
@@ -59,13 +61,13 @@ endorsement remain arXiv decisions.
 
 ## Release and author gates
 
-Require PASS in release_validation_v8.json, journal_validation_v8.json and
-completion_v8.json with matching archive hashes. Reports and command logs travel with the ZIPs in
-`paper2_publication_bundle_v8.zip`. Author identity, declarations, MIT code
+Require PASS in release_validation_v9.json, journal_validation_v9.json and
+completion_v9.json with matching archive hashes. Reports and command logs travel with the ZIPs in
+`paper2_publication_bundle_v9.zip`. Author identity, declarations, MIT code
 and CC BY 4.0 content licenses are supplied. Final author review and the
 arXiv account/endorsement/upload are still required. The author reports no
 prior publication or current submission as of 7 November 2026. The v7 artifact
-has been published on GitHub; the revised v8 package is prepared for a separate
+has been published on GitHub; the revised v9 package is prepared for a separate
 release. No journal/arXiv submission, review email or editor contact has occurred.
 
 After further edits, rebuild and create a new release tag. Preserve v6 as the

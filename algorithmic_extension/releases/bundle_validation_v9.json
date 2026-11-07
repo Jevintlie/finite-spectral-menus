@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "release": "v9",
+  "bundle_files": 29,
+  "research_files_checked": 549,
+  "recorded_validation_commands": 11,
+  "scope": "Hashes and recorded gates, not new benchmark runs or independent proof review",
+  "bundle": "paper2_publication_bundle_v9.zip",
+  "sha256": "32eab1233a3c742a931870184a0153987fee7ba6113c54c87cc1dc5f81146231"
+}

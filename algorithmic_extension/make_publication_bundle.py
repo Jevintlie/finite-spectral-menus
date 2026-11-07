@@ -59,8 +59,10 @@ request for independent criticism; no independent response is claimed.
 Author identity and declarations are supplied. The manuscript cites the
 public v7 artifact at https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7.
 The author reports no prior publication or current submission as of
-7 November 2026. Final PDF approval, independent criticism and actual arXiv
-submission remain pending. See submission/PUBLICATION_PLAN.md in the research
+7 November 2026. On 8 November the author authorized citation refinements
+and preparation for arXiv submission. Portal PDF review and actual arXiv
+submission remain author actions. Independent human criticism is not yet
+obtained and is not claimed as completed. See submission/PUBLICATION_PLAN.md in the research
 artifact. This bundle records preparation, not arXiv submission or peer review.
 '''.encode('utf8')
     manifest = {'release': tag, 'files': {n: hashlib.sha256(b).hexdigest() for n, b in sorted(payload.items())}}

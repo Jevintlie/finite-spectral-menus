@@ -6,10 +6,10 @@ authors:
   - family-names: "Felixciano"
     given-names: "Jevint"
     affiliation: "Independent researcher"
-version: "v8"
-date-released: "2026-11-07"
+version: "v9"
+date-released: "2026-11-08"
 repository-code: "https://github.com/Jevintlie/finite-spectral-menus"
-url: "https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v8"
+url: "https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v9"
 license:
   - MIT
   - CC-BY-4.0

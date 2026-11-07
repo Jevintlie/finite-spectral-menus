@@ -1,0 +1,632 @@
+{
+  "audit_date": "2026-11-08",
+  "manuscript_version": "v8",
+  "manuscript_pdf_sha256": "87a9641da8a2e4a13d09eec66bf971a277ee54a59f352249e33998332aed7769",
+  "scope": "Source identity, registered metadata, accessible full-text cited passages and citation-context alignment; not a fresh proof review or exhaustive novelty search.",
+  "summary": {
+    "references_in_pdf": 20,
+    "research_works_with_downloaded_pdfs": 18,
+    "software_documentation_sources": 2,
+    "listed_dois_verified": 13,
+    "fabricated_references_found": 0,
+    "wrong_doi_targets_found": 0,
+    "material_content_mismatches_found": 0,
+    "all_v8_source_inputs_unchanged": true
+  },
+  "uncited_bib_entry": {
+    "key": "tottori2026",
+    "included_in_pdf": false,
+    "registered_identity_verified": true,
+    "scope": "Metadata only; its contents are not part of this 20-reference citation-use audit."
+  },
+  "source_input_hashes": {
+    "author_info.tex": "bb242253e377d9379463a540d8643ed9f0ae728f7bb1b496347b7374398cedde",
+    "banded_results.tex": "64a80ac603c7de258df1f1124529cdba87007c9b53cd1de032c08966821773f4",
+    "figures/structural.pdf": "72e9e26823587a7bf1de1c32d03a25057c3c79f7df7b4801c796daa66d4c9848",
+    "main.bbl": "09e6192943bd109779874db4e00c8aa8c85e9d854bf4cdfca0839600a8d45c96",
+    "main.tex": "e9f8d1e4512529832961c6dc46bf8f7eeacde933015836666bb229359e8229b6",
+    "prior_art_comparison.tex": "7216b71b75571d3a82fb269235de1cb3e32b3ef5a85845363abecfc220c09a3c",
+    "references.bib": "b2decb81df567cb60d5167f3bc28fe7c5fb947610e1e990b68a146a6000b9b3b",
+    "sparse_results.tex": "969454d3657bdef5473ec288faf97f8f06e62169622f885b1d05cd39585d13d0",
+    "sparse_study.tex": "dd1ce4fcff95955f9b5ea22505cab13b76be40f0830681f28128e8efbf831d21",
+    "sparse_verification.tex": "049bcfa6cc1b2d747b396c0baee33ae23e2101273b1c3fb2e61984e7da91b7e1",
+    "structural_theory.tex": "342861161e3acdd8951f4f73e0f8d000f77698545dbbd86e3a45944737807107",
+    "tables/banded.tex": "29888ab94b4e1dfa9e7ba15f4487b9090d034c48c46f6e3cb75d6632735e1785",
+    "tables/dictionary.tex": "dc3cd20e1c77b8f19e49527d5b4543061ad4197b268c2fe1077e7ebe10167914",
+    "tables/sparse.tex": "fdb224dba898a842c8438e0bc721951a47895d242755d79fde9bb4893c9fa196",
+    "tables/sparse_scaling.tex": "2248ffc27a7a4c2c073d18ec2326ab08c1381501aa1c1a5af4173b78f84e42e7",
+    "tables/special.tex": "2bc561bf44900df743b264caceeb5ad8a4023e201d1241746305678710bcf89f",
+    "tables/warm.tex": "009f5509dcd0fefca982dbaa70b9294163c1a6ffb94ebadce55de1978f276fe5"
+  },
+  "references": [
+    {
+      "number": 1,
+      "bib_key": "barbarino2022",
+      "reference": "Barbarino & Noferini (2023)",
+      "doi": "10.1016/j.laa.2023.04.022",
+      "cited_url": "https://doi.org/10.1016/j.laa.2023.04.022",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Publisher PDF in Aalto institutional repository; Theorem 1.1, printed p. 2 (PDF p. 3).",
+      "assessment": "The theorem provides analytic eigenvalues and an analytic unitary eigenbasis for a Hermitian matrix analytic on an open real interval. This supports the analytic-branch premise used in our finiteness proof. The finite-zero argument and menu result remain our deductions, not results attributed to this source.",
+      "note": "The bibliography key ends in 2022, but the displayed publication year is correctly 2023. No error.",
+      "downloaded_pdf": {
+        "key": "barbarino2022",
+        "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/8fef8017-6bba-463c-b86d-3f25dd8800d7/content",
+        "status": "downloaded",
+        "final_url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/8fef8017-6bba-463c-b86d-3f25dd8800d7/content",
+        "sha256": "0b0f9f76a6a62a57cf597402bfb3927781baeb6b2188952b03efea9207de6feb",
+        "bytes": 895213
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "bib_key": "bazgan2022",
+      "reference": "Bazgan et al. (2022)",
+      "doi": "10.1007/s00224-021-10066-5",
+      "cited_url": "https://doi.org/10.1007/s00224-021-10066-5",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Published 21-page article; Proposition 1 and Theorem 2, especially printed pp. 403 and 407–408.",
+      "assessment": "The paper develops weighted-sum approximation guarantees and limitations of supported solutions, including tight examples. Our attribution of the scalarization principle and supported-solution limitations is appropriate; it does not attribute our exact additive spectral-menu theorem to them.",
+      "note": "Online publication was 2021; the cited volume 66, pp. 395–415 belongs to 2022. No year mismatch.",
+      "downloaded_pdf": {
+        "key": "bazgan2022",
+        "url": "https://mediatum.ub.tum.de/doc/1705216/document.pdf",
+        "status": "downloaded",
+        "final_url": "https://mediatum.ub.tum.de/doc/1705216/document.pdf",
+        "sha256": "a43dcf65905d6f60d517e1a70bcc04bb10937cb83ac27e026c764a3b128dc3ee",
+        "bytes": 949595
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 39
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "bib_key": "buchheim2017",
+      "reference": "Buchheim & Kurtz (2017)",
+      "doi": "10.1007/s10107-016-1053-z",
+      "cited_url": "https://doi.org/10.1007/s10107-016-1053-z",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Published PDF; Section 2, Lemma 1 and Corollary 1, printed pp. 4–5.",
+      "assessment": "It equates finite min–max–min policies with convex combinations of selected decisions for convex uncertainty and obtains a dimension-based cardinality result. This supports our prior-art discussion and its convexity qualification.",
+      "note": "Online publication was 2016; the cited journal issue is 2017. Both identify the same work.",
+      "downloaded_pdf": {
+        "key": "buchheim2017",
+        "url": "https://www.lix.polytechnique.fr/~dambrosio/teaching/MPRO/INITREC/Files/ZA4.pdf",
+        "status": "downloaded",
+        "final_url": "https://www.lix.polytechnique.fr/~dambrosio/teaching/MPRO/INITREC/Files/ZA4.pdf",
+        "sha256": "f6b1a69d5f5785c7f011e346f34919bec92015c14df4b6a24f9a9a9ee822dbda",
+        "bytes": 560714
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 99
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "bib_key": "cao2017",
+      "reference": "Cao et al. (2017)",
+      "doi": "10.4230/LIPIcs.ICDT.2017.11",
+      "cited_url": "https://doi.org/10.4230/LIPIcs.ICDT.2017.11",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official ICDT proceedings PDF; Section 3.1.1 and Theorem 5, p. 11:6.",
+      "assessment": "The two-dimensional decision problem is reduced to closed interval coverage and solved greedily. This directly supports our acknowledgement that the regret-menu objective and interval-covering approach have predecessors.",
+      "note": "The DOI is registered with DataCite, not Crossref. A Crossref 404 was not evidence of a bad DOI.",
+      "downloaded_pdf": {
+        "key": "cao2017",
+        "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol068-icdt2017/LIPIcs.ICDT.2017.11/LIPIcs.ICDT.2017.11.pdf",
+        "status": "downloaded",
+        "final_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol068-icdt2017/LIPIcs.ICDT.2017.11/LIPIcs.ICDT.2017.11.pdf",
+        "sha256": "6081e9c04e0a95638c0ea623d2825a0ec956029df74bb1437a1a900c706d7566",
+        "bytes": 740206
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "bib_key": "cardinal2025",
+      "reference": "Cardinal, Goaoc & Wajsbrot (2025)",
+      "doi": "10.4230/LIPIcs.MFCS.2025.33",
+      "cited_url": "https://doi.org/10.4230/LIPIcs.MFCS.2025.33",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official MFCS proceedings PDF; Section 4.2, Lemmas 11–12, p. 33:12.",
+      "assessment": "The paper defines a maximal reachable parameter, proves attainment for polytopes, and characterizes k-point hitting by repeated application of that reach map. Our Section 4.2 citation is correct. The different polyhedral input assumptions are acknowledged in our paper.",
+      "note": "The published lemmas are 11–12; an older preprint uses different numbering. Our paper cites the section, so no correction is needed. DOI is registered with DataCite.",
+      "downloaded_pdf": {
+        "key": "cardinal2025",
+        "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol345-mfcs2025/LIPIcs.MFCS.2025.33/LIPIcs.MFCS.2025.33.pdf",
+        "status": "downloaded",
+        "final_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol345-mfcs2025/LIPIcs.MFCS.2025.33/LIPIcs.MFCS.2025.33.pdf",
+        "sha256": "9f3a06b4a048df0102e673414767d0e0ead243559d3247638ebedb4e72aa1c51",
+        "bytes": 845241
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 124
+        },
+        {
+          "file": "manuscript/main.tex",
+          "line": 266
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "bib_key": "demmel1993",
+      "reference": "Demmel, Heath & van der Vorst (1993)",
+      "doi": null,
+      "cited_url": "https://www.netlib.org/lapack/lawnspdf/lawn60.pdf",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official Netlib LAPACK Working Note 60; title page and Section 6.3.2, Algorithm 17, printed p. 38.",
+      "assessment": "The report explicitly gives the tridiagonal pivot recurrence and counts negative pivots to count eigenvalues below a shift. This is the classical Sturm-count method used as background in our sparse verifier.",
+      "note": "The report number UT CS-93-192 and 1993 date match the actual title page. No DOI is claimed.",
+      "downloaded_pdf": {
+        "key": "demmel1993",
+        "url": "https://www.netlib.org/lapack/lawnspdf/lawn60.pdf",
+        "status": "downloaded",
+        "final_url": "https://netlib.org/lapack/lawnspdf/lawn60.pdf",
+        "sha256": "f593cf17aae4318b7e52718a5063c10ba029f025219f99d1f266d859aff3576d",
+        "bytes": 659595
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/sparse_study.tex",
+          "line": 54
+        },
+        {
+          "file": "manuscript/sparse_verification.tex",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "bib_key": "diakonikolas2011",
+      "reference": "Diakonikolas (2011 thesis)",
+      "doi": "10.7916/D80K2GR9",
+      "cited_url": "https://doi.org/10.7916/D80K2GR9",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Columbia thesis PDF; Chapter 5, Section 5.2.2 (printed p. 82), Theorems 5.3.3 and 5.3.5, Remark 5.3.6.",
+      "assessment": "The thesis distinguishes points selected from a finite set from points allowed in its convex hull, explicitly discusses useful points off the lower envelope, and distinguishes objective-space points from recoverable decisions. All four pinpoint citations in our appendix match.",
+      "note": "The thesis record DOI D80K2GR9 and downloadable-file DOI D8SX6MGG differ legitimately: the record links directly to that file. They are not different theses.",
+      "downloaded_pdf": {
+        "key": "diakonikolas2011",
+        "url": "https://academiccommons.columbia.edu/doi/10.7916/D8SX6MGG/download",
+        "status": "downloaded",
+        "final_url": "https://academiccommons.columbia.edu/doi/10.7916/D8SX6MGG/download",
+        "sha256": "2b89f00e33ba32fb460ccb618f52ad7daf9e9d3d371a819574d5bb8c5b6db67b",
+        "bytes": 1620378
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 92
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 23
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "bib_key": "diakonikolas2008",
+      "reference": "Diakonikolas & Yannakakis (2008)",
+      "doi": null,
+      "cited_url": "https://www.cs.columbia.edu/~ilias/papers/convex-pareto.html",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Ten-page author-hosted SODA extended abstract; Sections 1 and 4, including the discrete versus convex approximation discussion.",
+      "assessment": "The paper studies small convex Pareto approximations with weighted-optimization oracles, and the need for feasible representatives beyond the lower envelope. This supports the historical attribution; detailed theorem numbers in our manuscript deliberately refer to the complete 2011 thesis.",
+      "note": "The cited Columbia landing page exists, but its old ACM PDF link returns an access error here. A working PDF is linked from the author’s current homepage and was downloaded. Adding that direct PDF would improve access.",
+      "downloaded_pdf": {
+        "key": "diakonikolas2008",
+        "url": "https://www.iliasdiakonikolas.org/papers/convex-pareto-soda.pdf",
+        "status": "downloaded",
+        "sha256": "770a03acacd513c66ffe6d26e564ba2d97eb1afd496a426d4cc0f1d5510ba705"
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 92
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 24
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "bib_key": "gaubert2011",
+      "reference": "Gaubert, McEneaney & Qu (2011)",
+      "doi": "10.1109/CDC.2011.6161386",
+      "cited_url": "https://doi.org/10.1109/CDC.2011.6161386",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Eight-page author arXiv version; Section III, Theorems 3.1–3.2 (PDF p. 4). IEEE DOI metadata independently matched.",
+      "assessment": "The paper establishes asymptotic approximation errors for sufficiently smooth semiconvex functions using prescribed quadratic pieces. Appropriate one-dimensional specializations give inverse-square behavior. Our manuscript cites this conditionally as background and explicitly does not assert that law for every spectral model.",
+      "note": "This source cannot justify an unconditional K^-2 law. The current manuscript already preserves that restriction.",
+      "downloaded_pdf": {
+        "key": "gaubert2011",
+        "url": "https://arxiv.org/pdf/1109.5241",
+        "status": "downloaded",
+        "final_url": "https://arxiv.org/pdf/1109.5241",
+        "sha256": "ac5436a6b58197178498c8297995f4c28f924b9867f8c67c50be3d40763c80b2",
+        "bytes": 837084
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 128
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "bib_key": "hanasusanto2015",
+      "reference": "Hanasusanto, Kuhn & Wiesemann (2015)",
+      "doi": "10.1287/opre.2015.1392",
+      "cited_url": "https://doi.org/10.1287/opre.2015.1392",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Author manuscript from Optimization Online; objective-uncertainty setup and Theorem 1 (PDF p. 12), with its companion proof. Crossref matches the journal record.",
+      "assessment": "The theorem provides a policy-count bound involving decision-space dimension and the rank of the uncertainty map. It is relevant prior art for finite-policy reductions. Our manuscript does not claim its bound directly applies to the continuum of projectors.",
+      "note": "The inspected PDF is an author manuscript, not the journal-typeset version. Publisher PDF access was blocked; journal identity, authors, year, volume and pages were verified independently.",
+      "downloaded_pdf": {
+        "key": "hanasusanto2015",
+        "url": "https://optimization-online.org/wp-content/uploads/2014/03/4294.pdf",
+        "status": "downloaded",
+        "final_url": "https://optimization-online.org/wp-content/uploads/2014/03/4294.pdf",
+        "sha256": "3c3b66eda3b37e180a01d1d0b71d431f6b5934c80fbc7ec4cd1b9a250adb4311",
+        "bytes": 696353
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 99
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "bib_key": "helfrich2024",
+      "reference": "Helfrich et al. (2024)",
+      "doi": "10.1007/s00186-023-00823-2",
+      "cited_url": "https://doi.org/10.1007/s00186-023-00823-2",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Published 37-page article; Theorem 4.4, Section 5 weighted-sum discussion, and Theorem 5.5.",
+      "assessment": "It gives a general scalarization approximation framework, including supported-solution guarantees and sharpness. Our use as prior art for scalarization limits is appropriate, without claiming it proves the spectral-menu repair count.",
+      "note": "Published online in 2023 and assigned to volume 100, pp. 27–63 in 2024. The bibliography correctly uses 2024.",
+      "downloaded_pdf": {
+        "key": "helfrich2024",
+        "url": "https://mediatum.ub.tum.de/doc/1761605/1761605.pdf",
+        "status": "downloaded",
+        "final_url": "https://mediatum.ub.tum.de/doc/1761605/1761605.pdf",
+        "sha256": "49351ad4c27af074fb9c07671f22c24fd786c92d7a5f3ce3405cb8811cdb68a6",
+        "bytes": 600313
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 39
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "bib_key": "imamoto2008",
+      "reference": "Imamoto & Tang (2008)",
+      "doi": null,
+      "cited_url": "https://iaeng.org/publication/WCECS2008/WCECS2008_pp1191-1194.pdf",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official four-page WCECS PDF; abstract, Sections II–III and the optimality/recursive construction discussion.",
+      "assessment": "The source addresses a fixed number of piecewise-linear segments minimizing maximum absolute error for a convex differentiable function. That is exactly the scalar approximation topic attributed to it in our introduction.",
+      "note": "The PDF exists. Python’s TLS trust store rejected its certificate chain, but curl with Windows certificate verification downloaded it successfully. No TLS verification was disabled.",
+      "downloaded_pdf": {
+        "key": "imamoto2008",
+        "url": "https://www.iaeng.org/publication/WCECS2008/WCECS2008_pp1191-1194.pdf",
+        "status": "downloaded",
+        "method": "curl using Windows TLS certificate verification",
+        "sha256": "193e7a52bb10b12e0144a687e7c572b2e1ef0583d1d6124e8cc010844c77ca0d"
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "bib_key": "kurtz2026",
+      "reference": "Kurtz (2026)",
+      "doi": "10.1007/s10107-026-02329-1",
+      "cited_url": "https://doi.org/10.1007/s10107-026-02329-1",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Published Springer HTML and 34-page publisher PDF via web reader: Section 2.2 and Theorems 2 and 7. Older 19-page author preprint also downloaded for comparison.",
+      "assessment": "Published Theorem 2 concerns exactness under concavity in uncertainty; published Theorem 7 gives an additive approximation bound with a Lipschitz condition in recourse decisions. The bounded integer-recourse and convex-uncertainty setting matches our discussion. Our statement that price-convex regret is outside these assumptions is appropriately qualified.",
+      "note": "The cited theorem numbers are correct for the published version, although preprint Theorem 7 is a different statement. For maximum precision, add “under its continuity assumptions and, for the approximation bound, a Lipschitz condition in the recourse decision” to our summary.",
+      "downloaded_pdf": {
+        "key": "kurtz2026",
+        "url": "https://optimization-online.org/wp-content/uploads/2024/09/main-3.pdf",
+        "status": "downloaded",
+        "final_url": "https://optimization-online.org/wp-content/uploads/2024/09/main-3.pdf",
+        "sha256": "c382ce0ec75705c5125d84d3476a29e9ddde0130027d55f6f5afcdd123f30643",
+        "bytes": 566132
+      },
+      "published_content_url": "https://link.springer.com/article/10.1007/s10107-026-02329-1",
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 101
+        },
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "bib_key": "magnanti2012",
+      "reference": "Magnanti & Stratila (2012)",
+      "doi": null,
+      "cited_url": "https://arxiv.org/abs/1201.3148",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "arXiv:1201.3148, Section 2.1, Lemma 2 (PDF p. 8); RUTCOR’s 2012 report list checked separately.",
+      "assessment": "Lemma 2 replaces a multiplicative piecewise-linear approximant with tangent pieces while bounding the number of pieces by 3Q. Our manuscript correctly identifies multiplicative tangent replacement as prior art and distinguishes its own additive tolerance/counting refinement.",
+      "note": "RUTCOR confirms report 6-2012. The arXiv PDF and the technical-report citation identify the same work; no DOI is claimed.",
+      "downloaded_pdf": {
+        "key": "magnanti2012",
+        "url": "https://arxiv.org/pdf/1201.3148",
+        "status": "downloaded",
+        "final_url": "https://arxiv.org/pdf/1201.3148",
+        "sha256": "ab49472b8f0b9c738547c9f54bfdb30e62895f5407916777106d82a8084df61a",
+        "bytes": 267397
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/prior_art_comparison.tex",
+          "line": 42
+        },
+        {
+          "file": "manuscript/structural_theory.tex",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "bib_key": "pythondecimal",
+      "reference": "Python Software Foundation: Decimal",
+      "doi": null,
+      "cited_url": "https://docs.python.org/3.12/library/decimal.html",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official Python 3.12 documentation: introductory arithmetic guarantees, float construction, rounding modes, contexts and signals.",
+      "assessment": "The documentation specifies exact conversion from binary floats, configurable precision, directed rounding toward positive/negative infinity, and underflow traps. This supports the documented arithmetic assumptions of our Decimal fallback, not a proof of our complete verifier.",
+      "note": "This is software documentation, not a research paper, and does not need a paper DOI. The 3.12 URL moves between maintenance releases; this audit rechecks it on 8 November 2026, not the historical access date.",
+      "citation_locations": [
+        {
+          "file": "manuscript/sparse_verification.tex",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "bib_key": "rote1992",
+      "reference": "Rote (1992)",
+      "doi": "10.1007/BF02238642",
+      "cited_url": "https://doi.org/10.1007/BF02238642",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Author-hosted 22-page report version; abstract and Sections 1–2; journal identity confirmed by Crossref and author publication list.",
+      "assessment": "It evaluates a convex function and derivatives/subgradients adaptively, using chord and supporting-line bounds. This supports the sandwich-method comparison in our introduction.",
+      "note": "The downloaded author report explicitly states its relationship to the journal article. It is not a byte-for-byte copy of the 25-page journal typesetting; this is disclosed rather than treated as a missing paper.",
+      "downloaded_pdf": {
+        "key": "rote1992",
+        "url": "https://page.mi.fu-berlin.de/rote/Papers/pdf/The%2Bconvergence%2Brate%2Bof%2Bthe%2BSandwich%2Balgorithm%2Bfor%2Bapproximating%2Bconvex%2Bfunctions.pdf",
+        "status": "downloaded",
+        "sha256": "893d98b3b5131b0948743e0a195605a0b6f47844a4aa723ba426f69e710424b8",
+        "version": "author report, not journal typeset PDF"
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "bib_key": "rump2022",
+      "reference": "Rump (2022)",
+      "doi": "10.1137/21M1451440",
+      "cited_url": "https://doi.org/10.1137/21M1451440",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Author-hosted 19-page manuscript; abstract, introduction, and interval inclusion property (2.1). SIAM DOI metadata separately verified.",
+      "assessment": "It provides verified bounds for eigenvalues/eigenvectors, including clustered cases, and discusses interval arithmetic and possible verification failure. This supports our broad statement that verified spectral computation is established. We do not attribute our particular menu certificate to Rump.",
+      "note": "The downloadable copy is labeled a review manuscript. The published SIAM article exists and its title, author, volume, issue and pages match; direct publisher access was blocked here.",
+      "downloaded_pdf": {
+        "key": "rump2022",
+        "url": "https://www.tuhh.de/ti3/paper/rump/Ru22a.pdf",
+        "status": "downloaded",
+        "final_url": "https://www.tuhh.de/ti3/paper/rump/Ru22a.pdf",
+        "sha256": "444d583231bf5f30f67bcd6d23d3013728a8818d5770758fff57e118da439720",
+        "bytes": 405980
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "bib_key": "scipyeigsh",
+      "reference": "SciPy developers: eigsh",
+      "doi": null,
+      "cited_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigsh.html",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official API documentation: function description, sparse/LinearOperator inputs, parameters, and Notes.",
+      "assessment": "The documentation identifies eigsh as an ARPACK wrapper using implicitly restarted Lanczos for the real symmetric case. This supports the sparse solver description, without implying certified eigenvalue enclosures.",
+      "note": "This is documentation, not a journal paper. The generic stable URL currently displays the 1.18.0 manual; benchmark metadata records SciPy 1.18.1. Pin a suitable archived documentation version if available, or explicitly name the implementation version. The cited ARPACK fact is unaffected.",
+      "citation_locations": [
+        {
+          "file": "manuscript/sparse_study.tex",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "bib_key": "shen2026",
+      "reference": "Shen, Davis, Lu & Bai (2026)",
+      "doi": "10.1007/s10543-026-01109-9",
+      "cited_url": "https://doi.org/10.1007/s10543-026-01109-9",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Published 23-page BIT article on the author’s university website; Theorem 4.1, Algorithm 1 implementation notes, and Appendix A.3 (pp. 18–19).",
+      "assessment": "The article solves the two-group fair-PCA problem through univariate eigenvalue optimization, uses Brent’s method, and explicitly constructs a suitable basis inside a repeated-eigenvalue space. These are the exact methodological predecessors credited in our introduction and endpoint-oracle discussion.",
+      "note": "The DOI, four authors and year match. The number 17 is an article number, not a page count; the actual paper has 23 pages. “66, Article 17” would be clearer formatting than “66:17”, but the existing reference identifies the right paper.",
+      "downloaded_pdf": {
+        "key": "shen2026",
+        "url": "https://www.cs.ucdavis.edu/~bai/publications/ShenDLB26.pdf",
+        "status": "downloaded",
+        "final_url": "https://www.cs.ucdavis.edu/~bai/publications/ShenDLB26.pdf",
+        "sha256": "8c35340a5daf480050c3108fc8889f23503e23f1e92a4e78ca8bc5cd84947134",
+        "bytes": 754768
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 108
+        },
+        {
+          "file": "manuscript/main.tex",
+          "line": 219
+        },
+        {
+          "file": "manuscript/main.tex",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "bib_key": "tantipongpipat2019",
+      "reference": "Tantipongpipat et al. (2019)",
+      "doi": null,
+      "cited_url": "https://papers.nips.cc/paper_files/paper/2019/hash/2201611d7a08ffda97e3e8c6b667a1bc-Abstract.html",
+      "existence": "verified",
+      "bibliographic_identity": "matched",
+      "content_assessment": "supports the use made in v8, subject to stated qualifications",
+      "passages_inspected": "Official NeurIPS 32 proceedings PDF; Theorems 1.1–1.3, especially Theorem 1.2 (PDF p. 3).",
+      "assessment": "Theorem 1.2 gives a polynomial-time result for two-group dimensionality reduction under concavity/monotonicity and trace-linear criteria. This supports our endpoint-oracle ancestry. It is not a claim of unrestricted exactness for every multi-criterion problem.",
+      "note": "The official paper URL, five authors, title, year and proceedings volume match. No DOI is claimed or needed for this proceedings URL.",
+      "downloaded_pdf": {
+        "key": "tantipongpipat2019",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/2201611d7a08ffda97e3e8c6b667a1bc-Paper.pdf",
+        "status": "downloaded",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/2201611d7a08ffda97e3e8c6b667a1bc-Paper.pdf",
+        "sha256": "f024bb2be48f1534953439dd80fbd602ff1384c436016cc2a75ed8ae5f3b1ff2",
+        "bytes": 472485
+      },
+      "citation_locations": [
+        {
+          "file": "manuscript/main.tex",
+          "line": 107
+        },
+        {
+          "file": "manuscript/main.tex",
+          "line": 219
+        }
+      ]
+    }
+  ]
+}

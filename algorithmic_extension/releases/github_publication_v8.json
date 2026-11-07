@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tag": "v8",
+  "commit": "188e1e665d0c02202028be092ca98576af8964b1",
+  "public_release_url": "https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v8",
+  "assets": [
+    {
+      "name": "main.pdf",
+      "sha256": "87a9641da8a2e4a13d09eec66bf971a277ee54a59f352249e33998332aed7769",
+      "url": "https://github.com/Jevintlie/finite-spectral-menus/releases/download/v8/main.pdf"
+    },
+    {
+      "name": "paper2_algorithmic_arxiv_source_v8.zip",
+      "sha256": "b7eccfe1f9c98701497f4ec4fba208bd705f80301a71f7476dfb9c9268b763c6",
+      "url": "https://github.com/Jevintlie/finite-spectral-menus/releases/download/v8/paper2_algorithmic_arxiv_source_v8.zip"
+    },
+    {
+      "name": "paper2_publication_bundle_v8.zip",
+      "sha256": "ab68ba65dcf36b5e4e4f6785c31083042bf81f21a9323f39ed8f701a278233ab",
+      "url": "https://github.com/Jevintlie/finite-spectral-menus/releases/download/v8/paper2_publication_bundle_v8.zip"
+    }
+  ],
+  "public_download_hashes_verified": true,
+  "arxiv_submission": false
+}

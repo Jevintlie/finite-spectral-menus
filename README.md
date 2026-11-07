@@ -12,14 +12,19 @@ It does not establish a validated physical application or a new general eigensol
 
 - [Read the 22-page paper](algorithmic_extension/manuscript/main.pdf)
 - [LaTeX source](algorithmic_extension/manuscript/main.tex)
-- [Download v8: complete bundle and arXiv source](https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v8)
+- [arXiv upload guide](algorithmic_extension/submission/ARXIV_UPLOAD_GUIDE.md)
+- [Copy-and-paste submission metadata](algorithmic_extension/submission/arxiv_metadata_copy_paste.txt)
+- [Download v9: complete bundle and arXiv source](https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v9)
 - [Reproduction instructions](algorithmic_extension/REPRODUCIBILITY.md)
-- [Validation summary](algorithmic_extension/releases/completion_v8.json)
+- [Validation summary](algorithmic_extension/releases/completion_v9.json)
 - [Focused independent-review brief](algorithmic_extension/submission/independent_review/REVIEW_BRIEF.pdf)
 - [License scope](LICENSE.md)
 
-V8 inserts the public artifact link and updates publication-status metadata.
-Proofs, algorithms and frozen benchmark evidence are unchanged from v7/v6.
+V9 incorporates four refinements after checking all 20 cited references: explicit
+continuity/Lipschitz assumptions for the cited robust-policy result, an author
+PDF link for the SODA paper, version-pinned SciPy documentation distinguished
+from the experimental version, and an explicit article number for Shen et al.
+Proofs, algorithms and frozen benchmark evidence are unchanged from v8.
 All 11 clean-extraction checks passed. This is internal technical validation,
 not independent human peer review or a certificate of novelty. Substantial
 AI assistance is disclosed in the manuscript. Independent human criticism
@@ -45,8 +50,8 @@ The complete release bundle also includes a standard-library integrity verifier.
 ## Versions and citation
 
 The manuscript cites the fixed [v7 artifact](https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7),
-whose scientific evidence is unchanged. V8 supplies the manuscript containing
-that public link. Cite the exact release or commit used; no arXiv ID or DOI
+whose scientific evidence is unchanged. V9 supplies citation refinements and
+the author upload guide. Cite the exact release or commit used; no arXiv ID or DOI
 has been assigned by this workflow. GitHub hosting is not a DOI archive.
 
 Software is MIT licensed. Manuscript, documentation and generated results are

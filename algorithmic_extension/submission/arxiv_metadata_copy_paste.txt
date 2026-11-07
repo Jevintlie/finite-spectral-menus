@@ -1,0 +1,50 @@
+ARXIV METADATA — Paper 2, preparation v9
+
+TITLE
+Finite Menus of Spectral Subspaces: Realizability and the Cost of Convexification
+
+AUTHOR
+Jevint Felixciano
+
+AFFILIATION (where requested)
+Independent researcher
+
+CORRESPONDING EMAIL (where requested)
+jevintfelixciano@protonmail.com
+
+SUGGESTED PRIMARY CATEGORY
+math.OC — Optimization and Control
+
+LICENSE
+CC BY 4.0 — Creative Commons Attribution
+
+COMMENTS
+22 pages; code, results and validation bundle: https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v9
+
+JOURNAL REFERENCE: leave blank
+DOI: leave blank
+REPORT NUMBER: leave blank
+
+ABSTRACT (copy only the following paragraph, without this label)
+We study fixed menus of rank-$r$ orthogonal subspaces under a shared
+quadratic reward and multiple quadratic resource costs, with worst-case
+additive regret over a compact scalar-price interval. The fully adaptive
+value curve determines a convexified menu problem but can conceal different
+realizable optima. We characterize exactly when this relaxation is valid
+on every price subinterval: the slopes of actual optimal presets must fill
+the superdifferential interval at every interior price. For spectral menus,
+this becomes a union-of-intervals test on active cutoff eigenspaces and
+always holds for a single site. If $q$ prices fail the criterion, every
+relaxed $K$-menu admits a replacement by at most $K+\min(K,q)$ globally
+price-optimal presets at no greater regret. Analytic eigenvalue
+parameterization makes $q$ finite for each fixed spectral instance.
+The resulting additive cardinality bound transfers any separately
+established positive power-law asymptotic. Sharp spectral examples also
+realize the factor-two comparison supplied by endpoint scalarization.
+We combine established two-criterion spectral optimization and interval
+covering with reusable bounds and solver-independent outward verification.
+Synthetic dense and sparse experiments demonstrate construction and
+continuous-price certification, including banded instances of dimension
+4096, while documenting regimes where specialized or dense methods are
+faster. The contribution is the realizability criterion, its spectral
+characterization, and the exceptional-price refinement of finite-menu repair.

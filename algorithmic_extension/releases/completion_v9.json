@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "release": "v9",
+  "checked_on": "2026-11-08",
+  "pages": 22,
+  "archive_hashes": {
+    "paper2_algorithmic_research_v9.zip": "2c56d88c479dd64b65d85beddd6a34983e67694ec5276b42d98f6efd4138fb7a",
+    "paper2_algorithmic_arxiv_source_v9.zip": "596d9ab435f80f42ed57522c2a476e799f83591c96bfb25740b33716eef1bb15",
+    "paper2_journal_source_v9.zip": "7e0910f78cc66488f2973af79e2b205aed6a9e24f7ed1895de68bcf45c209ba4"
+  },
+  "manuscript_pdf_sha256": "c02106b6d42710b7ed48724bbb3d9793cddb30a8b2de02f7bf8dc1d62deed055",
+  "frozen_files_checked": 214,
+  "proofs_algorithms_and_frozen_evidence_unchanged_from_v8": true,
+  "changes": "Four citation/assumption refinements and submission documentation",
+  "cited_references": 20,
+  "v7_v8_archives_unchanged": true,
+  "v6_archives_unchanged": true,
+  "clean_validation_commands": 11,
+  "prior_concurrent_status_confirmed": true,
+  "author_fields_supplied": true,
+  "licenses_authorized": true,
+  "new_performance_benchmarks": false,
+  "independent_review": "Prepared; no reviewer contacted or response received",
+  "public_artifact_url": "https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7",
+  "arxiv_submission": "Not performed",
+  "technically_ready_for_author_upload": true,
+  "pending": [
+    "arXiv account/endorsement if required/upload",
+    "Author inspection of arXiv-generated PDF and final submission"
+  ],
+  "scope": "PASS is a technical preparation gate, not proof, priority, peer review, or public submission."
+}

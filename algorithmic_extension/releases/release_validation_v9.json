@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "archives": {
+    "research": {
+      "name": "paper2_algorithmic_research_v9.zip",
+      "sha256": "2c56d88c479dd64b65d85beddd6a34983e67694ec5276b42d98f6efd4138fb7a"
+    },
+    "arxiv": {
+      "name": "paper2_algorithmic_arxiv_source_v9.zip",
+      "sha256": "596d9ab435f80f42ed57522c2a476e799f83591c96bfb25740b33716eef1bb15"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "verify_distribution.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.522264400000495,
+      "log": "command_0.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "reproduce.py",
+        "--mode",
+        "verify"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 117.23727660000077,
+      "log": "command_1.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "reproduce.py",
+        "--mode",
+        "smoke"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.521300500000507,
+      "log": "command_2.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "manuscript/build.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 2.7492308000000776,
+      "log": "command_3.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "audit_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.2666271999987657,
+      "log": "command_4.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "audit_sparse_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.07445320000078937,
+      "log": "command_5.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Crude\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "audit_banded_results.py"
+      ],
+      "cwd": "research\\algorithmic_extension",
+      "returncode": 0,
+      "seconds": 0.07153250000010303,
+      "log": "command_6.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.8921109999992041,
+      "log": "command_7.log"
+    },
+    {
+      "command": [
+        "bibtex",
+        "main"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.2452672999988863,
+      "log": "command_8.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.818780899999183,
+      "log": "command_9.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "arxiv",
+      "returncode": 0,
+      "seconds": 0.8245458000001236,
+      "log": "command_10.log"
+    }
+  ],
+  "scope": "Clean extraction and distributed hashes; original 134 menu checks/54 certificate replays; sparse 31 menu checks/8 certificate replays; 14 banded grid certificate replays and both arithmetic paths; structural diagnostics; fresh smoke solve/certificate; both PDF builds. Significance and priority assessed separately."
+}
