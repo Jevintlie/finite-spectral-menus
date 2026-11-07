@@ -4,23 +4,26 @@
 
 Jevint Felixciano — Independent researcher
 
-This repository is prepared for public release; this local snapshot has not
-yet been uploaded. The manuscript studies exactness of convexified finite
-menus and the additional realizable presets needed to repair missing slopes.
-It is a structural optimization paper with synthetic computational evidence,
-not a validated physical application or a claim of a new general eigensolver.
+This paper studies when convexified finite menus can be realized by rank-r
+orthogonal subspaces, and bounds the additional presets needed when some
+optimal slopes are missing. It combines structural results with synthetic
+computational evidence and independently replayable numerical certificates.
+It does not establish a validated physical application or a new general eigensolver.
 
-- [Read the paper](algorithmic_extension/manuscript/main.pdf)
-- [LaTeX sources](algorithmic_extension/manuscript/main.tex)
+- [Read the 22-page paper](algorithmic_extension/manuscript/main.pdf)
+- [LaTeX source](algorithmic_extension/manuscript/main.tex)
+- [Download v8: complete bundle and arXiv source](https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v8)
 - [Reproduction instructions](algorithmic_extension/REPRODUCIBILITY.md)
-- [Focused review brief](algorithmic_extension/submission/independent_review/REVIEW_BRIEF.pdf)
-- [Release validation](algorithmic_extension/releases/completion_v7.json)
-- [Licenses](LICENSE.md)
+- [Validation summary](algorithmic_extension/releases/completion_v8.json)
+- [Focused independent-review brief](algorithmic_extension/submission/independent_review/REVIEW_BRIEF.pdf)
+- [License scope](LICENSE.md)
 
-V7 supplies the author's declarations and licenses and closes the missing
-validation-report handoff gap. Proofs and benchmark evidence are unchanged
-from v6. Independent human review and public arXiv submission are pending.
-Internal validation is not peer review or a novelty certificate.
+V8 inserts the public artifact link and updates publication-status metadata.
+Proofs, algorithms and frozen benchmark evidence are unchanged from v7/v6.
+All 11 clean-extraction checks passed. This is internal technical validation,
+not independent human peer review or a certificate of novelty. Substantial
+AI assistance is disclosed in the manuscript. Independent human criticism
+and arXiv submission remain pending.
 
 ## Verify and reproduce
 
@@ -33,16 +36,18 @@ python reproduce.py --mode verify
 python reproduce.py --mode smoke
 ```
 
-The first command checks the archived source/evidence manifest. Added
-repository landing files and release reports are listed in
-PUBLIC_SNAPSHOT_MANIFEST.json. The verification workflow creates new output
-folders and does not overwrite frozen results. Building the manuscript needs
-a LaTeX installation. Read REPRODUCIBILITY.md for complete assumptions.
+The first command checks the research artifact manifest. Additional repository
+files and validation reports are covered by PUBLIC_SNAPSHOT_MANIFEST.json.
+The evidence replays and smoke solve create new outputs, preserving stored
+results. Building the paper requires LaTeX. See REPRODUCIBILITY.md for details.
+The complete release bundle also includes a standard-library integrity verifier.
 
-## Versioning and citation
+## Versions and citation
 
-Cite the manuscript and the exact published release/commit you use. No DOI,
-arXiv ID or live repository address is invented in this snapshot. The author
-will insert the actual public release address into a subsequent manuscript
-build. Software is MIT; manuscript, documentation and generated results are
-CC BY 4.0. Third-party works/dependencies retain their own rights.
+The manuscript cites the fixed [v7 artifact](https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7),
+whose scientific evidence is unchanged. V8 supplies the manuscript containing
+that public link. Cite the exact release or commit used; no arXiv ID or DOI
+has been assigned by this workflow. GitHub hosting is not a DOI archive.
+
+Software is MIT licensed. Manuscript, documentation and generated results are
+CC BY 4.0. Third-party works and dependencies retain their own rights.

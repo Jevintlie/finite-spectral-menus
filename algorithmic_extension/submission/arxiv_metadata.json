@@ -2,13 +2,13 @@
   "title": "Finite Menus of Spectral Subspaces: Realizability and the Cost of Convexification",
   "authors": "Jevint Felixciano",
   "suggested_primary_category": "math.OC",
-  "comments": "22 pages; reproducibility artifact prepared. Public artifact address pending.",
+  "comments": "22 pages; code, results and validation bundle: https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7",
   "abstract_latex": "We study fixed menus of rank-$r$ orthogonal subspaces under a shared\nquadratic reward and multiple quadratic resource costs, with worst-case\nadditive regret over a compact scalar-price interval. The fully adaptive\nvalue curve determines a convexified menu problem but can conceal different\nrealizable optima. We characterize exactly when this relaxation is valid\non every price subinterval: the slopes of actual optimal presets must fill\nthe superdifferential interval at every interior price. For spectral menus,\nthis becomes a union-of-intervals test on active cutoff eigenspaces and\nalways holds for a single site. If $q$ prices fail the criterion, every\nrelaxed $K$-menu admits a replacement by at most $K+\\min(K,q)$ globally\nprice-optimal presets at no greater regret. Analytic eigenvalue\nparameterization makes $q$ finite for each fixed spectral instance.\nThe resulting additive cardinality bound transfers any separately\nestablished positive power-law asymptotic. Sharp spectral examples also\nrealize the factor-two comparison supplied by endpoint scalarization.\nWe combine established two-criterion spectral optimization and interval\ncovering with reusable bounds and solver-independent outward verification.\nSynthetic dense and sparse experiments demonstrate construction and\ncontinuous-price certification, including banded instances of dimension\n4096, while documenting regimes where specialized or dense methods are\nfaster. The contribution is the realizability criterion, its spectral\ncharacterization, and the exceptional-price refinement of finite-menu repair.",
   "journal_reference": null,
   "doi": null,
   "license": "CC BY 4.0",
   "entry_point": "main.tex",
-  "publication_status": "Not submitted by this workflow; author prior/concurrent submission confirmation pending",
+  "publication_status": "Author reports no prior publication or current submission as of 7 November 2026; plans arXiv posting. Not submitted by this workflow.",
   "affiliation": "Independent researcher",
   "corresponding_email": "jevintfelixciano@protonmail.com"
 }

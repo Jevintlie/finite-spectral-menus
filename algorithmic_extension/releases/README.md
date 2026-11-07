@@ -1,8 +1,7 @@
-# Release assets
+# Release validation
 
-The JSON reports certify the named ZIP files intended as GitHub Release
-attachments. ZIP binaries are not duplicated in the source tree. Attach
-paper2_publication_bundle_v7.zip to the matching release; it contains all
-three source/research ZIPs and the reports/logs together. Retain the exact
-bytes and verify against bundle_validation_v7.json. The source-tree manifest
-can be checked without downloading the ZIP assets.
+These reports and logs describe the exact versioned ZIP archives attached to
+the corresponding [GitHub releases](https://github.com/Jevintlie/finite-spectral-menus/releases).
+Use paper2_publication_bundle_v8.zip for the latest manuscript and full reports.
+ZIP binaries are release attachments rather than duplicates in this tree.
+Historical v7 reports remain applicable to the unchanged v7 archives only.

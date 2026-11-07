@@ -1,4 +1,23 @@
-# Publication preparation (v7)
+# Public artifact and manuscript revision (v8)
+
+The versioned research artifact is public:
+https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7
+
+V8 adds that verified URL to the manuscript and updates publication-status
+metadata. Its proofs, algorithms and frozen experimental evidence are
+unchanged. Use `paper2_publication_bundle_v8.zip` for the revised manuscript
+and complete reports; use `paper2_algorithmic_arxiv_source_v8.zip` for arXiv.
+These are available with the matching v8 GitHub release once published.
+
+The author reports no prior publication or current submission as of
+7 November 2026 and plans an arXiv posting. Final author approval of the PDF,
+arXiv account/endorsement/upload, and independent human criticism remain
+pending. The GitHub upload is not an arXiv submission or peer review.
+
+The v6/v7 audits below describe their preserved historical archives.
+`audit_public_artifact_v8.py` checks the v8 revision.
+
+# Historical publication preparation (v7)
 
 Updated 7 November 2026. Author: Jevint Felixciano, Independent researcher.
 Author declarations are in the manuscript. Software is MIT licensed;

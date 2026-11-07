@@ -56,10 +56,12 @@ checks, extract the research ZIP and follow its REPRODUCIBILITY.md. Timings
 are frozen evidence, not a new performance study. See review/ for a focused
 request for independent criticism; no independent response is claimed.
 
-Author identity and declarations are supplied. Public GitHub location,
-arXiv submission, final author approval and prior/concurrent-submission
-confirmation remain separate actions. The manuscript does not invent a
-public URL. See submission/PUBLICATION_PLAN.md in the research artifact.
+Author identity and declarations are supplied. The manuscript cites the
+public v7 artifact at https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7.
+The author reports no prior publication or current submission as of
+7 November 2026. Final PDF approval, independent criticism and actual arXiv
+submission remain pending. See submission/PUBLICATION_PLAN.md in the research
+artifact. This bundle records preparation, not arXiv submission or peer review.
 '''.encode('utf8')
     manifest = {'release': tag, 'files': {n: hashlib.sha256(b).hexdigest() for n, b in sorted(payload.items())}}
     with zipfile.ZipFile(target, 'x', zipfile.ZIP_DEFLATED) as archive:

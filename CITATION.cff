@@ -1,12 +1,15 @@
 cff-version: 1.2.0
-message: "Please cite this manuscript and the exact published artifact version used."
+message: "Please cite this manuscript and the exact artifact version used."
 title: "Finite Menus of Spectral Subspaces: Realizability and the Cost of Convexification"
 type: software
 authors:
   - family-names: "Felixciano"
     given-names: "Jevint"
     affiliation: "Independent researcher"
-version: "v7-preparation"
+version: "v8"
+date-released: "2026-11-07"
+repository-code: "https://github.com/Jevintlie/finite-spectral-menus"
+url: "https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v8"
 license:
   - MIT
   - CC-BY-4.0

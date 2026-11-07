@@ -1,6 +1,7 @@
 # GitHub and arXiv plan — 7 November 2026
 
-Status: local preparation; nothing uploaded or sent.
+Status: v7 artifact published on GitHub; v8 availability revision prepared.
+No review message or arXiv/journal submission has been sent.
 
 ## Confirmed choices
 
@@ -14,19 +15,25 @@ explicitly authorized. See LICENSE.md for scope.
 ## GitHub
 
 Authenticated owner verified: `Jevintlie`.
-Proposed repository: `finite-spectral-menus` (not created).
-Do not cite its proposed URL as a live public resource.
+Repository created by the author: https://github.com/Jevintlie/finite-spectral-menus.
+V7 is public and both release assets were downloaded without authentication
+and matched to the local SHA-256 hashes on 7 November 2026:
+https://github.com/Jevintlie/finite-spectral-menus/releases/tag/v7
+Source commit: 1c5db35e65c41c3f3b36ad3588fbadef27fe66c9.
+The v8 manuscript now cites this release.
 
 Upload only the prepared public snapshot, not the entire research workspace.
-Create an empty repository, push the snapshot, record its actual commit SHA,
+Push the snapshot, record its actual commit SHA,
 and attach the publication bundle to a fixed version release. Cite the
 verified release address rather than only a moving branch. GitHub supplies
 versioned distribution, not a DOI archive; Zenodo remains optional.
 
 The available GitHub connector can inspect existing repositories but exposes
 no repository-creation or release-upload operation in this session. GitHub
-CLI is not installed. Use the author's authenticated interface or a later
-configured publishing tool. Do not paste tokens into documents or chat.
+CLI is not installed. Git was authenticated through the author's device
+login, with repository-local DPAPI credential storage for the Windows SSH
+session. Uploads use Git and the GitHub release API; credentials stay in
+process memory and are never placed in the artifacts.
 
 After the public location exists, update manuscript/main.tex's availability
 statement and metadata, rebuild and create a new tag. Preserve v6/v7 ZIPs.
@@ -50,8 +57,9 @@ and availability have not been established.
 ## Still pending
 
 - Final author review of manuscript and contribution wording.
-- Confirmation of prior-publication and concurrent-submission status.
-- Actual public artifact address and a fresh build incorporating it.
+- Author reports no prior publication or current submission as of 7 November
+  2026 and plans arXiv posting. This status is now confirmed.
+- The public artifact address is established; v8 adds it to the manuscript.
 - Recipient/message approval and a sending account for review outreach.
 - Independent review response, or an explicit decision to submit before it.
 

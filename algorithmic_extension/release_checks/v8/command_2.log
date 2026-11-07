@@ -1,0 +1,5 @@
+Using a shorter Windows reproduction path: C:\Users\Crude\AppData\Local\Temp\spectral_menu_20261107T165523661736Z
+Running check_structural_example.py
+Running smoke_solver.py
+{"status": "PASS", "mode": "smoke", "report": "C:\\Users\\Crude\\AppData\\Local\\Temp\\spectral_menu_20261107T165523661736Z\\reproduction_report.json"}
+
